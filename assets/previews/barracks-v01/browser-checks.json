@@ -1,0 +1,29 @@
+[
+  {
+    "width": 1440,
+    "height": 1000,
+    "overflow": false,
+    "errors": [],
+    "orders": "1 / 5",
+    "reserved": "3",
+    "selected": "Cung thủ"
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "overflow": false,
+    "errors": [],
+    "orders": "1 / 5",
+    "reserved": "3",
+    "selected": "Cung thủ"
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "overflow": false,
+    "errors": [],
+    "orders": "1 / 5",
+    "reserved": "3",
+    "selected": "Cung thủ"
+  }
+]

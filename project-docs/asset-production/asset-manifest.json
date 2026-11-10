@@ -1,0 +1,3022 @@
+{
+  "schema_version": 1,
+  "design_version": "2.0",
+  "status": "proof-in-progress",
+  "asset_root": "Crownlands",
+  "relative_path_base": "Crownlands project root",
+  "counts": {
+    "total": 189,
+    "by_batch": {
+      "proof": 16,
+      "core": 134,
+      "expansion": 39
+    },
+    "by_category": {
+      "terrain": 8,
+      "world-network": 8,
+      "world-decoration": 3,
+      "world-site": 9,
+      "world-resource": 4,
+      "world-army": 7,
+      "city-building": 33,
+      "city-ground": 1,
+      "city-resource": 12,
+      "city-perimeter": 6,
+      "city-overlay": 2,
+      "unit-card": 14,
+      "unit-icon": 14,
+      "ui-resource": 4,
+      "ui-badge": 13,
+      "ui-action": 15,
+      "report-effect": 3,
+      "season-terrain": 24,
+      "season-city": 3,
+      "season-decoration": 6
+    }
+  },
+  "proof_asset_count": 16,
+  "proof_ids": [
+    "city-barracks-v01",
+    "city-ground-summer",
+    "city-town-hall-v01",
+    "effect-radiant-ward",
+    "ui-resource-grain",
+    "unit-card-cavalry-iii",
+    "unit-card-cavalry-iv-martial",
+    "unit-card-cavalry-iv-radiant",
+    "unit-card-cavalry-iv-umbral",
+    "unit-card-sword-i",
+    "world-army-patrol",
+    "world-city-small",
+    "world-npc-bandit-camp",
+    "world-resource-clay-site",
+    "world-resource-grain-field",
+    "world-terrain-grass-summer"
+  ],
+  "contracts": {
+    "world-terrain": {
+      "camera": "world",
+      "export_px": [
+        128,
+        128
+      ],
+      "runtime_css_px": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "format": "webp",
+      "alpha": false
+    },
+    "world-overlay": {
+      "camera": "world",
+      "export_px": [
+        128,
+        128
+      ],
+      "runtime_css_px": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "format": "png",
+      "alpha": true
+    },
+    "world-site": {
+      "camera": "world",
+      "export_px": [
+        128,
+        128
+      ],
+      "runtime_css_px": [
+        32,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.75
+      ],
+      "format": "png",
+      "alpha": true
+    },
+    "world-great-city": {
+      "camera": "world",
+      "export_px": [
+        192,
+        192
+      ],
+      "runtime_css_px": [
+        48,
+        48
+      ],
+      "anchor": [
+        0.5,
+        0.75
+      ],
+      "format": "png",
+      "alpha": true
+    },
+    "city-ground": {
+      "camera": "city",
+      "export_px": [
+        2048,
+        1536
+      ],
+      "runtime_css_px": null,
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "format": "webp",
+      "alpha": false
+    },
+    "city-building": {
+      "camera": "city",
+      "export_px": [
+        512,
+        512
+      ],
+      "runtime_css_width_range": [
+        96,
+        128
+      ],
+      "anchor": [
+        0.5,
+        0.78
+      ],
+      "format": "png",
+      "alpha": true
+    },
+    "city-resource": {
+      "camera": "city",
+      "export_px": [
+        512,
+        512
+      ],
+      "runtime_css_width_range": [
+        80,
+        112
+      ],
+      "anchor": [
+        0.5,
+        0.78
+      ],
+      "format": "png",
+      "alpha": true
+    },
+    "city-overlay": {
+      "camera": "city",
+      "export_px": [
+        512,
+        512
+      ],
+      "runtime_css_width_range": [
+        96,
+        128
+      ],
+      "anchor": [
+        0.5,
+        0.78
+      ],
+      "format": "png",
+      "alpha": true
+    },
+    "city-perimeter": {
+      "camera": "city",
+      "export_px": [
+        2048,
+        1536
+      ],
+      "runtime_css_px": null,
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "format": "png",
+      "alpha": true
+    },
+    "unit-card": {
+      "camera": "unit-card",
+      "export_px": [
+        512,
+        512
+      ],
+      "runtime_css_width_range": [
+        64,
+        96
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "format": "png",
+      "alpha": true
+    },
+    "unit-icon": {
+      "camera": "ui",
+      "export_px": [
+        128,
+        128
+      ],
+      "runtime_css_width_range": [
+        32,
+        48
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "format": "png",
+      "alpha": true
+    },
+    "ui-icon": {
+      "camera": "ui",
+      "export_px": [
+        128,
+        128
+      ],
+      "runtime_css_width_range": [
+        24,
+        32
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "format": "svg",
+      "alpha": true
+    },
+    "report-effect": {
+      "camera": "ui",
+      "export_px": [
+        128,
+        128
+      ],
+      "runtime_css_width_range": [
+        24,
+        48
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "format": "png",
+      "alpha": true
+    }
+  },
+  "render_contract": {
+    "world_zoom_1_css_tile": 32,
+    "world_city_css_max": 32,
+    "world_great_city_css_max": 48,
+    "dynamic_layers": [
+      "ownership",
+      "relation",
+      "faction",
+      "threat-rating",
+      "unit-count",
+      "tier",
+      "labels",
+      "selection",
+      "timers",
+      "fog-of-war"
+    ],
+    "four_seasons": "Environment only; core uses summer.",
+    "ui_shell": "HTML/CSS; no raster buttons, panels or full-screen HUD backgrounds.",
+    "alpha": "Real alpha, never a checkerboard texture.",
+    "default_safe_padding_fraction": 0.08
+  },
+  "assets": [
+    {
+      "id": "world-terrain-grass-summer",
+      "batch": "proof",
+      "category": "terrain",
+      "contract": "world-terrain",
+      "description": "Seamless bright summer grass material, top-down, no objects, no text.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-grass-summer.webp",
+      "source_directory": "assets/source/world-terrain-grass-summer"
+    },
+    {
+      "id": "world-terrain-dirt-summer",
+      "batch": "core",
+      "category": "terrain",
+      "contract": "world-terrain",
+      "description": "Seamless bright summer dirt material, top-down, no objects, no text.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-dirt-summer.webp",
+      "source_directory": "assets/source/world-terrain-dirt-summer"
+    },
+    {
+      "id": "world-terrain-forest-floor-summer",
+      "batch": "core",
+      "category": "terrain",
+      "contract": "world-terrain",
+      "description": "Seamless bright summer forest-floor material, top-down, no objects, no text.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-forest-floor-summer.webp",
+      "source_directory": "assets/source/world-terrain-forest-floor-summer"
+    },
+    {
+      "id": "world-terrain-rock-summer",
+      "batch": "core",
+      "category": "terrain",
+      "contract": "world-terrain",
+      "description": "Seamless bright summer rock material, top-down, no objects, no text.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-rock-summer.webp",
+      "source_directory": "assets/source/world-terrain-rock-summer"
+    },
+    {
+      "id": "world-terrain-shallow-water-summer",
+      "batch": "core",
+      "category": "terrain",
+      "contract": "world-terrain",
+      "description": "Seamless bright summer shallow-water material, top-down, no objects, no text.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-shallow-water-summer.webp",
+      "source_directory": "assets/source/world-terrain-shallow-water-summer"
+    },
+    {
+      "id": "world-terrain-deep-water-summer",
+      "batch": "core",
+      "category": "terrain",
+      "contract": "world-terrain",
+      "description": "Seamless bright summer deep-water material, top-down, no objects, no text.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-deep-water-summer.webp",
+      "source_directory": "assets/source/world-terrain-deep-water-summer"
+    },
+    {
+      "id": "world-terrain-riverbank-summer",
+      "batch": "core",
+      "category": "terrain",
+      "contract": "world-terrain",
+      "description": "Seamless bright summer riverbank material, top-down, no objects, no text.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-riverbank-summer.webp",
+      "source_directory": "assets/source/world-terrain-riverbank-summer"
+    },
+    {
+      "id": "world-terrain-farmland-summer",
+      "batch": "core",
+      "category": "terrain",
+      "contract": "world-terrain",
+      "description": "Seamless bright summer farmland material, top-down, no objects, no text.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-farmland-summer.webp",
+      "source_directory": "assets/source/world-terrain-farmland-summer"
+    },
+    {
+      "id": "world-road-straight",
+      "batch": "core",
+      "category": "world-network",
+      "contract": "world-overlay",
+      "description": "Connected dirt road straight; no perspective, route geometry only may rotate.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-road-straight.png",
+      "source_directory": "assets/source/world-road-straight"
+    },
+    {
+      "id": "world-road-corner",
+      "batch": "core",
+      "category": "world-network",
+      "contract": "world-overlay",
+      "description": "Connected dirt road corner; no perspective, route geometry only may rotate.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-road-corner.png",
+      "source_directory": "assets/source/world-road-corner"
+    },
+    {
+      "id": "world-road-junction",
+      "batch": "core",
+      "category": "world-network",
+      "contract": "world-overlay",
+      "description": "Connected dirt road junction; no perspective, route geometry only may rotate.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-road-junction.png",
+      "source_directory": "assets/source/world-road-junction"
+    },
+    {
+      "id": "world-road-end",
+      "batch": "core",
+      "category": "world-network",
+      "contract": "world-overlay",
+      "description": "Connected dirt road end; no perspective, route geometry only may rotate.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-road-end.png",
+      "source_directory": "assets/source/world-road-end"
+    },
+    {
+      "id": "world-road-bridge",
+      "batch": "core",
+      "category": "world-network",
+      "contract": "world-overlay",
+      "description": "Connected dirt road bridge; no perspective, route geometry only may rotate.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-road-bridge.png",
+      "source_directory": "assets/source/world-road-bridge"
+    },
+    {
+      "id": "world-river-straight",
+      "batch": "core",
+      "category": "world-network",
+      "contract": "world-overlay",
+      "description": "River straight, tile-edge endpoints centered and widths matched; transparent banks, consistent water.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-river-straight.png",
+      "source_directory": "assets/source/world-river-straight"
+    },
+    {
+      "id": "world-river-corner",
+      "batch": "core",
+      "category": "world-network",
+      "contract": "world-overlay",
+      "description": "River corner, tile-edge endpoints centered and widths matched; transparent banks, consistent water.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-river-corner.png",
+      "source_directory": "assets/source/world-river-corner"
+    },
+    {
+      "id": "world-river-junction",
+      "batch": "core",
+      "category": "world-network",
+      "contract": "world-overlay",
+      "description": "River junction, tile-edge endpoints centered and widths matched; transparent banks, consistent water.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-river-junction.png",
+      "source_directory": "assets/source/world-river-junction"
+    },
+    {
+      "id": "world-decoration-forest-clump-small-summer",
+      "batch": "core",
+      "category": "world-decoration",
+      "contract": "world-site",
+      "description": "Compact forest-clump-small, summer daylight; no site ownership symbol.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-decoration-forest-clump-small-summer.png",
+      "source_directory": "assets/source/world-decoration-forest-clump-small-summer"
+    },
+    {
+      "id": "world-decoration-forest-clump-large-summer",
+      "batch": "core",
+      "category": "world-decoration",
+      "contract": "world-site",
+      "description": "Compact forest-clump-large, summer daylight; no site ownership symbol.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-decoration-forest-clump-large-summer.png",
+      "source_directory": "assets/source/world-decoration-forest-clump-large-summer"
+    },
+    {
+      "id": "world-decoration-rock-ridge-summer",
+      "batch": "core",
+      "category": "world-decoration",
+      "contract": "world-site",
+      "description": "Compact rock-ridge, summer daylight; no site ownership symbol.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-decoration-rock-ridge-summer.png",
+      "source_directory": "assets/source/world-decoration-rock-ridge-summer"
+    },
+    {
+      "id": "world-city-small",
+      "batch": "proof",
+      "category": "world-site",
+      "contract": "world-site",
+      "description": "Compact circular small city icon. Recognizable at 32 CSS pixels, no detailed city scene.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-city-small.png",
+      "source_directory": "assets/source/world-city-small"
+    },
+    {
+      "id": "world-city-medium",
+      "batch": "core",
+      "category": "world-site",
+      "contract": "world-site",
+      "description": "Compact circular medium city icon. Recognizable at 32 CSS pixels, no detailed city scene.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-city-medium.png",
+      "source_directory": "assets/source/world-city-medium"
+    },
+    {
+      "id": "world-city-large",
+      "batch": "core",
+      "category": "world-site",
+      "contract": "world-site",
+      "description": "Compact circular large city icon. Recognizable at 32 CSS pixels, no detailed city scene.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-city-large.png",
+      "source_directory": "assets/source/world-city-large"
+    },
+    {
+      "id": "world-city-abandoned",
+      "batch": "core",
+      "category": "world-site",
+      "contract": "world-site",
+      "description": "Ruined circular settlement, distinguish from a living city without skull text.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-city-abandoned.png",
+      "source_directory": "assets/source/world-city-abandoned"
+    },
+    {
+      "id": "world-forward-camp",
+      "batch": "core",
+      "category": "world-site",
+      "contract": "world-site",
+      "description": "Small military forward camp, tents and palisade; not a miniature full city.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-forward-camp.png",
+      "source_directory": "assets/source/world-forward-camp"
+    },
+    {
+      "id": "world-npc-bandit-camp",
+      "batch": "proof",
+      "category": "world-site",
+      "contract": "world-site",
+      "description": "Local bandit camp with rough shelters; no monster or ownership flag baked in.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-npc-bandit-camp.png",
+      "source_directory": "assets/source/world-npc-bandit-camp"
+    },
+    {
+      "id": "world-resource-wood-site",
+      "batch": "core",
+      "category": "world-resource",
+      "contract": "world-site",
+      "description": "small managed woodland and timber stack; functional small resource site at 32 CSS pixels.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-resource-wood-site.png",
+      "source_directory": "assets/source/world-resource-wood-site"
+    },
+    {
+      "id": "world-resource-clay-site",
+      "batch": "proof",
+      "category": "world-resource",
+      "contract": "world-site",
+      "description": "red-brown clay pit with excavation terraces; not a stone quarry; functional small resource site at 32 CSS pixels.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-resource-clay-site.png",
+      "source_directory": "assets/source/world-resource-clay-site"
+    },
+    {
+      "id": "world-resource-iron-site",
+      "batch": "core",
+      "category": "world-resource",
+      "contract": "world-site",
+      "description": "dark exposed iron ore seam and timber support; functional small resource site at 32 CSS pixels.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-resource-iron-site.png",
+      "source_directory": "assets/source/world-resource-iron-site"
+    },
+    {
+      "id": "world-resource-grain-field",
+      "batch": "proof",
+      "category": "world-resource",
+      "contract": "world-site",
+      "description": "compact cultivated grain field with orderly furrows; not a giant grain sack; functional small resource site at 32 CSS pixels.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-resource-grain-field.png",
+      "source_directory": "assets/source/world-resource-grain-field"
+    },
+    {
+      "id": "world-army-sword",
+      "batch": "core",
+      "category": "world-army",
+      "contract": "world-site",
+      "description": "One compact representative sword formation marker, no literal headcount, no faction color baked.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-army-sword.png",
+      "source_directory": "assets/source/world-army-sword"
+    },
+    {
+      "id": "world-army-spear",
+      "batch": "core",
+      "category": "world-army",
+      "contract": "world-site",
+      "description": "One compact representative spear formation marker, no literal headcount, no faction color baked.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-army-spear.png",
+      "source_directory": "assets/source/world-army-spear"
+    },
+    {
+      "id": "world-army-archer",
+      "batch": "core",
+      "category": "world-army",
+      "contract": "world-site",
+      "description": "One compact representative archer formation marker, no literal headcount, no faction color baked.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-army-archer.png",
+      "source_directory": "assets/source/world-army-archer"
+    },
+    {
+      "id": "world-army-cavalry",
+      "batch": "core",
+      "category": "world-army",
+      "contract": "world-site",
+      "description": "One compact representative cavalry formation marker, no literal headcount, no faction color baked.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-army-cavalry.png",
+      "source_directory": "assets/source/world-army-cavalry"
+    },
+    {
+      "id": "world-army-elephant",
+      "batch": "core",
+      "category": "world-army",
+      "contract": "world-site",
+      "description": "One compact representative elephant formation marker, no literal headcount, no faction color baked.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-army-elephant.png",
+      "source_directory": "assets/source/world-army-elephant"
+    },
+    {
+      "id": "world-army-patrol",
+      "batch": "proof",
+      "category": "world-army",
+      "contract": "world-site",
+      "description": "Unscouted mobile army marker: compact paired pennants and travel equipment; visually different from a static camp.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-army-patrol.png",
+      "source_directory": "assets/source/world-army-patrol"
+    },
+    {
+      "id": "world-wagon",
+      "batch": "core",
+      "category": "world-army",
+      "contract": "world-site",
+      "description": "Compact supply wagon marker; cargo type and owner are runtime overlays.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-wagon.png",
+      "source_directory": "assets/source/world-wagon"
+    },
+    {
+      "id": "world-great-city-minor",
+      "batch": "expansion",
+      "category": "world-site",
+      "contract": "world-great-city",
+      "description": "Great city minor, distinguished silhouette; never exceeds 48 CSS pixels at 1x.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-great-city-minor.png",
+      "source_directory": "assets/source/world-great-city-minor"
+    },
+    {
+      "id": "world-great-city-major",
+      "batch": "expansion",
+      "category": "world-site",
+      "contract": "world-great-city",
+      "description": "Great city major, distinguished silhouette; never exceeds 48 CSS pixels at 1x.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-great-city-major.png",
+      "source_directory": "assets/source/world-great-city-major"
+    },
+    {
+      "id": "world-great-city-royal",
+      "batch": "expansion",
+      "category": "world-site",
+      "contract": "world-great-city",
+      "description": "Great city royal, distinguished silhouette; never exceeds 48 CSS pixels at 1x.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-great-city-royal.png",
+      "source_directory": "assets/source/world-great-city-royal"
+    },
+    {
+      "id": "city-town-hall-v01",
+      "batch": "proof",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Phủ thành, visual stage 1; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "approved",
+      "approved": true,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-town-hall-v01.png",
+      "source_directory": "assets/source/city-town-hall-v01",
+      "selected_source": "assets/source/city-town-hall-v01/proof-v02.png",
+      "source_revision": 2,
+      "approval": {
+        "kind": "user",
+        "date": "2026-11-10",
+        "evidence": "ok phủ v2 ổn nha. tiếp theo làm gì ?",
+        "scope": "Main-hall proof revision 2 visual concept; no blanket approval of other buildings."
+      }
+    },
+    {
+      "id": "city-town-hall-v02",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Phủ thành, visual stage 2; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-town-hall-v02.png",
+      "source_directory": "assets/source/city-town-hall-v02"
+    },
+    {
+      "id": "city-town-hall-v03",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Phủ thành, visual stage 3; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-town-hall-v03.png",
+      "source_directory": "assets/source/city-town-hall-v03"
+    },
+    {
+      "id": "city-warehouse-v01",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Kho tài nguyên, visual stage 1; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "draft",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-warehouse-v01.png",
+      "source_directory": "assets/source/city-warehouse-v01",
+      "selected_source": "assets/source/city-warehouse-v01/proof-v01.png",
+      "source_revision": 1,
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_file": "assets/source/city-warehouse-v01/proof-v01-prompt.txt",
+      "runtime_copy": "app/assets/city-warehouse.png",
+      "preview_dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "city-warehouse-v02",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Kho tài nguyên, visual stage 2; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-warehouse-v02.png",
+      "source_directory": "assets/source/city-warehouse-v02"
+    },
+    {
+      "id": "city-warehouse-v03",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Kho tài nguyên, visual stage 3; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-warehouse-v03.png",
+      "source_directory": "assets/source/city-warehouse-v03"
+    },
+    {
+      "id": "city-granary-v01",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Kho lương, visual stage 1; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "draft",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-granary-v01.png",
+      "source_directory": "assets/source/city-granary-v01",
+      "selected_source": "assets/source/city-granary-v01/proof-v01.png",
+      "source_revision": 1,
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_file": "assets/source/city-granary-v01/proof-v01-prompt.txt",
+      "runtime_copy": "app/assets/city-granary.png",
+      "preview_dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "city-granary-v02",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Kho lương, visual stage 2; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-granary-v02.png",
+      "source_directory": "assets/source/city-granary-v02"
+    },
+    {
+      "id": "city-granary-v03",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Kho lương, visual stage 3; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-granary-v03.png",
+      "source_directory": "assets/source/city-granary-v03"
+    },
+    {
+      "id": "city-rally-point-v01",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Điểm tập kết, visual stage 1; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "draft",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-rally-point-v01.png",
+      "source_directory": "assets/source/city-rally-point-v01",
+      "selected_source": "assets/source/city-rally-point-v01/proof-v01.png",
+      "source_revision": 1,
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_file": "assets/source/city-rally-point-v01/proof-v01-prompt.txt",
+      "runtime_copy": "app/assets/city-rally-point.png",
+      "preview_dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "city-rally-point-v02",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Điểm tập kết, visual stage 2; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-rally-point-v02.png",
+      "source_directory": "assets/source/city-rally-point-v02"
+    },
+    {
+      "id": "city-rally-point-v03",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Điểm tập kết, visual stage 3; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-rally-point-v03.png",
+      "source_directory": "assets/source/city-rally-point-v03"
+    },
+    {
+      "id": "city-barracks-v01",
+      "batch": "proof",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Doanh trại, visual stage 1; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-barracks-v01.png",
+      "source_directory": "assets/source/city-barracks-v01"
+    },
+    {
+      "id": "city-barracks-v02",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Doanh trại, visual stage 2; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-barracks-v02.png",
+      "source_directory": "assets/source/city-barracks-v02"
+    },
+    {
+      "id": "city-barracks-v03",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Doanh trại, visual stage 3; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-barracks-v03.png",
+      "source_directory": "assets/source/city-barracks-v03"
+    },
+    {
+      "id": "city-academy-v01",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Học viện, visual stage 1; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-academy-v01.png",
+      "source_directory": "assets/source/city-academy-v01"
+    },
+    {
+      "id": "city-academy-v02",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Học viện, visual stage 2; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-academy-v02.png",
+      "source_directory": "assets/source/city-academy-v02"
+    },
+    {
+      "id": "city-academy-v03",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Học viện, visual stage 3; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-academy-v03.png",
+      "source_directory": "assets/source/city-academy-v03"
+    },
+    {
+      "id": "city-transport-depot-v01",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Trạm vận tải, visual stage 1; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "draft",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-transport-depot-v01.png",
+      "source_directory": "assets/source/city-transport-depot-v01",
+      "selected_source": "assets/source/city-transport-depot-v01/proof-v02.png",
+      "source_revision": 2,
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_file": "assets/source/city-transport-depot-v01/proof-v02-prompt.txt",
+      "runtime_copy": "app/assets/city-transport-depot.png",
+      "preview_dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "city-transport-depot-v02",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Trạm vận tải, visual stage 2; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-transport-depot-v02.png",
+      "source_directory": "assets/source/city-transport-depot-v02"
+    },
+    {
+      "id": "city-transport-depot-v03",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Trạm vận tải, visual stage 3; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-transport-depot-v03.png",
+      "source_directory": "assets/source/city-transport-depot-v03"
+    },
+    {
+      "id": "city-forge-v01",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Lò rèn, visual stage 1; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-forge-v01.png",
+      "source_directory": "assets/source/city-forge-v01"
+    },
+    {
+      "id": "city-forge-v02",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Lò rèn, visual stage 2; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-forge-v02.png",
+      "source_directory": "assets/source/city-forge-v02"
+    },
+    {
+      "id": "city-forge-v03",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Lò rèn, visual stage 3; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-forge-v03.png",
+      "source_directory": "assets/source/city-forge-v03"
+    },
+    {
+      "id": "city-stable-v01",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Chuồng ngựa, visual stage 1; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-stable-v01.png",
+      "source_directory": "assets/source/city-stable-v01"
+    },
+    {
+      "id": "city-stable-v02",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Chuồng ngựa, visual stage 2; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-stable-v02.png",
+      "source_directory": "assets/source/city-stable-v02"
+    },
+    {
+      "id": "city-stable-v03",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Chuồng ngựa, visual stage 3; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-stable-v03.png",
+      "source_directory": "assets/source/city-stable-v03"
+    },
+    {
+      "id": "city-elephant-stable-v01",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Trại voi, visual stage 1; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-elephant-stable-v01.png",
+      "source_directory": "assets/source/city-elephant-stable-v01"
+    },
+    {
+      "id": "city-elephant-stable-v02",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Trại voi, visual stage 2; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-elephant-stable-v02.png",
+      "source_directory": "assets/source/city-elephant-stable-v02"
+    },
+    {
+      "id": "city-elephant-stable-v03",
+      "batch": "core",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Trại voi, visual stage 3; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-elephant-stable-v03.png",
+      "source_directory": "assets/source/city-elephant-stable-v03"
+    },
+    {
+      "id": "city-governor-hall-v01",
+      "batch": "expansion",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Dinh điều hành, visual stage 1; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-governor-hall-v01.png",
+      "source_directory": "assets/source/city-governor-hall-v01"
+    },
+    {
+      "id": "city-governor-hall-v02",
+      "batch": "expansion",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Dinh điều hành, visual stage 2; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-governor-hall-v02.png",
+      "source_directory": "assets/source/city-governor-hall-v02"
+    },
+    {
+      "id": "city-governor-hall-v03",
+      "batch": "expansion",
+      "category": "city-building",
+      "contract": "city-building",
+      "description": "Dinh điều hành, visual stage 3; fixed footprint and ground anchor, no text/levels/flags.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-governor-hall-v03.png",
+      "source_directory": "assets/source/city-governor-hall-v03"
+    },
+    {
+      "id": "city-ground-summer",
+      "batch": "proof",
+      "category": "city-ground",
+      "contract": "city-ground",
+      "description": "Circular city terrain and access roads, clean empty pads matching layout; no buildings or baked resource structures.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-ground-summer.webp",
+      "source_directory": "assets/source/city-ground-summer"
+    },
+    {
+      "id": "city-resource-wood-v01",
+      "batch": "core",
+      "category": "city-resource",
+      "contract": "city-resource",
+      "description": "One wood production plot, visual stage 1; same pad shape and anchor.",
+      "status": "draft",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-resource-wood-v01.png",
+      "source_directory": "assets/source/city-resource-wood-v01",
+      "selected_source": "assets/source/city-resource-wood-v01/proof-v01.png",
+      "source_revision": 1,
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_file": "assets/source/city-resource-wood-v01/proof-v01-prompt.txt",
+      "runtime_copy": "app/assets/city-resource-wood.png",
+      "preview_dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "city-resource-wood-v02",
+      "batch": "core",
+      "category": "city-resource",
+      "contract": "city-resource",
+      "description": "One wood production plot, visual stage 2; same pad shape and anchor.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-resource-wood-v02.png",
+      "source_directory": "assets/source/city-resource-wood-v02"
+    },
+    {
+      "id": "city-resource-wood-v03",
+      "batch": "core",
+      "category": "city-resource",
+      "contract": "city-resource",
+      "description": "One wood production plot, visual stage 3; same pad shape and anchor.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-resource-wood-v03.png",
+      "source_directory": "assets/source/city-resource-wood-v03"
+    },
+    {
+      "id": "city-resource-clay-v01",
+      "batch": "core",
+      "category": "city-resource",
+      "contract": "city-resource",
+      "description": "One clay production plot, visual stage 1; same pad shape and anchor.",
+      "status": "draft",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-resource-clay-v01.png",
+      "source_directory": "assets/source/city-resource-clay-v01",
+      "selected_source": "assets/source/city-resource-clay-v01/proof-v01.png",
+      "source_revision": 1,
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_file": "assets/source/city-resource-clay-v01/proof-v01-prompt.txt",
+      "runtime_copy": "app/assets/city-resource-clay.png",
+      "preview_dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "city-resource-clay-v02",
+      "batch": "core",
+      "category": "city-resource",
+      "contract": "city-resource",
+      "description": "One clay production plot, visual stage 2; same pad shape and anchor.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-resource-clay-v02.png",
+      "source_directory": "assets/source/city-resource-clay-v02"
+    },
+    {
+      "id": "city-resource-clay-v03",
+      "batch": "core",
+      "category": "city-resource",
+      "contract": "city-resource",
+      "description": "One clay production plot, visual stage 3; same pad shape and anchor.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-resource-clay-v03.png",
+      "source_directory": "assets/source/city-resource-clay-v03"
+    },
+    {
+      "id": "city-resource-iron-v01",
+      "batch": "core",
+      "category": "city-resource",
+      "contract": "city-resource",
+      "description": "One iron production plot, visual stage 1; same pad shape and anchor.",
+      "status": "draft",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-resource-iron-v01.png",
+      "source_directory": "assets/source/city-resource-iron-v01",
+      "selected_source": "assets/source/city-resource-iron-v01/proof-v01.png",
+      "source_revision": 1,
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_file": "assets/source/city-resource-iron-v01/proof-v01-prompt.txt",
+      "runtime_copy": "app/assets/city-resource-iron.png",
+      "preview_dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "city-resource-iron-v02",
+      "batch": "core",
+      "category": "city-resource",
+      "contract": "city-resource",
+      "description": "One iron production plot, visual stage 2; same pad shape and anchor.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-resource-iron-v02.png",
+      "source_directory": "assets/source/city-resource-iron-v02"
+    },
+    {
+      "id": "city-resource-iron-v03",
+      "batch": "core",
+      "category": "city-resource",
+      "contract": "city-resource",
+      "description": "One iron production plot, visual stage 3; same pad shape and anchor.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-resource-iron-v03.png",
+      "source_directory": "assets/source/city-resource-iron-v03"
+    },
+    {
+      "id": "city-resource-grain-v01",
+      "batch": "core",
+      "category": "city-resource",
+      "contract": "city-resource",
+      "description": "One grain production plot, visual stage 1; same pad shape and anchor.",
+      "status": "draft",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-resource-grain-v01.png",
+      "source_directory": "assets/source/city-resource-grain-v01",
+      "selected_source": "assets/source/city-resource-grain-v01/proof-v01.png",
+      "source_revision": 1,
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_file": "assets/source/city-resource-grain-v01/proof-v01-prompt.txt",
+      "runtime_copy": "app/assets/city-resource-grain.png",
+      "preview_dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "city-resource-grain-v02",
+      "batch": "core",
+      "category": "city-resource",
+      "contract": "city-resource",
+      "description": "One grain production plot, visual stage 2; same pad shape and anchor.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-resource-grain-v02.png",
+      "source_directory": "assets/source/city-resource-grain-v02"
+    },
+    {
+      "id": "city-resource-grain-v03",
+      "batch": "core",
+      "category": "city-resource",
+      "contract": "city-resource",
+      "description": "One grain production plot, visual stage 3; same pad shape and anchor.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-resource-grain-v03.png",
+      "source_directory": "assets/source/city-resource-grain-v03"
+    },
+    {
+      "id": "city-wall-v01",
+      "batch": "core",
+      "category": "city-perimeter",
+      "contract": "city-perimeter",
+      "description": "Circular wall stage 1; transparent center, gate opening at south anchor, same ellipse as layout.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-wall-v01.png",
+      "source_directory": "assets/source/city-wall-v01"
+    },
+    {
+      "id": "city-gate-v01",
+      "batch": "core",
+      "category": "city-perimeter",
+      "contract": "city-perimeter",
+      "description": "Gate structure stage 1, same full-canvas alignment, other pixels transparent.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-gate-v01.png",
+      "source_directory": "assets/source/city-gate-v01"
+    },
+    {
+      "id": "city-wall-v02",
+      "batch": "core",
+      "category": "city-perimeter",
+      "contract": "city-perimeter",
+      "description": "Circular wall stage 2; transparent center, gate opening at south anchor, same ellipse as layout.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-wall-v02.png",
+      "source_directory": "assets/source/city-wall-v02"
+    },
+    {
+      "id": "city-gate-v02",
+      "batch": "core",
+      "category": "city-perimeter",
+      "contract": "city-perimeter",
+      "description": "Gate structure stage 2, same full-canvas alignment, other pixels transparent.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-gate-v02.png",
+      "source_directory": "assets/source/city-gate-v02"
+    },
+    {
+      "id": "city-wall-v03",
+      "batch": "core",
+      "category": "city-perimeter",
+      "contract": "city-perimeter",
+      "description": "Circular wall stage 3; transparent center, gate opening at south anchor, same ellipse as layout.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-wall-v03.png",
+      "source_directory": "assets/source/city-wall-v03"
+    },
+    {
+      "id": "city-gate-v03",
+      "batch": "core",
+      "category": "city-perimeter",
+      "contract": "city-perimeter",
+      "description": "Gate structure stage 3, same full-canvas alignment, other pixels transparent.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-gate-v03.png",
+      "source_directory": "assets/source/city-gate-v03"
+    },
+    {
+      "id": "city-empty-slot",
+      "batch": "core",
+      "category": "city-overlay",
+      "contract": "city-overlay",
+      "description": "Empty building pad for selection, no numbered label or button.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-empty-slot.png",
+      "source_directory": "assets/source/city-empty-slot"
+    },
+    {
+      "id": "city-construction-overlay",
+      "batch": "core",
+      "category": "city-overlay",
+      "contract": "city-overlay",
+      "description": "Reusable compact scaffold/construction overlay, no baked completion timer.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-construction-overlay.png",
+      "source_directory": "assets/source/city-construction-overlay"
+    },
+    {
+      "id": "unit-card-sword-i",
+      "batch": "proof",
+      "category": "unit-card",
+      "contract": "unit-card",
+      "description": "Simple iron sword, cloth tunic, round wooden shield. Same line pose and anatomy as other tiers; no text/border.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/units/unit-card-sword-i.png",
+      "source_directory": "assets/source/unit-card-sword-i"
+    },
+    {
+      "id": "unit-icon-sword-i",
+      "batch": "core",
+      "category": "unit-icon",
+      "contract": "unit-icon",
+      "description": "Readable cropped derivative of corresponding card; preserve defining weapon/mount.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "derived-card-crop",
+      "output_path": "assets/export/units/unit-icon-sword-i.png",
+      "source_directory": "assets/source/unit-icon-sword-i",
+      "depends_on": [
+        "unit-card-sword-i"
+      ]
+    },
+    {
+      "id": "unit-card-sword-ii",
+      "batch": "core",
+      "category": "unit-card",
+      "contract": "unit-card",
+      "description": "Iron sword, padded tunic, open iron helmet, reinforced wooden shield. Same line pose and anatomy as other tiers; no text/border.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/units/unit-card-sword-ii.png",
+      "source_directory": "assets/source/unit-card-sword-ii"
+    },
+    {
+      "id": "unit-icon-sword-ii",
+      "batch": "core",
+      "category": "unit-icon",
+      "contract": "unit-icon",
+      "description": "Readable cropped derivative of corresponding card; preserve defining weapon/mount.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "derived-card-crop",
+      "output_path": "assets/export/units/unit-icon-sword-ii.png",
+      "source_directory": "assets/source/unit-icon-sword-ii",
+      "depends_on": [
+        "unit-card-sword-ii"
+      ]
+    },
+    {
+      "id": "unit-card-spear-i",
+      "batch": "core",
+      "category": "unit-card",
+      "contract": "unit-card",
+      "description": "Long wooden spear with iron tip, cloth tunic, small shield. Same line pose and anatomy as other tiers; no text/border.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/units/unit-card-spear-i.png",
+      "source_directory": "assets/source/unit-card-spear-i"
+    },
+    {
+      "id": "unit-icon-spear-i",
+      "batch": "core",
+      "category": "unit-icon",
+      "contract": "unit-icon",
+      "description": "Readable cropped derivative of corresponding card; preserve defining weapon/mount.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "derived-card-crop",
+      "output_path": "assets/export/units/unit-icon-spear-i.png",
+      "source_directory": "assets/source/unit-icon-spear-i",
+      "depends_on": [
+        "unit-card-spear-i"
+      ]
+    },
+    {
+      "id": "unit-card-spear-ii",
+      "batch": "core",
+      "category": "unit-card",
+      "contract": "unit-card",
+      "description": "Reinforced long spear, padded armor, open helmet, compact shield. Same line pose and anatomy as other tiers; no text/border.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/units/unit-card-spear-ii.png",
+      "source_directory": "assets/source/unit-card-spear-ii"
+    },
+    {
+      "id": "unit-icon-spear-ii",
+      "batch": "core",
+      "category": "unit-icon",
+      "contract": "unit-icon",
+      "description": "Readable cropped derivative of corresponding card; preserve defining weapon/mount.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "derived-card-crop",
+      "output_path": "assets/export/units/unit-icon-spear-ii.png",
+      "source_directory": "assets/source/unit-icon-spear-ii",
+      "depends_on": [
+        "unit-card-spear-ii"
+      ]
+    },
+    {
+      "id": "unit-card-archer-i",
+      "batch": "core",
+      "category": "unit-card",
+      "contract": "unit-card",
+      "description": "Short wooden bow, cloth tunic, visible quiver; no crossbow. Same line pose and anatomy as other tiers; no text/border.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/units/unit-card-archer-i.png",
+      "source_directory": "assets/source/unit-card-archer-i"
+    },
+    {
+      "id": "unit-icon-archer-i",
+      "batch": "core",
+      "category": "unit-icon",
+      "contract": "unit-icon",
+      "description": "Readable cropped derivative of corresponding card; preserve defining weapon/mount.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "derived-card-crop",
+      "output_path": "assets/export/units/unit-icon-archer-i.png",
+      "source_directory": "assets/source/unit-icon-archer-i",
+      "depends_on": [
+        "unit-card-archer-i"
+      ]
+    },
+    {
+      "id": "unit-card-archer-ii",
+      "batch": "core",
+      "category": "unit-card",
+      "contract": "unit-card",
+      "description": "Improved recurved bow, padded vest, bracers, tidy quiver. Same line pose and anatomy as other tiers; no text/border.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/units/unit-card-archer-ii.png",
+      "source_directory": "assets/source/unit-card-archer-ii"
+    },
+    {
+      "id": "unit-icon-archer-ii",
+      "batch": "core",
+      "category": "unit-icon",
+      "contract": "unit-icon",
+      "description": "Readable cropped derivative of corresponding card; preserve defining weapon/mount.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "derived-card-crop",
+      "output_path": "assets/export/units/unit-icon-archer-ii.png",
+      "source_directory": "assets/source/unit-icon-archer-ii",
+      "depends_on": [
+        "unit-card-archer-ii"
+      ]
+    },
+    {
+      "id": "unit-card-elephant-i",
+      "batch": "core",
+      "category": "unit-card",
+      "contract": "unit-card",
+      "description": "Whole elephant and mahout, plain saddle platform, cloth protection. Same line pose and anatomy as other tiers; no text/border.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/units/unit-card-elephant-i.png",
+      "source_directory": "assets/source/unit-card-elephant-i"
+    },
+    {
+      "id": "unit-icon-elephant-i",
+      "batch": "core",
+      "category": "unit-icon",
+      "contract": "unit-icon",
+      "description": "Readable cropped derivative of corresponding card; preserve defining weapon/mount.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "derived-card-crop",
+      "output_path": "assets/export/units/unit-icon-elephant-i.png",
+      "source_directory": "assets/source/unit-icon-elephant-i",
+      "depends_on": [
+        "unit-card-elephant-i"
+      ]
+    },
+    {
+      "id": "unit-card-elephant-ii",
+      "batch": "core",
+      "category": "unit-card",
+      "contract": "unit-card",
+      "description": "Whole elephant, reinforced harness and modest head armor, clear mahout. Same line pose and anatomy as other tiers; no text/border.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/units/unit-card-elephant-ii.png",
+      "source_directory": "assets/source/unit-card-elephant-ii"
+    },
+    {
+      "id": "unit-icon-elephant-ii",
+      "batch": "core",
+      "category": "unit-icon",
+      "contract": "unit-icon",
+      "description": "Readable cropped derivative of corresponding card; preserve defining weapon/mount.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "derived-card-crop",
+      "output_path": "assets/export/units/unit-icon-elephant-ii.png",
+      "source_directory": "assets/source/unit-icon-elephant-ii",
+      "depends_on": [
+        "unit-card-elephant-ii"
+      ]
+    },
+    {
+      "id": "unit-card-cavalry-i",
+      "batch": "core",
+      "category": "unit-card",
+      "contract": "unit-card",
+      "description": "Whole horse and rider, cloth tunic, light spear, plain saddle. Same line pose and anatomy as other tiers; no text/border.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/units/unit-card-cavalry-i.png",
+      "source_directory": "assets/source/unit-card-cavalry-i"
+    },
+    {
+      "id": "unit-icon-cavalry-i",
+      "batch": "core",
+      "category": "unit-icon",
+      "contract": "unit-icon",
+      "description": "Readable cropped derivative of corresponding card; preserve defining weapon/mount.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "derived-card-crop",
+      "output_path": "assets/export/units/unit-icon-cavalry-i.png",
+      "source_directory": "assets/source/unit-icon-cavalry-i",
+      "depends_on": [
+        "unit-card-cavalry-i"
+      ]
+    },
+    {
+      "id": "unit-card-cavalry-ii",
+      "batch": "core",
+      "category": "unit-card",
+      "contract": "unit-card",
+      "description": "Whole horse and rider, padded armor, open helmet, reinforced saddle. Same line pose and anatomy as other tiers; no text/border.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/units/unit-card-cavalry-ii.png",
+      "source_directory": "assets/source/unit-card-cavalry-ii"
+    },
+    {
+      "id": "unit-icon-cavalry-ii",
+      "batch": "core",
+      "category": "unit-icon",
+      "contract": "unit-icon",
+      "description": "Readable cropped derivative of corresponding card; preserve defining weapon/mount.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "derived-card-crop",
+      "output_path": "assets/export/units/unit-icon-cavalry-ii.png",
+      "source_directory": "assets/source/unit-icon-cavalry-ii",
+      "depends_on": [
+        "unit-card-cavalry-ii"
+      ]
+    },
+    {
+      "id": "unit-card-cavalry-iii",
+      "batch": "proof",
+      "category": "unit-card",
+      "contract": "unit-card",
+      "description": "Whole horse and rider, articulated torso armor, shield and lance, no path insignia. Same line pose and anatomy as other tiers; no text/border.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/units/unit-card-cavalry-iii.png",
+      "source_directory": "assets/source/unit-card-cavalry-iii"
+    },
+    {
+      "id": "unit-icon-cavalry-iii",
+      "batch": "core",
+      "category": "unit-icon",
+      "contract": "unit-icon",
+      "description": "Readable cropped derivative of corresponding card; preserve defining weapon/mount.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "derived-card-crop",
+      "output_path": "assets/export/units/unit-icon-cavalry-iii.png",
+      "source_directory": "assets/source/unit-icon-cavalry-iii",
+      "depends_on": [
+        "unit-card-cavalry-iii"
+      ]
+    },
+    {
+      "id": "unit-card-cavalry-iv-martial",
+      "batch": "proof",
+      "category": "unit-card",
+      "contract": "unit-card",
+      "description": "Whole horse and rider, practical steel armor, disciplined straight lance, iron crest, muted red-brown accents. Same line pose and anatomy as other tiers; no text/border.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/units/unit-card-cavalry-iv-martial.png",
+      "source_directory": "assets/source/unit-card-cavalry-iv-martial"
+    },
+    {
+      "id": "unit-icon-cavalry-iv-martial",
+      "batch": "core",
+      "category": "unit-icon",
+      "contract": "unit-icon",
+      "description": "Readable cropped derivative of corresponding card; preserve defining weapon/mount.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "derived-card-crop",
+      "output_path": "assets/export/units/unit-icon-cavalry-iv-martial.png",
+      "source_directory": "assets/source/unit-icon-cavalry-iv-martial",
+      "depends_on": [
+        "unit-card-cavalry-iv-martial"
+      ]
+    },
+    {
+      "id": "unit-card-cavalry-iv-radiant",
+      "batch": "proof",
+      "category": "unit-card",
+      "contract": "unit-card",
+      "description": "Whole horse and rider, ivory cloth and warm gold trim, open geometric seal on shield, restrained luminous accent. Same line pose and anatomy as other tiers; no text/border.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/units/unit-card-cavalry-iv-radiant.png",
+      "source_directory": "assets/source/unit-card-cavalry-iv-radiant"
+    },
+    {
+      "id": "unit-icon-cavalry-iv-radiant",
+      "batch": "core",
+      "category": "unit-icon",
+      "contract": "unit-icon",
+      "description": "Readable cropped derivative of corresponding card; preserve defining weapon/mount.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "derived-card-crop",
+      "output_path": "assets/export/units/unit-icon-cavalry-iv-radiant.png",
+      "source_directory": "assets/source/unit-icon-cavalry-iv-radiant",
+      "depends_on": [
+        "unit-card-cavalry-iv-radiant"
+      ]
+    },
+    {
+      "id": "unit-card-cavalry-iv-umbral",
+      "batch": "proof",
+      "category": "unit-card",
+      "contract": "unit-card",
+      "description": "Whole horse and rider, dark violet cloth, angular broken-seal emblem, cool metal, readable daylight silhouette. Same line pose and anatomy as other tiers; no text/border.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/units/unit-card-cavalry-iv-umbral.png",
+      "source_directory": "assets/source/unit-card-cavalry-iv-umbral"
+    },
+    {
+      "id": "unit-icon-cavalry-iv-umbral",
+      "batch": "core",
+      "category": "unit-icon",
+      "contract": "unit-icon",
+      "description": "Readable cropped derivative of corresponding card; preserve defining weapon/mount.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "derived-card-crop",
+      "output_path": "assets/export/units/unit-icon-cavalry-iv-umbral.png",
+      "source_directory": "assets/source/unit-icon-cavalry-iv-umbral",
+      "depends_on": [
+        "unit-card-cavalry-iv-umbral"
+      ]
+    },
+    {
+      "id": "ui-resource-wood",
+      "batch": "core",
+      "category": "ui-resource",
+      "contract": "ui-icon",
+      "description": "Simple original wood glyph, readable without relying on color.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-resource-wood.svg",
+      "source_directory": "assets/source/ui-resource-wood"
+    },
+    {
+      "id": "ui-resource-clay",
+      "batch": "core",
+      "category": "ui-resource",
+      "contract": "ui-icon",
+      "description": "Simple original clay glyph, readable without relying on color.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-resource-clay.svg",
+      "source_directory": "assets/source/ui-resource-clay"
+    },
+    {
+      "id": "ui-resource-iron",
+      "batch": "core",
+      "category": "ui-resource",
+      "contract": "ui-icon",
+      "description": "Simple original iron glyph, readable without relying on color.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-resource-iron.svg",
+      "source_directory": "assets/source/ui-resource-iron"
+    },
+    {
+      "id": "ui-resource-grain",
+      "batch": "proof",
+      "category": "ui-resource",
+      "contract": "ui-icon",
+      "description": "Simple original grain glyph, readable without relying on color.",
+      "status": "exported",
+      "approved": true,
+      "actual_dimensions": [
+        128,
+        128
+      ],
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-resource-grain.svg",
+      "source_directory": "assets/source/ui-resource-grain",
+      "selected_source": "assets/source/ui-resource-grain/proof-v02.svg",
+      "source_revision": 2,
+      "approval": {
+        "kind": "user",
+        "date": "2026-11-10",
+        "evidence": "lựa v2 lương thực",
+        "scope": "ui-resource-grain artwork v02"
+      },
+      "export_sha256": "dcf19136a43ea07883fc86d980b178e786854fa8adf76bee1c2c773af06fabcc"
+    },
+    {
+      "id": "ui-path-martial",
+      "batch": "core",
+      "category": "ui-badge",
+      "contract": "ui-icon",
+      "description": "Original iron straight crest path badge; distinct silhouette, no text.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-path-martial.svg",
+      "source_directory": "assets/source/ui-path-martial"
+    },
+    {
+      "id": "ui-path-radiant",
+      "batch": "core",
+      "category": "ui-badge",
+      "contract": "ui-icon",
+      "description": "Original open geometric seal path badge; distinct silhouette, no text.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-path-radiant.svg",
+      "source_directory": "assets/source/ui-path-radiant"
+    },
+    {
+      "id": "ui-path-umbral",
+      "batch": "core",
+      "category": "ui-badge",
+      "contract": "ui-icon",
+      "description": "Original angular broken seal path badge; distinct silhouette, no text.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-path-umbral.svg",
+      "source_directory": "assets/source/ui-path-umbral"
+    },
+    {
+      "id": "ui-faction-iron-crown",
+      "batch": "core",
+      "category": "ui-badge",
+      "contract": "ui-icon",
+      "description": "Faction emblem, squared crown above a vertical bar; never substitute for path or relation.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-faction-iron-crown.svg",
+      "source_directory": "assets/source/ui-faction-iron-crown"
+    },
+    {
+      "id": "ui-faction-ash-crown",
+      "batch": "core",
+      "category": "ui-badge",
+      "contract": "ui-icon",
+      "description": "Faction emblem, split crown above a low ember arc; never substitute for path or relation.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-faction-ash-crown.svg",
+      "source_directory": "assets/source/ui-faction-ash-crown"
+    },
+    {
+      "id": "ui-relation-friendly",
+      "batch": "core",
+      "category": "ui-badge",
+      "contract": "ui-icon",
+      "description": "Relation marker: open circle, shape works in monochrome. Runtime color separate.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-relation-friendly.svg",
+      "source_directory": "assets/source/ui-relation-friendly"
+    },
+    {
+      "id": "ui-relation-neutral",
+      "batch": "core",
+      "category": "ui-badge",
+      "contract": "ui-icon",
+      "description": "Relation marker: diamond, shape works in monochrome. Runtime color separate.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-relation-neutral.svg",
+      "source_directory": "assets/source/ui-relation-neutral"
+    },
+    {
+      "id": "ui-relation-hostile",
+      "batch": "core",
+      "category": "ui-badge",
+      "contract": "ui-icon",
+      "description": "Relation marker: notched triangle, shape works in monochrome. Runtime color separate.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-relation-hostile.svg",
+      "source_directory": "assets/source/ui-relation-hostile"
+    },
+    {
+      "id": "ui-line-sword",
+      "batch": "core",
+      "category": "ui-badge",
+      "contract": "ui-icon",
+      "description": "Original simple sword line silhouette, no tier numeral baked.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-line-sword.svg",
+      "source_directory": "assets/source/ui-line-sword"
+    },
+    {
+      "id": "ui-line-spear",
+      "batch": "core",
+      "category": "ui-badge",
+      "contract": "ui-icon",
+      "description": "Original simple spear line silhouette, no tier numeral baked.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-line-spear.svg",
+      "source_directory": "assets/source/ui-line-spear"
+    },
+    {
+      "id": "ui-line-archer",
+      "batch": "core",
+      "category": "ui-badge",
+      "contract": "ui-icon",
+      "description": "Original simple archer line silhouette, no tier numeral baked.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-line-archer.svg",
+      "source_directory": "assets/source/ui-line-archer"
+    },
+    {
+      "id": "ui-line-cavalry",
+      "batch": "core",
+      "category": "ui-badge",
+      "contract": "ui-icon",
+      "description": "Original simple cavalry line silhouette, no tier numeral baked.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-line-cavalry.svg",
+      "source_directory": "assets/source/ui-line-cavalry"
+    },
+    {
+      "id": "ui-line-elephant",
+      "batch": "core",
+      "category": "ui-badge",
+      "contract": "ui-icon",
+      "description": "Original simple elephant line silhouette, no tier numeral baked.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-line-elephant.svg",
+      "source_directory": "assets/source/ui-line-elephant"
+    },
+    {
+      "id": "ui-action-pause",
+      "batch": "core",
+      "category": "ui-action",
+      "contract": "ui-icon",
+      "description": "Original simple pause action glyph, consistent stroke; label rendered in UI.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-action-pause.svg",
+      "source_directory": "assets/source/ui-action-pause"
+    },
+    {
+      "id": "ui-action-play",
+      "batch": "core",
+      "category": "ui-action",
+      "contract": "ui-icon",
+      "description": "Original simple play action glyph, consistent stroke; label rendered in UI.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-action-play.svg",
+      "source_directory": "assets/source/ui-action-play"
+    },
+    {
+      "id": "ui-action-speed",
+      "batch": "core",
+      "category": "ui-action",
+      "contract": "ui-icon",
+      "description": "Original simple speed action glyph, consistent stroke; label rendered in UI.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-action-speed.svg",
+      "source_directory": "assets/source/ui-action-speed"
+    },
+    {
+      "id": "ui-action-save",
+      "batch": "core",
+      "category": "ui-action",
+      "contract": "ui-icon",
+      "description": "Original simple save action glyph, consistent stroke; label rendered in UI.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-action-save.svg",
+      "source_directory": "assets/source/ui-action-save"
+    },
+    {
+      "id": "ui-action-load",
+      "batch": "core",
+      "category": "ui-action",
+      "contract": "ui-icon",
+      "description": "Original simple load action glyph, consistent stroke; label rendered in UI.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-action-load.svg",
+      "source_directory": "assets/source/ui-action-load"
+    },
+    {
+      "id": "ui-action-export",
+      "batch": "core",
+      "category": "ui-action",
+      "contract": "ui-icon",
+      "description": "Original simple export action glyph, consistent stroke; label rendered in UI.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-action-export.svg",
+      "source_directory": "assets/source/ui-action-export"
+    },
+    {
+      "id": "ui-action-import",
+      "batch": "core",
+      "category": "ui-action",
+      "contract": "ui-icon",
+      "description": "Original simple import action glyph, consistent stroke; label rendered in UI.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-action-import.svg",
+      "source_directory": "assets/source/ui-action-import"
+    },
+    {
+      "id": "ui-action-scout",
+      "batch": "core",
+      "category": "ui-action",
+      "contract": "ui-icon",
+      "description": "Original simple scout action glyph, consistent stroke; label rendered in UI.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-action-scout.svg",
+      "source_directory": "assets/source/ui-action-scout"
+    },
+    {
+      "id": "ui-action-attack",
+      "batch": "core",
+      "category": "ui-action",
+      "contract": "ui-icon",
+      "description": "Original simple attack action glyph, consistent stroke; label rendered in UI.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-action-attack.svg",
+      "source_directory": "assets/source/ui-action-attack"
+    },
+    {
+      "id": "ui-action-supply",
+      "batch": "core",
+      "category": "ui-action",
+      "contract": "ui-icon",
+      "description": "Original simple supply action glyph, consistent stroke; label rendered in UI.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-action-supply.svg",
+      "source_directory": "assets/source/ui-action-supply"
+    },
+    {
+      "id": "ui-action-retreat",
+      "batch": "core",
+      "category": "ui-action",
+      "contract": "ui-icon",
+      "description": "Original simple retreat action glyph, consistent stroke; label rendered in UI.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-action-retreat.svg",
+      "source_directory": "assets/source/ui-action-retreat"
+    },
+    {
+      "id": "ui-action-capture",
+      "batch": "core",
+      "category": "ui-action",
+      "contract": "ui-icon",
+      "description": "Original simple capture action glyph, consistent stroke; label rendered in UI.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-action-capture.svg",
+      "source_directory": "assets/source/ui-action-capture"
+    },
+    {
+      "id": "ui-action-upgrade",
+      "batch": "core",
+      "category": "ui-action",
+      "contract": "ui-icon",
+      "description": "Original simple upgrade action glyph, consistent stroke; label rendered in UI.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-action-upgrade.svg",
+      "source_directory": "assets/source/ui-action-upgrade"
+    },
+    {
+      "id": "ui-action-cancel",
+      "batch": "core",
+      "category": "ui-action",
+      "contract": "ui-icon",
+      "description": "Original simple cancel action glyph, consistent stroke; label rendered in UI.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-action-cancel.svg",
+      "source_directory": "assets/source/ui-action-cancel"
+    },
+    {
+      "id": "ui-action-food-warning",
+      "batch": "core",
+      "category": "ui-action",
+      "contract": "ui-icon",
+      "description": "Original simple food-warning action glyph, consistent stroke; label rendered in UI.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "vector",
+      "output_path": "assets/export/ui/ui-action-food-warning.svg",
+      "source_directory": "assets/source/ui-action-food-warning"
+    },
+    {
+      "id": "effect-radiant-ward",
+      "batch": "proof",
+      "category": "report-effect",
+      "contract": "report-effect",
+      "description": "Finite translucent gold barrier around a short rank, clear boundary; report symbol, not a combat animation.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/effects/effect-radiant-ward.png",
+      "source_directory": "assets/source/effect-radiant-ward"
+    },
+    {
+      "id": "effect-umbral-seal-break",
+      "batch": "core",
+      "category": "report-effect",
+      "contract": "report-effect",
+      "description": "Broken geometric seal with a restrained violet fracture; no giant explosion.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/effects/effect-umbral-seal-break.png",
+      "source_directory": "assets/source/effect-umbral-seal-break"
+    },
+    {
+      "id": "effect-martial-specialized-gear",
+      "batch": "core",
+      "category": "report-effect",
+      "contract": "report-effect",
+      "description": "Steel lance/shield with an iron crest: practical equipment advantage, no magical glow.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/effects/effect-martial-specialized-gear.png",
+      "source_directory": "assets/source/effect-martial-specialized-gear"
+    },
+    {
+      "id": "world-terrain-grass-spring",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal spring version of summer grass; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-grass-spring.webp",
+      "source_directory": "assets/source/world-terrain-grass-spring",
+      "depends_on": [
+        "world-terrain-grass-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-dirt-spring",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal spring version of summer dirt; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-dirt-spring.webp",
+      "source_directory": "assets/source/world-terrain-dirt-spring",
+      "depends_on": [
+        "world-terrain-dirt-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-forest-floor-spring",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal spring version of summer forest-floor; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-forest-floor-spring.webp",
+      "source_directory": "assets/source/world-terrain-forest-floor-spring",
+      "depends_on": [
+        "world-terrain-forest-floor-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-rock-spring",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal spring version of summer rock; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-rock-spring.webp",
+      "source_directory": "assets/source/world-terrain-rock-spring",
+      "depends_on": [
+        "world-terrain-rock-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-shallow-water-spring",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal spring version of summer shallow-water; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-shallow-water-spring.webp",
+      "source_directory": "assets/source/world-terrain-shallow-water-spring",
+      "depends_on": [
+        "world-terrain-shallow-water-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-deep-water-spring",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal spring version of summer deep-water; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-deep-water-spring.webp",
+      "source_directory": "assets/source/world-terrain-deep-water-spring",
+      "depends_on": [
+        "world-terrain-deep-water-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-riverbank-spring",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal spring version of summer riverbank; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-riverbank-spring.webp",
+      "source_directory": "assets/source/world-terrain-riverbank-spring",
+      "depends_on": [
+        "world-terrain-riverbank-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-farmland-spring",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal spring version of summer farmland; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-farmland-spring.webp",
+      "source_directory": "assets/source/world-terrain-farmland-spring",
+      "depends_on": [
+        "world-terrain-farmland-summer"
+      ]
+    },
+    {
+      "id": "city-ground-spring",
+      "batch": "expansion",
+      "category": "season-city",
+      "contract": "city-ground",
+      "description": "spring recolor/ground variant of summer scene; identical slot and gate positions.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-ground-spring.webp",
+      "source_directory": "assets/source/city-ground-spring",
+      "depends_on": [
+        "city-ground-summer"
+      ]
+    },
+    {
+      "id": "world-decoration-forest-clump-small-spring",
+      "batch": "expansion",
+      "category": "season-decoration",
+      "contract": "world-site",
+      "description": "spring version, same silhouette/anchor as summer; no different map collision.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-decoration-forest-clump-small-spring.png",
+      "source_directory": "assets/source/world-decoration-forest-clump-small-spring",
+      "depends_on": [
+        "world-decoration-forest-clump-small-summer"
+      ]
+    },
+    {
+      "id": "world-decoration-forest-clump-large-spring",
+      "batch": "expansion",
+      "category": "season-decoration",
+      "contract": "world-site",
+      "description": "spring version, same silhouette/anchor as summer; no different map collision.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-decoration-forest-clump-large-spring.png",
+      "source_directory": "assets/source/world-decoration-forest-clump-large-spring",
+      "depends_on": [
+        "world-decoration-forest-clump-large-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-grass-autumn",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal autumn version of summer grass; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-grass-autumn.webp",
+      "source_directory": "assets/source/world-terrain-grass-autumn",
+      "depends_on": [
+        "world-terrain-grass-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-dirt-autumn",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal autumn version of summer dirt; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-dirt-autumn.webp",
+      "source_directory": "assets/source/world-terrain-dirt-autumn",
+      "depends_on": [
+        "world-terrain-dirt-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-forest-floor-autumn",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal autumn version of summer forest-floor; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-forest-floor-autumn.webp",
+      "source_directory": "assets/source/world-terrain-forest-floor-autumn",
+      "depends_on": [
+        "world-terrain-forest-floor-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-rock-autumn",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal autumn version of summer rock; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-rock-autumn.webp",
+      "source_directory": "assets/source/world-terrain-rock-autumn",
+      "depends_on": [
+        "world-terrain-rock-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-shallow-water-autumn",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal autumn version of summer shallow-water; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-shallow-water-autumn.webp",
+      "source_directory": "assets/source/world-terrain-shallow-water-autumn",
+      "depends_on": [
+        "world-terrain-shallow-water-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-deep-water-autumn",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal autumn version of summer deep-water; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-deep-water-autumn.webp",
+      "source_directory": "assets/source/world-terrain-deep-water-autumn",
+      "depends_on": [
+        "world-terrain-deep-water-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-riverbank-autumn",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal autumn version of summer riverbank; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-riverbank-autumn.webp",
+      "source_directory": "assets/source/world-terrain-riverbank-autumn",
+      "depends_on": [
+        "world-terrain-riverbank-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-farmland-autumn",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal autumn version of summer farmland; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-farmland-autumn.webp",
+      "source_directory": "assets/source/world-terrain-farmland-autumn",
+      "depends_on": [
+        "world-terrain-farmland-summer"
+      ]
+    },
+    {
+      "id": "city-ground-autumn",
+      "batch": "expansion",
+      "category": "season-city",
+      "contract": "city-ground",
+      "description": "autumn recolor/ground variant of summer scene; identical slot and gate positions.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-ground-autumn.webp",
+      "source_directory": "assets/source/city-ground-autumn",
+      "depends_on": [
+        "city-ground-summer"
+      ]
+    },
+    {
+      "id": "world-decoration-forest-clump-small-autumn",
+      "batch": "expansion",
+      "category": "season-decoration",
+      "contract": "world-site",
+      "description": "autumn version, same silhouette/anchor as summer; no different map collision.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-decoration-forest-clump-small-autumn.png",
+      "source_directory": "assets/source/world-decoration-forest-clump-small-autumn",
+      "depends_on": [
+        "world-decoration-forest-clump-small-summer"
+      ]
+    },
+    {
+      "id": "world-decoration-forest-clump-large-autumn",
+      "batch": "expansion",
+      "category": "season-decoration",
+      "contract": "world-site",
+      "description": "autumn version, same silhouette/anchor as summer; no different map collision.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-decoration-forest-clump-large-autumn.png",
+      "source_directory": "assets/source/world-decoration-forest-clump-large-autumn",
+      "depends_on": [
+        "world-decoration-forest-clump-large-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-grass-winter",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal winter version of summer grass; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-grass-winter.webp",
+      "source_directory": "assets/source/world-terrain-grass-winter",
+      "depends_on": [
+        "world-terrain-grass-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-dirt-winter",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal winter version of summer dirt; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-dirt-winter.webp",
+      "source_directory": "assets/source/world-terrain-dirt-winter",
+      "depends_on": [
+        "world-terrain-dirt-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-forest-floor-winter",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal winter version of summer forest-floor; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-forest-floor-winter.webp",
+      "source_directory": "assets/source/world-terrain-forest-floor-winter",
+      "depends_on": [
+        "world-terrain-forest-floor-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-rock-winter",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal winter version of summer rock; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-rock-winter.webp",
+      "source_directory": "assets/source/world-terrain-rock-winter",
+      "depends_on": [
+        "world-terrain-rock-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-shallow-water-winter",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal winter version of summer shallow-water; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-shallow-water-winter.webp",
+      "source_directory": "assets/source/world-terrain-shallow-water-winter",
+      "depends_on": [
+        "world-terrain-shallow-water-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-deep-water-winter",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal winter version of summer deep-water; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-deep-water-winter.webp",
+      "source_directory": "assets/source/world-terrain-deep-water-winter",
+      "depends_on": [
+        "world-terrain-deep-water-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-riverbank-winter",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal winter version of summer riverbank; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-riverbank-winter.webp",
+      "source_directory": "assets/source/world-terrain-riverbank-winter",
+      "depends_on": [
+        "world-terrain-riverbank-summer"
+      ]
+    },
+    {
+      "id": "world-terrain-farmland-winter",
+      "batch": "expansion",
+      "category": "season-terrain",
+      "contract": "world-terrain",
+      "description": "Seasonal winter version of summer farmland; identical tile endpoints, no gameplay change.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-terrain-farmland-winter.webp",
+      "source_directory": "assets/source/world-terrain-farmland-winter",
+      "depends_on": [
+        "world-terrain-farmland-summer"
+      ]
+    },
+    {
+      "id": "city-ground-winter",
+      "batch": "expansion",
+      "category": "season-city",
+      "contract": "city-ground",
+      "description": "winter recolor/ground variant of summer scene; identical slot and gate positions.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/city/city-ground-winter.webp",
+      "source_directory": "assets/source/city-ground-winter",
+      "depends_on": [
+        "city-ground-summer"
+      ]
+    },
+    {
+      "id": "world-decoration-forest-clump-small-winter",
+      "batch": "expansion",
+      "category": "season-decoration",
+      "contract": "world-site",
+      "description": "winter version, same silhouette/anchor as summer; no different map collision.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-decoration-forest-clump-small-winter.png",
+      "source_directory": "assets/source/world-decoration-forest-clump-small-winter",
+      "depends_on": [
+        "world-decoration-forest-clump-small-summer"
+      ]
+    },
+    {
+      "id": "world-decoration-forest-clump-large-winter",
+      "batch": "expansion",
+      "category": "season-decoration",
+      "contract": "world-site",
+      "description": "winter version, same silhouette/anchor as summer; no different map collision.",
+      "status": "planned",
+      "approved": false,
+      "actual_dimensions": null,
+      "production_method": "illustration",
+      "output_path": "assets/export/world/world-decoration-forest-clump-large-winter.png",
+      "source_directory": "assets/source/world-decoration-forest-clump-large-winter",
+      "depends_on": [
+        "world-decoration-forest-clump-large-summer"
+      ]
+    }
+  ],
+  "updated_date": "2026-11-10",
+  "progress": {
+    "exported": 1,
+    "approved_asset_ids": [
+      "ui-resource-grain",
+      "city-town-hall-v01"
+    ],
+    "remaining_production_outputs": 188,
+    "note": "Grain v2 exported; hall proof v2 concept-approved awaiting formal export. Four support buildings and four city resource plots are draft and integrated for review; other proof approval remains unchanged.",
+    "approved_awaiting_export": 1,
+    "draft": 8
+  }
+}

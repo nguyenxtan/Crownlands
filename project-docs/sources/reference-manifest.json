@@ -1,0 +1,35 @@
+{
+  "document_version": "1.1",
+  "verified_date": "2026-11-07",
+  "purpose": "SHA256 of the unchanged reference files used for project documentation",
+  "files": [
+    {
+      "path": "../../reference-docs/01_Dinh_huong_va_luat_game_v1.0.docx",
+      "sha256": "517e96a31c90ba4bb18aa852a96dd1c4bec1299d01ae92f300e8bb3c26b437b7"
+    },
+    {
+      "path": "../../reference-docs/02_Dac_ta_he_thong_va_can_bang_v1.0.docx",
+      "sha256": "6dee159ccd04bba1b3bac1aed887c85969c5e87ac07489b026999288fbf703d4"
+    },
+    {
+      "path": "../../reference-docs/03_Kien_truc_ky_thuat_va_du_lieu_v1.0.docx",
+      "sha256": "4253efacb74b02545339dee0fcd4c291348a15ba9acb1e30d3cae29a47775cbb"
+    },
+    {
+      "path": "../../reference-docs/04_Giao_dien_va_quy_chuan_my_thuat_v1.0.docx",
+      "sha256": "ab4084b5dd5d410b5c522efb1fea8d00380abe3255525be2b708c96d9eab6b37"
+    },
+    {
+      "path": "../../reference-docs/05_Lo_trinh_kiem_thu_va_quan_tri_v1.0.docx",
+      "sha256": "775aa4caa35965447e563bc6c4a0af26a324ece0f1efc32a532d0ad712dba5ac"
+    },
+    {
+      "path": "../../reference-docs/Tam_Gioi_Bang_can_bang_v1.0.xlsx",
+      "sha256": "9e4138048a30e91a99e4ea4822191a8959ff51149cca4ca2cf750819fcca81f1"
+    },
+    {
+      "path": "../../reference-docs/Tam_Gioi_Khai_Quoc_Ho_so_tong_hop_v1.0.pdf",
+      "sha256": "9b3144c87135ab41437a7d3140a075164220886b4b035018018e5c8ab3f3f669"
+    }
+  ]
+}

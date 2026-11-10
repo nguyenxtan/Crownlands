@@ -1,0 +1,395 @@
+{
+  "created_date": "2026-11-10",
+  "status": "partially-approved",
+  "items": [
+    {
+      "id": "world-terrain-grass-summer",
+      "path": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-84e36828-20a7-481a-b288-11046ec57945.png",
+      "prompt": "Use case: stylized-concept. One seamless repeatable square top-down summer grass MATERIAL TILE for Crownlands bright hand-painted2D strategy map. Low-contrast moss/sage green #718B55 and light yellow-green #B7C78B, matte subtly mottled ground, soft tiny brush variation. Quiet background so tiny buildings stand out. Absolutely flat orthographic surface with no horizon, no perspective, no raised island, no border, no buildings, no flowers, rocks, trees, tuft clusters or objects. No directional shadow/highlight, no central focal feature; all4edges should join without visible seams. Opaque full-bleed square image, no transparency, no text.",
+      "references": [],
+      "workspace_source": "assets/source/world-terrain-grass-summer/proof-v01.png",
+      "revision": 1,
+      "tool": "built-in image_gen",
+      "approved": false,
+      "status": "draft",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "real_alpha": false,
+      "alpha_content_bbox": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "sha256": "98e3b546d33ed0801c1bb88868e8d284e4c59669209c6d73813f82565ecba00b"
+    },
+    {
+      "id": "world-city-small",
+      "path": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-97c10b7d-2389-48ec-9896-61e0f9ac4641.png",
+      "prompt": "Use case: stylized-concept. Generate exactly ONE isolated game sprite for Crownlands, a bright sophisticated hand-painted 2D empire strategy game. Subject: a compact SMALL circular walled town icon, pale limestone low ring wall, a few simple warm-timber blue-gray slate roofs, one visible open gate. This is a WORLD MAP SYMBOL that will be shown only 32 by 32 CSS pixels, NOT a detailed city scene. Bold instantly readable silhouette, restrained internal detail, no terrain island, no giant castle, no trees around it, no background scene. Orthographic WORLD camera looking steeply down, about 75 degrees above ground, no horizon or perspective convergence. Neutral summer daylight from upper screen-left. Harmonized palette sage green #718B55, warm wood #765339, pale stone #C6BDA6, slate roofs #526873. Invented coherent fantasy architecture. High-quality clean painterly edges, clear solid volumes, no cartoon outline. Centered single asset on square canvas, whole silhouette within central80%, transparent padding, ground-contact anchor approximately (0.5,0.75). Real transparent background, no checkerboard, no detached cast shadow, contact AO only. No text, numeral, UI border, flag, owner color, label or watermark. Desired source is square PNG.",
+      "references": [],
+      "workspace_source": "assets/source/world-city-small/proof-v01.png",
+      "revision": 1,
+      "tool": "built-in image_gen",
+      "approved": false,
+      "status": "draft",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "real_alpha": true,
+      "alpha_content_bbox": [
+        218,
+        220,
+        1026,
+        1049
+      ],
+      "sha256": "6084045582958795c441fddcbd65f396b0a7a37fe79ac694ba7d7d638a48262f"
+    },
+    {
+      "id": "world-npc-bandit-camp",
+      "path": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-a648ba10-e858-402b-89e4-01ac994aa443.png",
+      "prompt": "Use case: stylized-concept. Match the reference ONLY in painterly material treatment, daylight and WORLD camera. Crownlands is a bright sophisticated stylized2D strategy game, warm wood, pale stone, sage greens and restrained blue-gray accents. This must read as a compact32 CSS pixel WORLD MAP icon, with bold simple shapes, less internal detail than a city scene. Orthographic steep top-down about75 degrees above ground, no horizon or perspective convergence. Light upper screen-left. One isolated object, at least10% margin, ground anchor about(0.5,0.75), REAL transparent background, no checkerboard, no detached shadow, no text/UI/border/owner flags/watermark. Subject: ONE SMALL BANDIT CAMP, distinct from a circular stone city: two low rough beige canvas lean-to tents, a broken rough timber palisade segment, a small cold firepit and tiny stacked supplies, irregular triangular camp silhouette on a minimal dirt footprint. No tall watchtower, no stone wall, no human figures, no military banners or giant scenery. Readable rough shelters from above.",
+      "references": [
+        "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-97c10b7d-2389-48ec-9896-61e0f9ac4641.png"
+      ],
+      "workspace_source": "assets/source/world-npc-bandit-camp/proof-v01.png",
+      "revision": 1,
+      "tool": "built-in image_gen",
+      "approved": false,
+      "status": "draft",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "real_alpha": true,
+      "alpha_content_bbox": [
+        276,
+        504,
+        978,
+        1092
+      ],
+      "sha256": "8e39aa544093d57b9342ef385063091fc4df1418ea2bdefe48da824b45c0046c"
+    },
+    {
+      "id": "world-resource-clay-site",
+      "path": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-daacb040-1224-4edf-be67-b36a0d07161d.png",
+      "prompt": "Use case: stylized-concept. Match the reference ONLY in painterly material treatment, daylight and WORLD camera. Crownlands is a bright sophisticated stylized2D strategy game, warm wood, pale stone, sage greens and restrained blue-gray accents. This must read as a compact32 CSS pixel WORLD MAP icon, with bold simple shapes, less internal detail than a city scene. Orthographic steep top-down about75 degrees above ground, no horizon or perspective convergence. Light upper screen-left. One isolated object, at least10% margin, ground anchor about(0.5,0.75), REAL transparent background, no checkerboard, no detached shadow, no text/UI/border/owner flags/watermark. Subject: ONE SMALL CLAY EXTRACTION SITE: a clean shallow oval excavation in warm terracotta red-brown clay with two broad terraced cuts, small timber edge support and one small wheelbarrow. Readable earth-material industry, elegant simple bold geometry; no gray stone, mountain, dark cave, crystal, giant quarry, clutter or big pile of bricks. Red clay should be unmistakable at32px. Minimal ground footprint, no thick floating diorama base.",
+      "references": [
+        "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-97c10b7d-2389-48ec-9896-61e0f9ac4641.png"
+      ],
+      "workspace_source": "assets/source/world-resource-clay-site/proof-v01.png",
+      "revision": 1,
+      "tool": "built-in image_gen",
+      "approved": false,
+      "status": "draft",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "real_alpha": true,
+      "alpha_content_bbox": [
+        234,
+        434,
+        1015,
+        1098
+      ],
+      "sha256": "229f69c640ca9fee2b1559c54300e92111c234e189510fb3610dcd8648c903a4"
+    },
+    {
+      "id": "world-resource-grain-field",
+      "path": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-d9f51147-4d11-41aa-a689-fb8c2b0ba08a.png",
+      "prompt": "Use case: stylized-concept. Match the reference ONLY in painterly material treatment, daylight and WORLD camera. Crownlands is a bright sophisticated stylized2D strategy game, warm wood, pale stone, sage greens and restrained blue-gray accents. This must read as a compact32 CSS pixel WORLD MAP icon, with bold simple shapes, less internal detail than a city scene. Orthographic steep top-down about75 degrees above ground, no horizon or perspective convergence. Light upper screen-left. One isolated object, at least10% margin, ground anchor about(0.5,0.75), REAL transparent background, no checkerboard, no detached shadow, no text/UI/border/owner flags/watermark. Subject: ONE COMPACT GRAIN FARM FIELD: two adjacent small rectangular strips of golden wheat with four or five readable rows, narrow earth furrow between, a tiny low wooden fence only along one edge. Clearly cultivated crops viewed from above. No giant sack, no bundle dominating field, no windmill, no barn, no people or floating island. Simple rich golden pattern against small earthy footprint, clean recognizable silhouette at32px.",
+      "references": [
+        "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-97c10b7d-2389-48ec-9896-61e0f9ac4641.png"
+      ],
+      "workspace_source": "assets/source/world-resource-grain-field/proof-v01.png",
+      "revision": 1,
+      "tool": "built-in image_gen",
+      "approved": false,
+      "status": "draft",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "real_alpha": true,
+      "alpha_content_bbox": [
+        283,
+        504,
+        955,
+        1075
+      ],
+      "sha256": "465901fc9d71af49d244b0ce7309f3b8f10444c419cc0857038ff2ba599149cf"
+    },
+    {
+      "id": "world-army-patrol",
+      "path": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-d820f8a5-60f7-4ac2-b536-9b705052f209.png",
+      "prompt": "Use case: stylized-concept. Match the reference ONLY in painterly material treatment, daylight and WORLD camera. Crownlands is a bright sophisticated stylized2D strategy game, warm wood, pale stone, sage greens and restrained blue-gray accents. This must read as a compact32 CSS pixel WORLD MAP icon, with bold simple shapes, less internal detail than a city scene. Orthographic steep top-down about75 degrees above ground, no horizon or perspective convergence. Light upper screen-left. One isolated object, at least10% margin, ground anchor about(0.5,0.75), REAL transparent background, no checkerboard, no detached shadow, no text/UI/border/owner flags/watermark. Subject: ONE SYMBOLIC MOBILE PATROL MARKER: a compact small pair of pale neutral pennants leaning slightly forward over a rolled travel bedroll and a tiny round shield, conveying a travelling army at32px. Strong tall/narrow silhouette distinct from static triangular tents or round town. Simple dark timber pole, off-white cloth, slate-blue small shield, warm brown equipment. No camp, building, horse, crowded army scene, faction insignia, owner color, skull or status ring.",
+      "references": [
+        "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-97c10b7d-2389-48ec-9896-61e0f9ac4641.png"
+      ],
+      "workspace_source": "assets/source/world-army-patrol/proof-v01.png",
+      "revision": 1,
+      "tool": "built-in image_gen",
+      "approved": false,
+      "status": "draft",
+      "actual_dimensions": [
+        1086,
+        1448
+      ],
+      "real_alpha": true,
+      "alpha_content_bbox": [
+        280,
+        294,
+        849,
+        1209
+      ],
+      "sha256": "6fef8f7285e84217979d59fdce65e4eb13505cdb2ba847ab10c740036ba987e6"
+    },
+    {
+      "id": "city-town-hall-v01",
+      "path": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-4f3da4fb-f3bd-43ae-ad69-0d25bd27435c.png",
+      "prompt": "Use case: stylized-concept. Generate exactly ONE isolated architectural game sprite for Crownlands, bright sophisticated hand-painted 2D empire strategy art. Subject: a small early-tier town hall (not a palace), clear two-storey central timber-and-pale-stone main building, modest slate-blue sloping roof with one small clerestory, a short broad entrance stair and visible wooden double door, restrained stone foundation. No tower, no heraldic flag, no decorative surrounding settlement. The town is a cohesive invented fantasy stone/timber culture. Camera is orthographic from southeast, 30 degrees above the ground, 2:1 diamond ground projection. The whole building sits on a compact stable footprint, ground-contact center approximately (0.5,0.78) of a square canvas, full building inside 8% safe padding. Neutral daylight upper screen-left, soft painterly material definition and crisp silhouette, pale limestone #C6BDA6, warm wood #765339, slate roof #526873. Readable at96-128 CSS pixels; elegant professional game asset, restrained detail, not toy plastic or photorealism. Isolated on REAL transparent background, no terrain island, no detached cast shadow, contact AO inside sprite only. No text, numbers, banner, UI frame, watermark or scene. Desired source is square PNG.",
+      "references": [],
+      "workspace_source": "assets/source/city-town-hall-v01/proof-v01.png",
+      "revision": 1,
+      "tool": "built-in image_gen",
+      "approved": false,
+      "status": "draft",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "real_alpha": true,
+      "alpha_content_bbox": [
+        92,
+        165,
+        1194,
+        1230
+      ],
+      "sha256": "b7151736707d7c62fe1ebd8eaef5a6a68cb928d8fac91d548124ecddaff404e2"
+    },
+    {
+      "id": "city-barracks-v01",
+      "path": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-0bd5810d-a37a-477c-a400-386ac8fdbdbc.png",
+      "prompt": "Use case: stylized-concept. Generate one isolated EARLY BARRACKS building sprite for Crownlands. Match the reference town hall in exact bright painterly material treatment, pale stone base, warm timber frame, slate-blue roof, daylight upper-left and orthographic30-degree southeast camera with2:1 ground projection. Subject: compact one-storey long barracks with a simple gabled roof, clear wide open entrance porch, three small side windows, a modest wooden practice rack showing two shields and a couple of spears immediately against the wall. Distinct low elongated silhouette compared with the taller town hall. No soldiers, banners, watchtower, walls, village scene or surrounding landscape. Whole structure/props fit central80% of square canvas, ground anchor around(0.5,0.78), no cut-offs. REAL transparent background, contact AO only, no detached cast shadow or terrain island. No text, level, UI, watermark.",
+      "references": [
+        "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-4f3da4fb-f3bd-43ae-ad69-0d25bd27435c.png"
+      ],
+      "workspace_source": "assets/source/city-barracks-v01/proof-v01.png",
+      "revision": 1,
+      "tool": "built-in image_gen",
+      "approved": false,
+      "status": "draft",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "real_alpha": true,
+      "alpha_content_bbox": [
+        31,
+        248,
+        1225,
+        1081
+      ],
+      "sha256": "e9d7b383a0f889c4d6b3646edfc2f8014f15ce02ad6ffda4992c0002e5f86bed"
+    },
+    {
+      "id": "city-ground-summer",
+      "path": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-55f8cbae-2706-4a3a-830a-7bbe2220b94d.png",
+      "prompt": "Use case: stylized-concept. Create one EMPTY CITY GROUND BACKGROUND for Crownlands, bright elegant hand-painted2D strategy art. Landscape4:3 composition, desired2048x1536. Camera orthographic southeast30degrees above ground, flat circular city ground projects to an ellipse; no horizon. A broad quiet grassy plain in sage/olive with a spacious softly worn light-earth circular city clearing centered in frame, a restrained elliptical ring path and a few subtle radial dirt paths to its center. Keep center and edges clear to OVERLAY separate game buildings and exact slot markers later. No buildings, walls, gate, tents, trees, rocks, crops, resource plots, units, furniture, labels, selection rings, numbered circles, baked pads, UI or borders anywhere. This is a reusable neutral empty terrain plate, not a completed city picture or floating island. Upper-left soft neutraldaylight, low contrast painterly texture, no dramatic shadows. Match reference building's warm limestone/timber/blue-gray palette only as style cue, DO NOT include that building. Opaque full-frame background.",
+      "references": [
+        "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-4f3da4fb-f3bd-43ae-ad69-0d25bd27435c.png"
+      ],
+      "workspace_source": "assets/source/city-ground-summer/proof-v01.png",
+      "revision": 1,
+      "tool": "built-in image_gen",
+      "approved": false,
+      "status": "draft",
+      "actual_dimensions": [
+        1448,
+        1086
+      ],
+      "real_alpha": false,
+      "alpha_content_bbox": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "sha256": "f911833f845a4af9251c361ef8cacb52442fefadd908de5f47e4c98df23de703"
+    },
+    {
+      "id": "unit-card-sword-i",
+      "path": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-128227c1-b4a6-4a3b-9dae-7c6948a73def.png",
+      "prompt": "Generate one full-body beginner SWORD infantryman for Crownlands using the reference ONLY as painterly STYLE, armor material treatment and neutral upper-left LIGHT reference. This is a soldier ON FOOT, no horse. Whole body three-quarter facing right, both boots and a simple iron short sword complete inside central80% of square canvas. Low-tier gear: plain blue-gray cloth tunic with simple leather belt, fabric hood lowered, no breastplate, round rough wooden shield with small iron boss, simple leather shoes. Modest practical human proportions matching the cavalry rider, not chibi/cartoon, not ornate knight. Upright relaxed ready pose, sword held diagonally down-right, shield visible left, readable silhouette at64px thumbnail. REAL transparent background with padding, contact AO only, no detached cast shadow, no ground scene, no labels/text/frame/flags/watermark. This is tierI common path: no gold, holy sigil, violet seal or magic.",
+      "references": [
+        "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-96ca7132-e4d0-4022-82c5-4c40ad20ecae.png"
+      ],
+      "workspace_source": "assets/source/unit-card-sword-i/proof-v01.png",
+      "revision": 1,
+      "tool": "built-in image_gen",
+      "approved": false,
+      "status": "draft",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "real_alpha": true,
+      "alpha_content_bbox": [
+        383,
+        21,
+        878,
+        1236
+      ],
+      "sha256": "0e2d691d8effcef0c0d25fc58e73c618678292955c2dd5881f445578fbf99fb5"
+    },
+    {
+      "id": "unit-card-cavalry-iii",
+      "path": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-7fc0b77c-ef76-44eb-a6b7-e85e1d59a895.png",
+      "prompt": "Edit the reference cutout ONLY to fix framing: retain exactly the same tierIII common cavalry rider, horse, armor, colors, pose, painterly treatment and transparent background. Zoom the WHOLE unit out so horse, allhooves, tail, rider and COMPLETE lance tip fit inside the central78% of the square canvas with comfortable transparent margins at ALL4edges. Currently the lance tip is clipped at the top: fully restore its metal tip, leave at least10% clear space ABOVE the tip and8% below the hooves. No outfit change, no sigil, no path, no scene, no new object, no detached shadow. Clean full-unit square card, baseline near0.82.",
+      "references": [
+        "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-96ca7132-e4d0-4022-82c5-4c40ad20ecae.png"
+      ],
+      "workspace_source": "assets/source/unit-card-cavalry-iii/proof-v02.png",
+      "revision": 2,
+      "tool": "built-in image_gen",
+      "approved": false,
+      "status": "draft",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "real_alpha": true,
+      "alpha_content_bbox": [
+        280,
+        118,
+        981,
+        1109
+      ],
+      "sha256": "66fa07cddb460eb4a8122e03b0db33eb5ec1aef48a68d378874dd8f3346fbd20"
+    },
+    {
+      "id": "unit-card-cavalry-iv-martial",
+      "path": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-0fa3ea59-6cd2-4fbd-92f9-587299a49d2a.png",
+      "prompt": "Create a new tierIV MARTIAL mounted cavalry cutout using the reference as the EXACT art style, horse anatomy, standing pose, right-facing three-quarter camera, scale and light reference. Keep the same chestnut horse and proportions and broad silhouette. Upgrade the rider to practical heavier articulated steel plate, protective closed-face steel helmet, straight reinforced lance and sturdy iron-crested shield, modest practical horse head/neck protection, muted red-brown cloth accents. This is Trọng kỵ Quân chế, a complete elite military path, no magic, no royal gold, no religious icon, no purple. Equipment must read visibly stronger than the reference but not become giant exaggerated armor. Zoom whole horse+rider+lance out to fit entirely in central78% of square canvas, at least10% transparent space above COMPLETE lance tip and8% below hooves. All4legs and tail visible, no clipped weapon or ears. Bright sophisticated hand-painted2D strategy art, neutral upper-left daylight. REAL transparent background, no checkerboard, no detached shadow, no text/label/frame/watermark.",
+      "references": [
+        "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-96ca7132-e4d0-4022-82c5-4c40ad20ecae.png"
+      ],
+      "workspace_source": "assets/source/unit-card-cavalry-iv-martial/proof-v01.png",
+      "revision": 1,
+      "tool": "built-in image_gen",
+      "approved": false,
+      "status": "draft",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "real_alpha": true,
+      "alpha_content_bbox": [
+        264,
+        41,
+        981,
+        1174
+      ],
+      "sha256": "0b648ee70d454cca69edecd6d281cfb4409dec7b3372460f06237ecc28456a3a"
+    },
+    {
+      "id": "unit-card-cavalry-iv-radiant",
+      "path": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-c7417261-8313-4502-a0fb-d9bc3732033c.png",
+      "prompt": "Create a new tierIV RADIANT mounted cavalry cutout using the reference as the EXACT art style, chestnut horse anatomy, standing pose, right-facing three-quarter camera, scale and light reference. Keep the same human+horse proportions. Upgrade rider to refined protective silver steel armor, ivory tabard and warm gold edging, an OPEN GEOMETRIC SEAL on the shield, one restrained gold accent near the seal, elegant protective horse head armor and ivory caparison. Unit is Kỵ vệ Thánh Ấn: finite protective ward identity, NOT an angel, no wings, no giant halo, no aura hiding body, no sword of fire. Visually distinguish through round/open seal and ivory cloth, still the same culture as practical military cavalry. Zoom whole horse+rider+upright lance out to fit entirely in central78% of square canvas, at least10% transparent space above COMPLETE lance tip and8% below hooves. All4legs and tail visible. Bright sophisticated hand-painted2D strategy art, neutral upper-left daylight. REAL transparent background, no checkerboard, no detached shadow, no text/label/frame/watermark.",
+      "references": [
+        "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-96ca7132-e4d0-4022-82c5-4c40ad20ecae.png"
+      ],
+      "workspace_source": "assets/source/unit-card-cavalry-iv-radiant/proof-v01.png",
+      "revision": 1,
+      "tool": "built-in image_gen",
+      "approved": false,
+      "status": "draft",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "real_alpha": true,
+      "alpha_content_bbox": [
+        230,
+        53,
+        990,
+        1190
+      ],
+      "sha256": "0df2343d6c7502788fd919484a6017e06e90e56c711dbb3169a876740487b24a"
+    },
+    {
+      "id": "unit-card-cavalry-iv-umbral",
+      "path": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-9f95283e-c410-44cb-859f-4a618424756e.png",
+      "prompt": "Create a new tierIV UMBRAL mounted cavalry cutout using the reference as the EXACT painterly style, chestnut horse anatomy, standing pose, right-facing three-quarter camera, scale and light reference. Keep the same human+horse proportions. Upgrade rider to angular darkened steel armor with clear lit planes, dark violet cloth #66577F and cool silver edges; a BROKEN GEOMETRIC SEAL on shield; controlled angular horse head armor and violet caparison. Unit is Kỵ vệ Hắc Ấn: seal-break identity. Still a living human and normal horse in bright daylight, NOT undead, no skeleton, no demon, no flames, no bat wings, no black smoke obscuring silhouette. Give clear shape contrast with ivory radiant and practical red-brown martial gear while preserving culture and comparable armor quality. Zoom whole horse+rider+upright lance out to fit central78% of square canvas, at least10% transparent space above COMPLETE lance tip and8% below hooves; all4legs and tail visible. REAL transparent background, no checkerboard, detached shadow, text/frame/watermark.",
+      "references": [
+        "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-96ca7132-e4d0-4022-82c5-4c40ad20ecae.png"
+      ],
+      "workspace_source": "assets/source/unit-card-cavalry-iv-umbral/proof-v01.png",
+      "revision": 1,
+      "tool": "built-in image_gen",
+      "approved": false,
+      "status": "draft",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "real_alpha": true,
+      "alpha_content_bbox": [
+        260,
+        70,
+        973,
+        1177
+      ],
+      "sha256": "b5c449ee35bb1c442ee4228163871d4ae3f9c2d4170294b4a6773ddd64eb604a"
+    },
+    {
+      "id": "ui-resource-grain",
+      "workspace_source": "assets/source/ui-resource-grain/proof-v02.svg",
+      "tool": "original SVG edited in code",
+      "status": "approved",
+      "approved": true,
+      "prompt": "Revise the original grain SVG into a small tied sheaf of three slender golden ears. Tapered pointed kernels, subtle warm gradients, thin contours, natural splay, compact straw binding. Preserve128x128 viewBox, true transparency, no letters/frame. Designed to remain legible at24/32px. Original vector revision; no new raster image generation.",
+      "revision": 2,
+      "approval_date": "2026-11-10",
+      "approval_evidence": "lựa v2 lương thực",
+      "production_export": "assets/export/ui/ui-resource-grain.svg"
+    },
+    {
+      "id": "effect-radiant-ward",
+      "path": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-aa557383-9898-40a1-b178-de2b91f72ae7.png",
+      "prompt": "Use case: stylized-concept. One compact ability REPORT ICON for Crownlands, not a battle scene and not an animation. A finite softly translucent warm-gold protective arc/barrier around three small simple silver shield silhouettes in a short rank, geometric open-seal motif at topcenter. Clean elegant hand-painted strategy UI illustration, readable at24-48px, gentle ivory/gold #E7CF83 with steel slate accents. One clear silhouette, no excessive glow or glitter, no angel wings, no people/horse, no fire/explosion. Centered square canvas, generous transparent margin, REAL alpha background, no checkerboard, no UI frame/text/numerals/watermark. Neutral upper-leftlight.",
+      "references": [],
+      "workspace_source": "assets/source/effect-radiant-ward/proof-v01.png",
+      "revision": 1,
+      "tool": "built-in image_gen",
+      "approved": false,
+      "status": "draft",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "real_alpha": true,
+      "alpha_content_bbox": [
+        116,
+        186,
+        1121,
+        1055
+      ],
+      "sha256": "4b0758c837a6ed4c71ec5a1e600d1592ac44610c9f82474e3e9ab5aaf19e5d75"
+    }
+  ],
+  "generation_mode": "proofv02: original SVG revision only;15 earlier image_gen raster sources reused unchanged",
+  "deliverable_scope": "Proof drafts and gallery, not approved production exports",
+  "source_prompt_files": "assets/source/<asset-id>/proof-vNN-prompt.txt for raster assets",
+  "revision": "proof-v02",
+  "revision_scope": "Only grain SVG revised;15 raster sources reused byte-for-byte. Overall concept/style received positive user feedback, final production assets still not approved.",
+  "feedback": "User: concept/style broadly consistent; grain icon needs improvement; asked to distinguish Ward, seal and beginner guard.",
+  "approved_asset_ids": [
+    "ui-resource-grain"
+  ],
+  "approval_note": "User selected grain v02. The15 raster sources remain draft; no blanket technical export approval inferred."
+}

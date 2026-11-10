@@ -1,0 +1,20 @@
+{
+  "asset_id": "city-town-hall-v01",
+  "proof_revision": 2,
+  "created_date": "2026-11-10",
+  "status": "approved-concept",
+  "tool": "built-in image_gen",
+  "reference": "proof-v01.png",
+  "prompt": "proof-v02-prompt.txt",
+  "file": "proof-v02.png",
+  "sha256": "b1d7f762e252d162de6b243da1d7fcbf6bedc3abb14ae3b4d94a0c6169c736ae",
+  "generated_original": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-33e6eb40-e11f-4f35-adeb-471068c4c446.png",
+  "note": "User selected the revised main-hall concept. Visual stage stays v01; source revision is proof-v02. Formal export remains separate from concept approval.",
+  "approved": true,
+  "approval": {
+    "kind": "user",
+    "date": "2026-11-10",
+    "evidence": "ok phủ v2 ổn nha. tiếp theo làm gì ?",
+    "scope": "Main-hall proof revision 2 visual concept; no blanket approval of other buildings."
+  }
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "width": 320,
+    "overflow": false,
+    "cards": [
+      {
+        "name": "Gỗ",
+        "width": 68,
+        "scroll": 68
+      },
+      {
+        "name": "Đất sét",
+        "width": 68,
+        "scroll": 68
+      },
+      {
+        "name": "Sắt",
+        "width": 68,
+        "scroll": 68
+      },
+      {
+        "name": "Lương thực",
+        "width": 68,
+        "scroll": 68
+      }
+    ],
+    "detailWidth": 320,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "overflow": false,
+    "cards": [
+      {
+        "name": "Gỗ",
+        "width": 85,
+        "scroll": 85
+      },
+      {
+        "name": "Đất sét",
+        "width": 85,
+        "scroll": 85
+      },
+      {
+        "name": "Sắt",
+        "width": 85,
+        "scroll": 85
+      },
+      {
+        "name": "Lương thực",
+        "width": 85,
+        "scroll": 85
+      }
+    ],
+    "detailWidth": 390,
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "overflow": false,
+    "cards": [
+      {
+        "name": "Gỗ",
+        "width": 139,
+        "scroll": 139
+      },
+      {
+        "name": "Đất sét",
+        "width": 139,
+        "scroll": 139
+      },
+      {
+        "name": "Sắt",
+        "width": 139,
+        "scroll": 139
+      },
+      {
+        "name": "Lương thực",
+        "width": 139,
+        "scroll": 139
+      }
+    ],
+    "detailWidth": 299,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "overflow": false,
+    "cards": [
+      {
+        "name": "Gỗ",
+        "width": 231,
+        "scroll": 231
+      },
+      {
+        "name": "Đất sét",
+        "width": 231,
+        "scroll": 231
+      },
+      {
+        "name": "Sắt",
+        "width": 231,
+        "scroll": 231
+      },
+      {
+        "name": "Lương thực",
+        "width": 231,
+        "scroll": 231
+      }
+    ],
+    "detailWidth": 325,
+    "errors": []
+  }
+]

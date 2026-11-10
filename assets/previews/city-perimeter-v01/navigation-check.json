@@ -1,0 +1,36 @@
+{
+  "origin": "http://127.0.0.1:4173",
+  "isolatedContexts": true,
+  "checks": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "detailAndSidebarEntry": true,
+      "worldEntryActionRestored": true,
+      "sidebarActive": "page",
+      "ground": "./assets/city-ground-v02.webp",
+      "updateLayoutNoOverflow": true,
+      "pageErrors": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "detailAndSidebarEntry": true,
+      "worldEntryActionRestored": true,
+      "sidebarActive": "page",
+      "ground": "./assets/city-ground-v02.webp",
+      "updateLayoutNoOverflow": true,
+      "pageErrors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "detailAndSidebarEntry": true,
+      "worldEntryActionRestored": true,
+      "sidebarActive": "page",
+      "ground": "./assets/city-ground-v02.webp",
+      "updateLayoutNoOverflow": true,
+      "pageErrors": []
+    }
+  ]
+}

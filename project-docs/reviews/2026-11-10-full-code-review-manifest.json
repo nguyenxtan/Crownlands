@@ -1,0 +1,330 @@
+{
+  "capturedAt": "2026-11-10T08:33:16.157406+00:00",
+  "note": "Concurrent logistics implementation remains active; reviewer must record any files that change during review.",
+  "files": [
+    {
+      "path": "app/assets/city-barracks.png",
+      "sha256": "b7278fec09fad845b0516396a650b0e770d43f5be0539eecc5efedd2a0655a34"
+    },
+    {
+      "path": "app/assets/city-gate-v01.png",
+      "sha256": "1d049fd16cd3ca46bfa89fae2520f5f26054c6d861accb694f1d6f1790e8c56f"
+    },
+    {
+      "path": "app/assets/city-granary.png",
+      "sha256": "9eb18829d5ca240515d99eed26a0a2d177a8b35c5896aba6fb12d135d1e4ed95"
+    },
+    {
+      "path": "app/assets/city-ground-v02.webp",
+      "sha256": "bbae06a8b067557e3f7c73e8711672e5e4a6613fb135628dd1a6c1a8c25d90a3"
+    },
+    {
+      "path": "app/assets/city-ground.webp",
+      "sha256": "459b36149dab4c7cf093f9e5a5bcdb80d746ac453ce9cf19402bedcf0be2d7a9"
+    },
+    {
+      "path": "app/assets/city-hall.png",
+      "sha256": "de24e5884b00757afe910ad5fde1e62e7137d925b889c2e216649785caf870cd"
+    },
+    {
+      "path": "app/assets/city-rally-point.png",
+      "sha256": "0ba2d17a0857d215dbb76bf69e594dbbde19f84684afe18d8cbd2df09b8c9f9e"
+    },
+    {
+      "path": "app/assets/city-resource-clay.png",
+      "sha256": "e226019dc0c0363dc5b89c9bf94a32089353fa00f0910e5f22113f74f7b7f984"
+    },
+    {
+      "path": "app/assets/city-resource-grain.png",
+      "sha256": "30c28d455a0309bc2f1dc5c53beae113b60f835be001d5af481e14d0f4c2de6f"
+    },
+    {
+      "path": "app/assets/city-resource-iron.png",
+      "sha256": "858b19546483b2019bd26a568e89e57ec7fd174c9a01b48a3f325f746e38c5a6"
+    },
+    {
+      "path": "app/assets/city-resource-wood.png",
+      "sha256": "18c8224d2e3226d0b280336d5860453f135c174016a4f472aafe1703a1b55d10"
+    },
+    {
+      "path": "app/assets/city-transport-depot.png",
+      "sha256": "c46aaa7bee016fc81b32612536460bbc90fd3eabd720f646351d8a3fc28b0efe"
+    },
+    {
+      "path": "app/assets/city-wall-v01.png",
+      "sha256": "504929824e74619710fa40faed7fe4c0aada0a006b3faf830bb3e205bff84f62"
+    },
+    {
+      "path": "app/assets/city-warehouse.png",
+      "sha256": "1534fb362d1c3ef7f6a8356e859e58798ded5589f1e6c9673ae9f6f1a967c7f6"
+    },
+    {
+      "path": "app/assets/grain.svg",
+      "sha256": "dcf19136a43ea07883fc86d980b178e786854fa8adf76bee1c2c773af06fabcc"
+    },
+    {
+      "path": "app/assets/grass.webp",
+      "sha256": "4aef8c3c4313d17aa66c5d805c90386d839bec97c75849bd1a067bfcd5858d68"
+    },
+    {
+      "path": "app/assets/provenance.json",
+      "sha256": "72818c29833d16e0f6c1e22f9fc1bba1243350f061a6777a2e700965fe524691"
+    },
+    {
+      "path": "app/assets/world-bandits.png",
+      "sha256": "3bd8b57362d6ca3724b13c1738f98fad71afdc7f300858ab094ffcc01ff1059d"
+    },
+    {
+      "path": "app/assets/world-city.png",
+      "sha256": "f353c5e74bb053a2def2d866fcb07b3445151e6867207e56463327e9ab002e54"
+    },
+    {
+      "path": "app/assets/world-clay.png",
+      "sha256": "91eadb961232a3947146b771e026fbe6a0e89c8558405f852f2c0da4b53b6fa2"
+    },
+    {
+      "path": "app/assets/world-grain.png",
+      "sha256": "e415fc999f10f45f3d6bdc5c51274fa5f95c0f8f26ddd0abae8e1e83b29e5aaa"
+    },
+    {
+      "path": "app/assets/world-patrol.png",
+      "sha256": "c931e18e92db3125cf28a97b35389c517bee22601c10bb33a7cbbe9e41153147"
+    },
+    {
+      "path": "app/barracks.css",
+      "sha256": "b38d119e41ead08bea2814c0e8fa72fb397aabeccfcafbfc6b5a42afa630a85e"
+    },
+    {
+      "path": "app/city-camera.css",
+      "sha256": "fa49c9d529d75d6971559906a9b4ce34177fc4a2d6156967dd5bb38159bb54c4"
+    },
+    {
+      "path": "app/city-locator.css",
+      "sha256": "f1679e7e75aa1177a6ba49de452857f2bf11d8c621b911d16210d6329f6ba065"
+    },
+    {
+      "path": "app/city-work.css",
+      "sha256": "aef40630e8da4e1a7c01354e84e28a56b236cfcc95185c49ca41d220e1011825"
+    },
+    {
+      "path": "app/economy.css",
+      "sha256": "00ab732f509b50935694b628ea9369d1baaf288eae5057a6928ab805d9973efb"
+    },
+    {
+      "path": "app/index.html",
+      "sha256": "537efeb9235963d285cbd07c4939cfb27a3e54c58247fc62066a9f664fd60778"
+    },
+    {
+      "path": "app/logistics.css",
+      "sha256": "a53ed7a7cf5a146f233375b561042d435f9db67cedcb1bd566d09b2616ddc8de"
+    },
+    {
+      "path": "app/resource-bar.css",
+      "sha256": "23debf1cd9f61018c4ccbacdc2196d41e2ec125fcb87dbd9070fd219db759d53"
+    },
+    {
+      "path": "app/src/app-updates.js",
+      "sha256": "4f5dfbecbb49ee477b2a8dd8dece40ec053c290061530c87e576f20265b42e2d"
+    },
+    {
+      "path": "app/src/barracks-view.js",
+      "sha256": "102d8e5c02f1f02990ff9d64be06d48a30a1c3b91333bf1b4763d65a9f14b9ad"
+    },
+    {
+      "path": "app/src/city-camera.js",
+      "sha256": "be85775871adc7e8488b25bd2ad2a5b435cb5b9295c7c7ad23fc08fa69cd4fb1"
+    },
+    {
+      "path": "app/src/city-construction.js",
+      "sha256": "17688bd5923a9ba5531df35b948aedb815d9ac5c8ddf1d4a947ba7cf6a3be92f"
+    },
+    {
+      "path": "app/src/city-locator.js",
+      "sha256": "5558f461b4828c481db802add32b077b129b1ca6a93e696cd0321a75f2e3ef32"
+    },
+    {
+      "path": "app/src/city-notices.js",
+      "sha256": "3703a16e43f307e2ddce6dad1d0c42fb21c4d68ea4e280649f270ce979e27308"
+    },
+    {
+      "path": "app/src/city-view.js",
+      "sha256": "3a6fd0e279bb754f925c2f8801005005bc62b0218e29108a4e9f6fff15c86ee3"
+    },
+    {
+      "path": "app/src/city-work.js",
+      "sha256": "e90943302f0077ca531e81f2f642380a324b925a68f6694f463c3d128a604e3a"
+    },
+    {
+      "path": "app/src/economy-rules.js",
+      "sha256": "5befd4570eeacc2ef29cd1d07a965b6d01c60ddf41ece2c1fac52c5ac84552d7"
+    },
+    {
+      "path": "app/src/economy.js",
+      "sha256": "c9e0e43446871ea187e453b979d34d3cea990d284939e5fc8e37a84b59da9420"
+    },
+    {
+      "path": "app/src/game.js",
+      "sha256": "bccf93b98b4c8016981e074575a6422aaff904f2bb18103bfaaa3455ff026a03"
+    },
+    {
+      "path": "app/src/hall-view.js",
+      "sha256": "809beabdb17ec1736d8abee42ee60c4f28387ebfbdb66908df95a9840bedb4c4"
+    },
+    {
+      "path": "app/src/logistics-validation.js",
+      "sha256": "1fdc57b87ff86493955f466f0f472a4f3c89c7a19c9390288359635556069f74"
+    },
+    {
+      "path": "app/src/logistics-view.js",
+      "sha256": "f453c0ef9ca60fae513e077acf6669293678f15a80780caac5e27a80ecf38201"
+    },
+    {
+      "path": "app/src/logistics.js",
+      "sha256": "5f2145aebd70d2c57a6339a5ac68530a43d1f834a0829705356b52af71603851"
+    },
+    {
+      "path": "app/src/main.js",
+      "sha256": "1f19af0aaac6f9534fd40729e8f9e454a39e92b9af190606b58c2bfc845640d3"
+    },
+    {
+      "path": "app/src/resource-bar.js",
+      "sha256": "27b8a7ec0e7b617eb8eb7b4a9a66a54f90eb86eba54b5f639f41fc07532fc62a"
+    },
+    {
+      "path": "app/src/state-validation-v2.js",
+      "sha256": "fd083280edd17b1765b7e35b7e45ac617e97086048e4ebab058ee10b275a90de"
+    },
+    {
+      "path": "app/src/state-validation.js",
+      "sha256": "c43ab9ac4328346dc71802c6d2e7460623d3a8071c11f9540b4c8bd48e96d55b"
+    },
+    {
+      "path": "app/src/storage.js",
+      "sha256": "0c1c4281d388ee5121b631bbeed7a03238c63cbe0277212ea9edc4c9568887dc"
+    },
+    {
+      "path": "app/src/ui-layout.js",
+      "sha256": "edc5292fe2eba6c1e4edeb24d81e6bf0cd51f4edfd74bf7a333a18d91900b905"
+    },
+    {
+      "path": "app/src/units.js",
+      "sha256": "13404f8ee39cc772b5dae6613a3b3b43942e5725efb1d02063775e1e9e7d73cd"
+    },
+    {
+      "path": "app/src/visuals.js",
+      "sha256": "78ecfe06bcff9e6911d6e7baa8cde70a1eddf584153962cda94c4c6fec93cef5"
+    },
+    {
+      "path": "app/src/world-map.js",
+      "sha256": "f07e790d60d7c14914f1a75604b7b85e339bcbb74dd864b5709b99bc7277a289"
+    },
+    {
+      "path": "app/src/world-path.js",
+      "sha256": "f17deb48f66ba2c842f071e821bbce4b6af328d28bc589a1344b37acf711cf38"
+    },
+    {
+      "path": "app/styles.css",
+      "sha256": "2c3ef05002094ce5289df1b5ad5a7324ec2ccba00c30e7c3d22787a89871c304"
+    },
+    {
+      "path": "app/ui-layout.css",
+      "sha256": "5f79ca63e4cfe61af5a434c9433ba2fa1ebbccf93b2cbbcb3151e203da3f8c0f"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "sha256": "ad5b5858250b8afa56febe9ff8d4314257f2f96921a768cdc0bb21cbd8afc990"
+    },
+    {
+      "path": "scripts/local-config.mjs",
+      "sha256": "3995d30678f13108ae4d4c0e4f8f8a3713c7e233b3bea207a14f492b8e9a3861"
+    },
+    {
+      "path": "scripts/local-service.mjs",
+      "sha256": "1594adcf4acc0b60a3df41a29c2670f7b139eb2b5c0db540abfea712ac7d5850"
+    },
+    {
+      "path": "scripts/prepare-art.py",
+      "sha256": "ebf966636a562d5ef54cf0fe8bc5d5658cffdd8393f4937b265a40d66ad014b9"
+    },
+    {
+      "path": "scripts/serve.mjs",
+      "sha256": "8fc0c353f8405a607e0f8776d9c49abaf765365a006bb672dc5c389f0955a5c9"
+    },
+    {
+      "path": "tests/build.test.js",
+      "sha256": "07adf1a08dd3c466ee80baa9d28dadfb9b141cd6884d1b19d6a028368fc8a4e5"
+    },
+    {
+      "path": "tests/economy.test.js",
+      "sha256": "ac101c5bf2734075a85fbf1fec17f5c114c63e105c14eba4e1ee67edd8ae00b1"
+    },
+    {
+      "path": "tests/fixtures/foundation-v1.json",
+      "sha256": "12789a4867f32ef71a3efaecfc9cda8d333214a13ec40dac6c03a330d37b216e"
+    },
+    {
+      "path": "tests/fixtures/foundation-v2.json",
+      "sha256": "4de8444ae2c53c22c23da22d01afe0e540b17c4e231f153b3c0603bc40fa3569"
+    },
+    {
+      "path": "tests/game.test.js",
+      "sha256": "9922557525e2729a2bbc3f5190c34ceedbcb0fc521ccb3fe0af090c927fe1f2a"
+    },
+    {
+      "path": "tests/logistics-storage.test.js",
+      "sha256": "4a69252ae8fd97966c56b5db5247866a2cf3900a18056a75e868f1dbae08b31f"
+    },
+    {
+      "path": "tests/logistics.test.js",
+      "sha256": "bbe1fb4a84c224cf0bc9170de840560a0670121fd52ee43d35ebe95d5f4cddb7"
+    },
+    {
+      "path": "tests/recruitment-storage.test.js",
+      "sha256": "77c5fe8273ba13914aeb419274fa0de11e77eca05fdb8b602c4159dd4dcd57e1"
+    },
+    {
+      "path": "tests/recruitment.test.js",
+      "sha256": "eba1fe4920053820832e614f7f9d754310da85723db7971c5dd68b379aafb22e"
+    },
+    {
+      "path": "tests/storage.test.js",
+      "sha256": "80ba1881fba1255ecadb842a300a31d7b2c1935066adb1dd123d07d13500b2da"
+    },
+    {
+      "path": "e2e/barracks.spec.js",
+      "sha256": "16cf8f967c74ed91127cb08c398b7d29fa9514b25d644f22b355733e5b9ecc2b"
+    },
+    {
+      "path": "e2e/city-camera.spec.js",
+      "sha256": "39a4826fbe4b2ca9df9f883455c0a54e4592daf19e83243cfe757bbe0eb79e42"
+    },
+    {
+      "path": "e2e/city-construction.spec.js",
+      "sha256": "efc12ff43af4df55e438fddfd163636a6399a5f0993b12cc853e311b90056b5f"
+    },
+    {
+      "path": "e2e/city-locator.spec.js",
+      "sha256": "91fdb0750fb5a2daed9e2dbfee11b314e4cf621460a8e61460f15739582c5138"
+    },
+    {
+      "path": "e2e/city-work.spec.js",
+      "sha256": "1e922c06158cca493ae1bb39bde2ec618d1ae55713e0f52ffd88cfdde583944e"
+    },
+    {
+      "path": "e2e/foundation.spec.js",
+      "sha256": "3fbd58212281024f6e07b4f71f287e7462a895227d5de4daba5f991d2130c111"
+    },
+    {
+      "path": "e2e/hall-economy.spec.js",
+      "sha256": "c2bb4fbd5f45029fb8c89847c9cd16333e6b477e97732020f43f27cc4eb3f9ed"
+    },
+    {
+      "path": "e2e/logistics.spec.js",
+      "sha256": "2bf5fba74c660eba107826d7e073472990487d215309c141d8664cbcc8307f9f"
+    },
+    {
+      "path": "e2e/usability.spec.js",
+      "sha256": "611b98435341ef160f8d4039063a3017dc0751aa16b56e66a9edf157564853e6"
+    }
+  ]
+}

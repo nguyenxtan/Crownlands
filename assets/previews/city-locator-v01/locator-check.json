@@ -1,0 +1,23 @@
+[
+  {
+    "width": 1440,
+    "height": 1000,
+    "overflow": false,
+    "zoom": "200%",
+    "targetSelected": "true"
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "overflow": false,
+    "zoom": "200%",
+    "targetSelected": "true"
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "overflow": false,
+    "zoom": "200%",
+    "targetSelected": "true"
+  }
+]

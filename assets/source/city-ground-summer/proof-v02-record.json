@@ -1,0 +1,25 @@
+{
+  "id": "city-ground-summer",
+  "tool": "built-in image_gen",
+  "status": "draft",
+  "approved": false,
+  "source_revision": 2,
+  "source": "assets/source/city-ground-summer/proof-v02.png",
+  "prompt": "assets/source/city-ground-summer/proof-v02-prompt.txt",
+  "generated_original": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1c3b1-ae87-7491-8233-e38a441decd8/exec-e8420ecb-e035-42ef-99e2-110053360cbe.png",
+  "style_references": [
+    "assets/source/city-ground-summer/proof-v01.png",
+    "assets/source/city-town-hall-v01/proof-v02.png"
+  ],
+  "sha256": "208096c3db5a0cb020c5d368588e65e9f3e7f630d21d156f2629db084106104d",
+  "actual_dimensions": [
+    1448,
+    1086
+  ],
+  "runtime_output": "app/assets/city-ground-v02.webp",
+  "runtime_sha256": "bbae06a8b067557e3f7c73e8711672e5e4a6613fb135628dd1a6c1a8c25d90a3",
+  "runtime_bytes": 398986,
+  "initial_source": "assets/source/city-ground-summer/proof-v01.png",
+  "initial_source_sha256": "f911833f845a4af9251c361ef8cacb52442fefadd908de5f47e4c98df23de703",
+  "note": "Opaque terrain only. Existing slot/resource anchors preserved. Source v01 and previous runtime retained. cwebp quality88 format conversion only, no cropping or repainting; formal 2048x1536 production export pending."
+}

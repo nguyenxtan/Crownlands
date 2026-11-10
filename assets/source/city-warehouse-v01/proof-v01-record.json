@@ -1,0 +1,27 @@
+{
+  "id": "city-warehouse-v01",
+  "label": "Kho tài nguyên",
+  "tool": "built-in image_gen",
+  "status": "draft",
+  "approved": false,
+  "source_revision": 1,
+  "source": "assets/source/city-warehouse-v01/proof-v01.png",
+  "prompt": "assets/source/city-warehouse-v01/proof-v01-prompt.txt",
+  "generated_original": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-9d209b39-aa97-4f3c-98f8-ee2a2891613f.png",
+  "style_references": [
+    "assets/source/city-town-hall-v01/proof-v02.png",
+    "assets/source/city-barracks-v01/proof-v01.png"
+  ],
+  "sha256": "d25671b173f96247b669207a25cf71c0aadf3222e188735e5d326def0c934eda",
+  "actual_dimensions": [
+    1254,
+    1254
+  ],
+  "alpha_bbox": [
+    45,
+    259,
+    1208,
+    1121
+  ],
+  "real_alpha": true
+}

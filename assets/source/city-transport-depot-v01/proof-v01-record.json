@@ -1,0 +1,27 @@
+{
+  "id": "city-transport-depot-v01",
+  "label": "Trạm vận tải",
+  "tool": "built-in image_gen",
+  "status": "draft",
+  "approved": false,
+  "source_revision": 1,
+  "source": "assets/source/city-transport-depot-v01/proof-v01.png",
+  "prompt": "assets/source/city-transport-depot-v01/proof-v01-prompt.txt",
+  "generated_original": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-1453f3a4-ca5b-49e0-b693-84a53d67205f.png",
+  "style_references": [
+    "assets/source/city-town-hall-v01/proof-v02.png",
+    "assets/source/city-barracks-v01/proof-v01.png"
+  ],
+  "sha256": "6806bee0b623ec65daf879a5ed3e7b9c71622a2b55a4dde0436acead43936b22",
+  "actual_dimensions": [
+    1254,
+    1254
+  ],
+  "alpha_bbox": [
+    36,
+    247,
+    1228,
+    1124
+  ],
+  "real_alpha": true
+}

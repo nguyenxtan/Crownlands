@@ -1,0 +1,62 @@
+{
+  "checked_date": "2026-11-10",
+  "design_version": "2.2",
+  "scope": "Documentation and specification data only",
+  "results": {
+    "original_sources": "7 reference files + U08 SHA256 unchanged",
+    "asset_contract": "3 JSON files byte-identical to2.0/2.1;189 planned outputs,16/134/39,14 profiles,14/16 layout; 0 image files in repository",
+    "archive": "v2.1 ZIP44 entries valid and byte-identical to pre-2.2 files; history sources/reviews/proposals unchanged; Claude review 2.1 report unchanged",
+    "scenario": "S00 0.2-draft parses; owners/profile/home/capacity/custody references,stocks,slot16/14 limits,52 starting troops and ai_budget floors/limits consistent",
+    "scenario_sha256": {
+      "before_2.2": "c8f7d1f86563cfee5307e81005301e68d6691af0993021734b7de0fb57809a49",
+      "after_2.2": "2d5131017768485dbd5c3f4a976585a48fe1d80ffa1569fd39603aeb6e94ce70",
+      "reason": "version 0.2-draft/design2.2: movement_rules site non-transit, custody, distance metric, ai_budget, guard wording, warehouse/debt/job/starvation rules, unresolved AI policy"
+    },
+    "opening_economy": {
+      "base_grain_per_game_hour": 400,
+      "starting_upkeep_per_game_hour": 52,
+      "net_grain_per_game_hour": 348,
+      "first_field_upgrade_affordable": true,
+      "combat_viability": "not-tested"
+    },
+    "reachability_steps_site_nontransit": {
+      "city-player-start": 0,
+      "city-ash-frontier": 19,
+      "city-ash-capital": 36,
+      "clay-near": 8,
+      "grain-near": 10,
+      "bandit-near": 10
+    },
+    "reachability_from_capital": {
+      "city-ash-frontier": 17,
+      "city-player-start": 36
+    },
+    "reachability_without_bridge": {
+      "city-ash-capital": 90,
+      "note": "bridge is a shortcut, not a mandatory chokepoint"
+    },
+    "arithmetic_reference_not_engine": {
+      "full_warehouse_6000_prod400_upkeep52": {
+        "net_clamp_1_2_4_segments": [
+          6000,
+          6000,
+          6000
+        ],
+        "overflow_per_hour": 348,
+        "old_clip_then_upkeep": [
+          5948,
+          5974,
+          5987
+        ]
+      },
+      "depletion_100_grain_net_minus52": {
+        "t_hit_seconds": "90000/13",
+        "event_tick_ceil": 6924
+      },
+      "absorption_toy": "1 quantum over 2 equal claims gives one quantum to the lowest stable key; reorder and same-key split give identical result; sum<=fund and each<=damage; no mortality rounding across profiles"
+    },
+    "decision_ids": "B01–B28 (no B29),BS01–10,BS-T01–13,RV21-01–15,BUILD01–05 and existing D/P/O/I/N/CAL namespaces verified",
+    "relative_links_checked": 179,
+    "limits": "No game/AI/combat/cache/save/turbo or image tests;13 BS-T and15 RV21 cases not run; 2.2 choices by Codex coordinator not re-reviewed by Claude"
+  }
+}

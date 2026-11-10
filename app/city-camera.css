@@ -1,0 +1,10 @@
+#city-stage{cursor:grab;outline-offset:-4px}
+#city-stage:focus-visible{outline:2px solid #e1c17a}
+#city-board{transform-origin:50% 50%}
+#city-stage.city-camera-dragging,#city-stage.city-camera-dragging .city-item{cursor:grabbing}
+.city-camera-toolbar{position:absolute;right:20px;bottom:56px;z-index:4;display:flex;align-items:center;border:1px solid #cbbf8b66;border-radius:5px;background:#26392bee;box-shadow:0 4px 14px #18311b55;color:#e7ddbd}
+.city-camera-toolbar button{width:37px;min-height:35px;padding:5px;border:0;border-radius:3px;background:none;color:inherit;font-size:21px;line-height:1}
+.city-camera-toolbar button:hover{background:#536745}
+.city-camera-toolbar button:disabled{opacity:.35}
+.city-camera-zoom{width:46px;text-align:center;font-size:11px;font-variant-numeric:tabular-nums}
+@media(max-width:700px){.city-camera-toolbar{right:12px;bottom:57px}.city-camera-toolbar button{width:35px;min-height:34px}.city-camera-zoom{font-size:10px;width:42px}}

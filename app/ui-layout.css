@@ -1,0 +1,100 @@
+:root{--ui-header-height:106px;--ui-footer-height:68px}
+#app .topbar{height:var(--ui-header-height);padding:10px 20px;gap:18px}
+#app .brand{min-width:190px;font-size:18px;gap:9px}
+#app .header-actions{gap:7px;align-items:center}
+#app .header-actions button{min-height:34px}
+#app .inspector{width:326px}
+#app .empire-label{padding:16px 20px;min-height:76px;gap:11px;letter-spacing:1px}
+#app .empire-label small{display:block;font-size:9px;color:#7b8468}
+#app .empire-label strong{font-size:22px;margin-top:4px}
+#app .emblem{width:34px;height:40px;font-size:22px}
+#app .detail{padding:20px}
+#app .detail p{font-size:13px;line-height:1.7}
+#app .detail .note{font-size:11px;line-height:1.65}
+#app .detail h2{font-size:27px}
+#app .detail .eyebrow{font-size:10px;letter-spacing:1.3px}
+#app .detail-level{font-size:10px;letter-spacing:.7px}
+#app .stat-row{font-size:12px;padding:11px 0}
+#app .stat-row strong{font-size:14px}
+#app .primary{font-size:13px;min-height:44px;font-weight:550}
+#app .costs{gap:5px}
+#app .cost-item{padding:8px 3px;font-size:14px}
+#app .cost-item img,#app .cost-item svg{width:24px;height:24px;margin-bottom:5px}
+#app .cost-label{display:block;font-size:10px;color:#6c795d;margin-bottom:4px;white-space:nowrap}
+#app .costs-label{margin-top:15px;margin-bottom:-6px;font-size:11px;color:#68775b}
+#app .city-work{position:static;top:auto;margin:10px 16px 0;padding:11px 9px 9px}
+#app .city-work header{padding-bottom:4px}
+#app .city-work h3{font-size:10px;letter-spacing:.8px}
+#app .work-state{font-size:10px}
+#app .work-categories{margin:0 3px 7px;font-size:10px;color:#707d5c}
+#app .city-work-list{max-height:155px}
+#app .city-work-row{min-height:49px;padding:8px}
+#app .work-title{font-size:11px}
+#app .city-work-row time{font-size:12px}
+#app .work-unit-symbol{font-size:22px;color:#8c784a}
+#app .city-work-row[data-kind="training"] .work-progress{background:linear-gradient(90deg,#9c8a52 var(--work-progress),#d2d2b8 var(--work-progress))}
+#app .army-summary>div{font-size:12px;line-height:1.5}
+#app .army-summary strong{font-size:13px}
+#app .unit-roster button{min-height:48px}
+#app .unit-roster button>span:nth-child(2){font-size:12px}
+#app .unit-roster small{font-size:9px}
+#app .recruit-quantity{font-size:12px}
+#app .recruit-quantity input{width:86px;min-height:42px}
+#app .barracks-panel h3{font-size:11px}
+#app #training-queue strong{font-size:12px}
+#app #training-queue small,#app #training-queue time{font-size:11px;line-height:1.5}
+#app .objective{margin:18px 16px 10px}
+#app .objective p{font-size:11px}
+#app .objective button{font-size:11px;min-height:32px}
+#app .known-sites h3{font-size:10px}
+#app .site-link{font-size:12px;min-height:44px}
+#app .site-link small{font-size:10px}
+#app #pause{height:34px;min-width:98px;font-size:12px;padding:5px 9px;white-space:nowrap}
+#app .time-block{min-width:210px}
+#app #clock-state{font-size:11px}
+.mobile-detail{display:none}
+.nav-item{position:relative}
+.nav-work-count{position:absolute;right:3px;top:3px;min-width:17px;padding:2px 4px;border-radius:9px;background:#cdb777;color:#273a26;font:650 9px system-ui;line-height:13px;text-align:center}
+#app .city-notice{bottom:calc(var(--ui-footer-height) + 12px);z-index:30}
+#toast{bottom:calc(var(--ui-footer-height) + 14px);z-index:40}
+@media(max-width:1200px){#app .brand{min-width:165px;font-size:16px}#app .topbar{padding:10px 14px;gap:12px}#app .inspector{width:300px}#app .autosave-status{font-size:9px}}
+@media(min-width:701px) and (max-width:940px){#app .brand{min-width:30px}#app .brand>span:last-child{display:none}#app .inspector{width:280px}}
+@media(max-width:700px){
+  :root{--ui-header-height:148px;--ui-footer-height:96px}
+  #app{min-height:100dvh;height:auto;overflow:visible}
+  #app .topbar{position:sticky;top:0;z-index:20;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:38px 78px;gap:10px 12px;height:148px;padding:11px 12px}
+  #app .brand{min-width:0;gap:8px;font-size:14px;letter-spacing:1.5px}
+  #app .brand>span:last-child{display:block}#app .brand small{display:none}#app .crown{font-size:25px}
+  #app .header-actions{grid-column:2;grid-row:1;gap:6px;justify-content:flex-end}
+  #app .header-actions button{font-size:11px;min-height:34px;padding:6px 9px}
+  #app #help{width:31px;padding:0}
+  #app .header-actions .autosave-status{position:absolute;left:48px;top:43px;right:auto;bottom:auto;font-size:8px;margin:0}
+  #app #update-app{position:static;white-space:nowrap}
+  #app .workspace{min-height:0;display:flex;flex-direction:column;flex-wrap:nowrap;position:relative;flex:none}
+  #app .sidebar{position:sticky;top:var(--ui-header-height);z-index:19;display:flex;flex-direction:row;align-items:center;width:100%;height:auto;flex-basis:auto;padding:4px 8px;border-right:0;border-bottom:1px solid var(--line);gap:5px;background:#26372b}
+  #app .nav-item{display:flex;flex:1;flex-direction:row;justify-content:center;align-items:center;gap:6px;min-height:42px;margin:0;padding:7px 5px;border-radius:4px}
+  #app .nav-item span{font-size:20px}#app .nav-item small{font-size:11px}
+  #app .nav-work-count{position:static;min-width:17px;padding:1px 4px;font-size:9px}
+  #app .mobile-detail{display:flex;color:#d6ceaa;border:1px solid #9d9c6c55;background:#36472f}
+  #app .nav-rule,#app .side-year,#app .side-bottom{display:none}
+  #app #play-area{flex:none;flex-basis:auto;width:100%;height:clamp(330px,50dvh,420px);margin-left:0;min-height:0}
+  #app .inspector{display:block;flex:none;flex-basis:auto;width:100%;min-height:0;overflow:visible;border-left:0;border-top:1px solid #586349}
+  #app .empire-label{padding:14px 18px;min-height:68px}
+  #app .detail{width:100%;padding:20px;grid-row:auto}
+  #app .detail h2,#app .barracks-heading h2{font-size:27px}
+  #app .detail-hero{height:110px}#app .detail-hero img{height:130px}
+  #app .barracks-heading img{width:85px;height:85px}
+  #app .barracks-heading .eyebrow{font-size:9px}#app .barracks-heading .detail-level{font-size:10px}
+  #app .city-work{margin:12px 16px 0;grid-row:auto}
+  #app .city-work-list{max-height:160px}
+  #app .objective{margin:18px 16px}
+  #app .known-sites{padding:18px 20px}
+  #app .timebar{position:sticky;bottom:0;z-index:25;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:24px 36px;align-content:center;gap:6px 8px;height:96px;padding:10px 12px}
+  #app .time-block{min-width:0;gap:6px}#app .time-block small{font-size:8px;letter-spacing:1px;margin-bottom:2px}#app .time-block strong{font-size:12px;white-space:nowrap}#app .sun{font-size:23px}
+  #app .time-controls{grid-row:2;grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%}
+  #app .time-controls #pause{height:34px;min-width:104px;padding:5px 10px;font-size:12px}
+  #app #speeds{gap:5px}#app #speeds button{min-width:35px;min-height:34px;font-size:12px;padding:5px}
+  #app #clock-state{display:block;grid-column:2;grid-row:1;font-size:10px;text-align:right}
+  #app #save-status,#app .offline-state{display:none}
+}
+@media(max-width:360px){#app .topbar:has(#update-app:not([hidden])) .brand>span:last-child{display:none}#app .header-actions button{padding:6px 7px}#app .nav-item small{font-size:10px}}

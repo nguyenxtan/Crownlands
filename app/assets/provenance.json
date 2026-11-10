@@ -1,0 +1,289 @@
+[
+  {
+    "source": "assets/source/world-city-small/proof-v01.png",
+    "output": "app/assets/world-city.png",
+    "source_sha256": "6084045582958795c441fddcbd65f396b0a7a37fe79ac694ba7d7d638a48262f",
+    "output_sha256": "f353c5e74bb053a2def2d866fcb07b3445151e6867207e56463327e9ab002e54",
+    "size": [
+      128,
+      128
+    ],
+    "ground_anchor": [
+      0.5,
+      0.75
+    ],
+    "status": "provisional-runtime-copy"
+  },
+  {
+    "source": "assets/source/world-npc-bandit-camp/proof-v01.png",
+    "output": "app/assets/world-bandits.png",
+    "source_sha256": "8e39aa544093d57b9342ef385063091fc4df1418ea2bdefe48da824b45c0046c",
+    "output_sha256": "3bd8b57362d6ca3724b13c1738f98fad71afdc7f300858ab094ffcc01ff1059d",
+    "size": [
+      128,
+      128
+    ],
+    "ground_anchor": [
+      0.5,
+      0.75
+    ],
+    "status": "provisional-runtime-copy"
+  },
+  {
+    "source": "assets/source/world-resource-clay-site/proof-v01.png",
+    "output": "app/assets/world-clay.png",
+    "source_sha256": "229f69c640ca9fee2b1559c54300e92111c234e189510fb3610dcd8648c903a4",
+    "output_sha256": "91eadb961232a3947146b771e026fbe6a0e89c8558405f852f2c0da4b53b6fa2",
+    "size": [
+      128,
+      128
+    ],
+    "ground_anchor": [
+      0.5,
+      0.75
+    ],
+    "status": "provisional-runtime-copy"
+  },
+  {
+    "source": "assets/source/world-resource-grain-field/proof-v01.png",
+    "output": "app/assets/world-grain.png",
+    "source_sha256": "465901fc9d71af49d244b0ce7309f3b8f10444c419cc0857038ff2ba599149cf",
+    "output_sha256": "e415fc999f10f45f3d6bdc5c51274fa5f95c0f8f26ddd0abae8e1e83b29e5aaa",
+    "size": [
+      128,
+      128
+    ],
+    "ground_anchor": [
+      0.5,
+      0.75
+    ],
+    "status": "provisional-runtime-copy"
+  },
+  {
+    "source": "assets/source/world-army-patrol/proof-v01.png",
+    "output": "app/assets/world-patrol.png",
+    "source_sha256": "6fef8f7285e84217979d59fdce65e4eb13505cdb2ba847ab10c740036ba987e6",
+    "output_sha256": "c931e18e92db3125cf28a97b35389c517bee22601c10bb33a7cbbe9e41153147",
+    "size": [
+      128,
+      128
+    ],
+    "ground_anchor": [
+      0.5,
+      0.75
+    ],
+    "status": "provisional-runtime-copy"
+  },
+  {
+    "source": "assets/source/city-town-hall-v01/proof-v02.png",
+    "output": "app/assets/city-hall.png",
+    "source_sha256": "b1d7f762e252d162de6b243da1d7fcbf6bedc3abb14ae3b4d94a0c6169c736ae",
+    "output_sha256": "de24e5884b00757afe910ad5fde1e62e7137d925b889c2e216649785caf870cd",
+    "size": [
+      512,
+      512
+    ],
+    "ground_anchor": [
+      0.5,
+      0.78
+    ],
+    "status": "provisional-runtime-copy"
+  },
+  {
+    "source": "assets/source/city-barracks-v01/proof-v01.png",
+    "output": "app/assets/city-barracks.png",
+    "source_sha256": "e9d7b383a0f889c4d6b3646edfc2f8014f15ce02ad6ffda4992c0002e5f86bed",
+    "output_sha256": "b7278fec09fad845b0516396a650b0e770d43f5be0539eecc5efedd2a0655a34",
+    "size": [
+      512,
+      512
+    ],
+    "ground_anchor": [
+      0.5,
+      0.78
+    ],
+    "status": "provisional-runtime-copy"
+  },
+  {
+    "source": "assets/source/city-warehouse-v01/proof-v01.png",
+    "output": "app/assets/city-warehouse.png",
+    "source_sha256": "d25671b173f96247b669207a25cf71c0aadf3222e188735e5d326def0c934eda",
+    "output_sha256": "1534fb362d1c3ef7f6a8356e859e58798ded5589f1e6c9673ae9f6f1a967c7f6",
+    "size": [
+      512,
+      512
+    ],
+    "ground_anchor": [
+      0.5,
+      0.78
+    ],
+    "status": "provisional-runtime-copy"
+  },
+  {
+    "source": "assets/source/city-granary-v01/proof-v01.png",
+    "output": "app/assets/city-granary.png",
+    "source_sha256": "af519bdb2648a9119c8a564cf57984d20adf5dbdb4c86b2526eddafb5a8465af",
+    "output_sha256": "9eb18829d5ca240515d99eed26a0a2d177a8b35c5896aba6fb12d135d1e4ed95",
+    "size": [
+      512,
+      512
+    ],
+    "ground_anchor": [
+      0.5,
+      0.78
+    ],
+    "status": "provisional-runtime-copy"
+  },
+  {
+    "source": "assets/source/city-rally-point-v01/proof-v01.png",
+    "output": "app/assets/city-rally-point.png",
+    "source_sha256": "6786e2765a6fb0185d3d0cd3f44b07aa951d3c0c2e0ac5a2d32c276fe22e1c2e",
+    "output_sha256": "0ba2d17a0857d215dbb76bf69e594dbbde19f84684afe18d8cbd2df09b8c9f9e",
+    "size": [
+      512,
+      512
+    ],
+    "ground_anchor": [
+      0.5,
+      0.78
+    ],
+    "status": "provisional-runtime-copy"
+  },
+  {
+    "source": "assets/source/city-transport-depot-v01/proof-v02.png",
+    "output": "app/assets/city-transport-depot.png",
+    "source_sha256": "225189741ba96ec0094f7d82d0a69a84169cab93a7016c4a78f871a1dde78a90",
+    "output_sha256": "c46aaa7bee016fc81b32612536460bbc90fd3eabd720f646351d8a3fc28b0efe",
+    "size": [
+      512,
+      512
+    ],
+    "ground_anchor": [
+      0.5,
+      0.78
+    ],
+    "status": "provisional-runtime-copy"
+  },
+  {
+    "source": "assets/source/city-resource-wood-v01/proof-v01.png",
+    "output": "app/assets/city-resource-wood.png",
+    "source_sha256": "b680c22148e13843854f6bbff5cf5be68cc54d3b1ed2694426df6715752af39f",
+    "output_sha256": "18c8224d2e3226d0b280336d5860453f135c174016a4f472aafe1703a1b55d10",
+    "size": [
+      512,
+      512
+    ],
+    "ground_anchor": [
+      0.5,
+      0.78
+    ],
+    "status": "provisional-runtime-copy"
+  },
+  {
+    "source": "assets/source/city-resource-clay-v01/proof-v01.png",
+    "output": "app/assets/city-resource-clay.png",
+    "source_sha256": "1aa9f9b0a1efb370c343c7bff5c32a883ddbeb75e69f95b7ae798d8b5095d2c2",
+    "output_sha256": "e226019dc0c0363dc5b89c9bf94a32089353fa00f0910e5f22113f74f7b7f984",
+    "size": [
+      512,
+      512
+    ],
+    "ground_anchor": [
+      0.5,
+      0.78
+    ],
+    "status": "provisional-runtime-copy"
+  },
+  {
+    "source": "assets/source/city-resource-iron-v01/proof-v01.png",
+    "output": "app/assets/city-resource-iron.png",
+    "source_sha256": "363726fd8e86847a577181ec68f580a07c9c52c2f8cdda2f27f722c2639cec72",
+    "output_sha256": "858b19546483b2019bd26a568e89e57ec7fd174c9a01b48a3f325f746e38c5a6",
+    "size": [
+      512,
+      512
+    ],
+    "ground_anchor": [
+      0.5,
+      0.78
+    ],
+    "status": "provisional-runtime-copy"
+  },
+  {
+    "source": "assets/source/city-resource-grain-v01/proof-v01.png",
+    "output": "app/assets/city-resource-grain.png",
+    "source_sha256": "a5c67b64b8def2acb7b07431582d7780c00fe416e7e582077e000e9fb86e5043",
+    "output_sha256": "30c28d455a0309bc2f1dc5c53beae113b60f835be001d5af481e14d0f4c2de6f",
+    "size": [
+      512,
+      512
+    ],
+    "ground_anchor": [
+      0.5,
+      0.78
+    ],
+    "status": "provisional-runtime-copy"
+  },
+  {
+    "source": "assets/source/world-terrain-grass-summer/proof-v01.png",
+    "output": "app/assets/grass.webp",
+    "source_sha256": "98e3b546d33ed0801c1bb88868e8d284e4c59669209c6d73813f82565ecba00b",
+    "output_sha256": "4aef8c3c4313d17aa66c5d805c90386d839bec97c75849bd1a067bfcd5858d68",
+    "size": [
+      256,
+      256
+    ],
+    "status": "provisional-runtime-copy"
+  },
+  {
+    "source": "assets/source/city-ground-summer/proof-v01.png",
+    "output": "app/assets/city-ground.webp",
+    "source_sha256": "f911833f845a4af9251c361ef8cacb52442fefadd908de5f47e4c98df23de703",
+    "output_sha256": "459b36149dab4c7cf093f9e5a5bcdb80d746ac453ce9cf19402bedcf0be2d7a9",
+    "size": [
+      1448,
+      1086
+    ],
+    "status": "provisional-runtime-copy"
+  },
+  {
+    "source": "assets/source/city-ground-summer/proof-v02.png",
+    "output": "app/assets/city-ground-v02.webp",
+    "source_sha256": "208096c3db5a0cb020c5d368588e65e9f3e7f630d21d156f2629db084106104d",
+    "output_sha256": "bbae06a8b067557e3f7c73e8711672e5e4a6613fb135628dd1a6c1a8c25d90a3",
+    "size": [
+      1448,
+      1086
+    ],
+    "status": "provisional-runtime-copy"
+  },
+  {
+    "source": "assets/export/ui/ui-resource-grain.svg",
+    "output": "app/assets/grain.svg",
+    "source_sha256": "dcf19136a43ea07883fc86d980b178e786854fa8adf76bee1c2c773af06fabcc",
+    "output_sha256": "dcf19136a43ea07883fc86d980b178e786854fa8adf76bee1c2c773af06fabcc",
+    "status": "approved-v2-unchanged"
+  },
+  {
+    "source": "assets/source/city-wall-v01/proof-v01.png",
+    "output": "app/assets/city-wall-v01.png",
+    "source_sha256": "504929824e74619710fa40faed7fe4c0aada0a006b3faf830bb3e205bff84f62",
+    "output_sha256": "504929824e74619710fa40faed7fe4c0aada0a006b3faf830bb3e205bff84f62",
+    "size": [
+      1448,
+      1086
+    ],
+    "status": "provisional-runtime-copy"
+  },
+  {
+    "source": "assets/source/city-gate-v01/proof-v01.png",
+    "output": "app/assets/city-gate-v01.png",
+    "source_sha256": "1d049fd16cd3ca46bfa89fae2520f5f26054c6d861accb694f1d6f1790e8c56f",
+    "output_sha256": "1d049fd16cd3ca46bfa89fae2520f5f26054c6d861accb694f1d6f1790e8c56f",
+    "size": [
+      1774,
+      887
+    ],
+    "status": "provisional-runtime-copy"
+  }
+]

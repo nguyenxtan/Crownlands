@@ -1,0 +1,44 @@
+{
+  "id": "city-gate-v01",
+  "tool": "built-in image_gen",
+  "status": "draft-runtime-integrated",
+  "approved": false,
+  "source": "assets/source/city-gate-v01/proof-v01.png",
+  "prompt": "assets/source/city-gate-v01/proof-v01-prompt.txt",
+  "generated_original": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1c3b1-ae87-7491-8233-e38a441decd8/exec-fca69bf4-e2f2-4ba6-bca8-2ba1a6d06035.png",
+  "style_references": [
+    "assets/source/city-town-hall-v01/proof-v02.png",
+    "assets/source/city-wall-v01/proof-v01.png"
+  ],
+  "sha256": "1d049fd16cd3ca46bfa89fae2520f5f26054c6d861accb694f1d6f1790e8c56f",
+  "actual_dimensions": [
+    1774,
+    887
+  ],
+  "alpha_bbox": [
+    68,
+    130,
+    1708,
+    832
+  ],
+  "real_alpha": true,
+  "alpha_checks": {
+    "size": [
+      1774,
+      887
+    ],
+    "bbox": [
+      68,
+      130,
+      1708,
+      832
+    ],
+    "transparent_fraction": 0.5144387996985138,
+    "near_opaque_fraction": 0.45929936232871404,
+    "center_alpha": 253,
+    "corner_alpha": 0,
+    "passage_alpha": 0
+  },
+  "note": "User requested in-game visibility after image preview. Integrated as provisional decorative layers using unchanged PNG source bytes. Formal 2048x1536 export remains pending; no production approval implied. Runtime presentation fit and front/back draw order are recorded in project-docs/implementation/city-perimeter-live.md.",
+  "runtime_output": "app/assets/city-gate-v01.png"
+}

@@ -1,0 +1,17 @@
+{
+  "version": "541c3aaf3833dd2d",
+  "checks": [
+    {
+      "width": 390,
+      "offlineBook": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "offlineBook": true,
+      "overflow": false,
+      "errors": []
+    }
+  ]
+}

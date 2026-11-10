@@ -1,0 +1,50 @@
+[
+  {
+    "view": "board",
+    "exit": 0,
+    "ready": true,
+    "image_error": false,
+    "cards": 16,
+    "screenshot": true
+  },
+  {
+    "view": "world",
+    "exit": 0,
+    "ready": true,
+    "image_error": false,
+    "cards": 16,
+    "screenshot": true
+  },
+  {
+    "view": "city",
+    "exit": 0,
+    "ready": true,
+    "image_error": false,
+    "cards": 16,
+    "screenshot": true
+  },
+  {
+    "view": "units",
+    "exit": 0,
+    "ready": true,
+    "image_error": false,
+    "cards": 16,
+    "screenshot": true
+  },
+  {
+    "view": "dark",
+    "exit": 0,
+    "ready": true,
+    "image_error": false,
+    "cards": 16,
+    "screenshot": true
+  },
+  {
+    "view": "inline",
+    "exit": 0,
+    "ready": true,
+    "image_error": false,
+    "cards": 16,
+    "screenshot": true
+  }
+]

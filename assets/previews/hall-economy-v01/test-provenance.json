@@ -1,0 +1,8 @@
+{
+  "releaseVersion": "8d4805ef9ed3f8d3",
+  "snapshot": "/var/folders/5n/qdmqpg0d6zd08hdkfl0_fj8m0000gn/T/crownlands-hall-release-SN0PGK",
+  "sourceSnapshot": "app from coherent served dist; baseline and hall tests from workspace; in-progress logistics tests excluded because not in this released module",
+  "nodeTests": 42,
+  "browserTests": 51,
+  "servedVersion": "8d4805ef9ed3f8d3"
+}

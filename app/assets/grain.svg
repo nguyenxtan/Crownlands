@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+<defs>
+ <linearGradient id="grain" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF0AB"/><stop offset=".38" stop-color="#E9C365"/><stop offset="1" stop-color="#BA8539"/></linearGradient>
+ <linearGradient id="straw" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#94703B"/><stop offset=".4" stop-color="#DFC38A"/><stop offset="1" stop-color="#AE8546"/></linearGradient>
+ <linearGradient id="cord" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#BA8A50"/><stop offset="1" stop-color="#795B36"/></linearGradient>
+ <g id="ear">
+  <path d="M0 12L0-43" fill="none" stroke="url(#straw)" stroke-width="2.6" stroke-linecap="round"/>
+  <g fill="url(#grain)" stroke="#A78040" stroke-width=".9" stroke-linejoin="round">
+   <path d="M0-37C-5-41-4-48 0-53C4-48 5-41 0-37Z"/>
+   <path d="M0-30C-7-31-11-36-9-42C-3-40 0-35 0-30Z"/><path d="M0-30C7-31 11-36 9-42C3-40 0-35 0-30Z"/>
+   <path d="M0-20C-8-21-13-26-11-32C-4-31 0-26 0-20Z"/><path d="M0-20C8-21 13-26 11-32C4-31 0-26 0-20Z"/>
+   <path d="M0-10C-8-11-13-16-11-22C-4-21 0-16 0-10Z"/><path d="M0-10C8-11 13-16 11-22C4-21 0-16 0-10Z"/>
+   <path d="M0 0C-7-1-12-6-10-12C-4-11 0-6 0 0Z"/><path d="M0 0C7-1 12-6 10-12C4-11 0-6 0 0Z"/>
+   <path d="M0 9C-6 8-10 4-9-2C-3-1 0 4 0 9Z"/><path d="M0 9C6 8 10 4 9-2C3-1 0 4 0 9Z"/>
+  </g>
+  <g stroke="#FFF1B7" stroke-width=".8" stroke-linecap="round" opacity=".8"><path d="M-8-38L-3-33M8-38L3-33M-10-28L-3-23M10-28L3-23M-10-18L-3-13M10-18L3-13M-9-8L-3-3M9-8L3-3"/></g>
+ </g>
+</defs>
+<g fill="none" stroke="url(#straw)" stroke-width="3" stroke-linecap="round"><path d="M53 113C58 96 52 78 43 62"/><path d="M63 115C66 97 64 80 64 61"/><path d="M76 112C68 96 77 78 84 62"/><path d="M58 114C63 99 59 87 55 78"/><path d="M70 114C67 100 72 87 75 78"/></g>
+<use href="#ear" transform="translate(43 63) rotate(-23)"/>
+<use href="#ear" transform="translate(84 63) rotate(23)"/>
+<use href="#ear" transform="translate(64 61)"/>
+<path d="M54 90C60 93 69 93 76 90L76 98C69 101 60 100 54 97Z" fill="url(#cord)" stroke="#785C37" stroke-width="1.1"/>
+<path d="M54 93C61 96 69 96 76 93M55 96C62 99 70 98 75 96" fill="none" stroke="#D9B17A" stroke-width="1"/>
+<path d="M65 95C58 89 53 91 56 95C58 99 62 98 65 95ZM65 95C73 90 77 93 73 97C70 99 67 97 65 95Z" fill="#BC9158" stroke="#765A35" stroke-width="1"/>
+<path d="M64 97L60 105M66 97L72 104" fill="none" stroke="#8D693E" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

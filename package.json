@@ -1,0 +1,20 @@
+{
+  "name": "crownlands",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/local-service.mjs start",
+    "dev": "npm run build && npm start",
+    "preview": "node scripts/serve.mjs",
+    "service:install": "node scripts/local-service.mjs install",
+    "service:stop": "node scripts/local-service.mjs stop",
+    "service:status": "node scripts/local-service.mjs status",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0"
+  }
+}

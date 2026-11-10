@@ -1,0 +1,23 @@
+# Final combined review and release verification
+
+Follow-up to your independent re-review (`2026-11-10-full-code-rereview-claude.md`). This is a focused delta check on the final combined source, not a third full re-audit. Target `/Users/tannx/Documents/code/Crownlands`, non-Git. Write only a new report and isolated artifacts; do not edit production code, dist,4173/service or personal browser saves.
+
+## Freeze and known changes
+
+The army-clarity root explicitly froze ALL app/test edits. Freeze manifest: `/tmp/crownlands-army-clarity-freeze.json`. Its last integration bug (badges swallowing gestures) is now fixed: pointer/wheel handlers are on the common canvas+badge surface and track the actual capture owner. Its7 targeted cases (3 clarity plus4 gestures) passed; new files include `field-presentation.js`, `tests/field-presentation.test.js`, `e2e/army-clarity.spec.js`, `e2e/army-gestures.spec.js`. See `implementation/army-clarity.md` and plan. Preserve its duration helper, active-transform override and form/focus semantics. The root is waiting for our final combined result/hash and will not mutate app/tests further.
+
+Coordinator has now finished N1/N2/N3 follow-ups and also freezes all app/test writes for this review:
+
+- **N1** in storage.js/index/main: after a raw export and explicit user confirmation that the file was kept, a blocked recovery can replace the browser copies when the incident archive cannot be written. This is a distinct button hidden until BOTH an archive-write failure and an export occurred in the current session. Normal reset still archives before any overwrite. `resetSession(game,{exported})` compares exact original primary/backup/incident bytes with the exported payload; any changed bytes reject without deleting anything. It salvages healthy manual/quick/auto slots before replacing browser copies. Only this user-confirmed path removes incident+backup copies to free quota; the downloaded file contains those exact bytes. Cancel leaves originals intact. State and schema validation remain strict. The app cannot prove a download was physically kept; the button+confirm explicitly asks the player to assert that. Tests capture and read the actual browser download before continuing.
+- **N2** in hall-view.js: incoming list says amount “mang về · tới cổng lúc …”, and visible note says “Hàng đang về chỉ nhập kho khi còn chỗ; phần dư chờ ở cổng.” The full-warehouse browser fixture now asserts incoming500 alongside forecast-received0 with that note.
+- **N3** in e2e/full-review-fixes: after the1px touchMove, poll a capture-phase `pointermove` counter on world-view (touch only), THEN assert camera unchanged. No longer a read-before-event race.
+- Added `tests/final-review-followups.test.js`3 new cases: exported quota fallback, stale export for each key with byte-preservation, healthy manual-slot salvage. All3 were RED before implementation and now pass. Two browser cases cover export+explicit cancel/accept+reload, and stale originals after export. Current combined unit suite: **87/87 pass**.
+
+## Required focused checks
+
+1. Independently read the N1 storage/controller/index changes. Check permission boundary, actual export content, no fallback before export, cancel, stale export, quota failure and healthy-slot preservation. Does any implicit action bypass archival, or can the new cleanup lose bytes that weren't in the confirmed export? Do not treat explicit post-export replacement as the old destructive-reset bug.
+2. Read only army-clarity deltas relative to your reviewed snapshot, focusing on world-map capture ownership and badge gestures, native keyboard/mouse activation, drag/pinch tap suppression and clicks selecting the right army. Include actual CDP touches starting on a badge, mixed badge+canvas and two badges; canvas-only I3 test must still pass.
+3. Check new N2 wording/capacity truth and N3 timing. No balance/schema/core simulation changes are intended.
+4. Run the COMPLETE current unit and browser suites in a fresh isolated copy/private origin (for example4395). Do not reuse an old build. Browser suite includes old regression cases, two-release/offline checks, new recovery cases and the clarity/gesture cases. Report actual counts, failures and tested source/build hash. Confirm source app/test hashes match the final shared tree at end; raise any difference.
+
+Write `project-docs/reviews/2026-11-10-final-combined-claude.md`, keep earlier reports intact, and worker_done with verdict, counts, build hash and any remaining Critical/Important/Minor. We will release this exact tree at4173 only after the combined check passes. All task scope/ordinary local release is already user-authorized. Avoid unrelated optional feature expansion.

@@ -1,0 +1,226 @@
+{
+  "status": "draft-not-approved",
+  "raster_sources": 15,
+  "svg_sources": 1,
+  "originals_not_pixel_modified": true,
+  "display_thumbnails": "sips resampling only",
+  "notes": [
+    "Raw generation sizes differ from final export contract; final export/anchors not approved.",
+    "Preview uses alpha content bounds for normalized display; originals kept intact.",
+    "World/site camera elevation needs visual approval; first draft is more oblique than the75degree target.",
+    "Need inspect light/dark backgrounds and32px readability before core production.",
+    "No gameplay/engine generated; gallery is a review artifact."
+  ],
+  "assets": [
+    {
+      "id": "world-terrain-grass-summer",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": false,
+      "padding_fraction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "world-city-small",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "padding_fraction": [
+        0.174,
+        0.175,
+        0.182,
+        0.163
+      ]
+    },
+    {
+      "id": "world-npc-bandit-camp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "padding_fraction": [
+        0.22,
+        0.402,
+        0.22,
+        0.129
+      ]
+    },
+    {
+      "id": "world-resource-clay-site",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "padding_fraction": [
+        0.187,
+        0.346,
+        0.191,
+        0.124
+      ]
+    },
+    {
+      "id": "world-resource-grain-field",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "padding_fraction": [
+        0.226,
+        0.402,
+        0.238,
+        0.143
+      ]
+    },
+    {
+      "id": "world-army-patrol",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "alpha": true,
+      "padding_fraction": [
+        0.258,
+        0.203,
+        0.218,
+        0.165
+      ]
+    },
+    {
+      "id": "city-town-hall-v01",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "padding_fraction": [
+        0.073,
+        0.132,
+        0.048,
+        0.019
+      ]
+    },
+    {
+      "id": "city-barracks-v01",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "padding_fraction": [
+        0.025,
+        0.198,
+        0.023,
+        0.138
+      ]
+    },
+    {
+      "id": "city-ground-summer",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "alpha": false,
+      "padding_fraction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "unit-card-sword-i",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "padding_fraction": [
+        0.305,
+        0.017,
+        0.3,
+        0.014
+      ]
+    },
+    {
+      "id": "unit-card-cavalry-iii",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "padding_fraction": [
+        0.223,
+        0.094,
+        0.218,
+        0.116
+      ]
+    },
+    {
+      "id": "unit-card-cavalry-iv-martial",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "padding_fraction": [
+        0.211,
+        0.033,
+        0.218,
+        0.064
+      ]
+    },
+    {
+      "id": "unit-card-cavalry-iv-radiant",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "padding_fraction": [
+        0.183,
+        0.042,
+        0.211,
+        0.051
+      ]
+    },
+    {
+      "id": "unit-card-cavalry-iv-umbral",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "padding_fraction": [
+        0.207,
+        0.056,
+        0.224,
+        0.061
+      ]
+    },
+    {
+      "id": "effect-radiant-ward",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha": true,
+      "padding_fraction": [
+        0.093,
+        0.148,
+        0.106,
+        0.159
+      ]
+    }
+  ]
+}

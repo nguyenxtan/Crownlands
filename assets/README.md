@@ -1,0 +1,18 @@
+# Crownlands assets
+
+Proof v01 created on2026-11-10, with later grain and hall revisions: **16 proof assets** (15 raster images generated with built-in image_gen and1 original SVG glyph). The user selected grain SVGv02; its128×128 export is ready at `export/ui/ui-resource-grain.svg`. Main-hall proofv02 is now concept-approved; the other14 raster assets remain drafts.
+
+Open the [proof gallery](previews/proof-v02/index.html) for all16 samples, a32px world-map composite, a city-layout composite and cavalry comparisons. Sources and exact prompts are saved in `source/<asset-id>/`. The [generation record](previews/proof-v02/generation-record.json) maps every selected source and prompt. [QA notes](previews/proof-v02/source-qa.json) distinguish draft source sizes from export contracts.
+
+Main-hall feedback revision, 2026-11-10: [hall proof v02](source/city-town-hall-v01/proof-v02.png) adds a civic tower, integrated wings and wider entrance. Its [exact prompt](source/city-town-hall-v01/proof-v02-prompt.txt) and [generation record](source/city-town-hall-v01/proof-v02-record.json) are retained beside v01. It is integrated into the app with a larger draw size; [city composite](previews/city-hall-v02/city-1440.png). The user approved this concept with “ok phủ v2 ổn nha”; formal export remains pending. This does not approve other buildings. At this revision, warehouse, granary, rally point and transport depot used code-native stand-ins; the support batch below replaces them. S01's presentation anchor is adjusted in layout revision2 to give the larger silhouette breathing room; slot counts and IDs remain14/16.
+
+Support batch01, 2026-11-10: the four stand-ins above have now been replaced in the app by dedicated raster concepts for warehouse, granary, rally point and transport depot. See the [four-building board and city composite](previews/city-support-v01/index.html), [prompt/source index](previews/city-support-v01/generation-record.json) and [browser QA](previews/city-support-v01/browser-check.json). The transport depot uses proof-v02 to provide a step-free wagon ramp; v01 is preserved. All four are drafts, not approved exports. The app-local512×512 copies are listed in `app/assets/provenance.json`; original hall/barracks, other runtime assets and layout are unchanged.
+
+Resource batch01, 2026-11-10: [wood, clay, iron and grain city plots](previews/city-resources-v01/index.html) now replace the16 geometric production stand-ins. Each type has its own transparent source, prompt and512×512 runtime copy, used four times around the city and in the detail panel. [Generation index](previews/city-resources-v01/generation-record.json) links all four selected sources and prompts. They remain drafts for user review; existing production levels, layout, source approvals and saved state stay unchanged.
+
+- `source/`: original images/SVG and prompts; keep generation revisions.
+- `previews/proof-v01/`, `previews/proof-v02/`: gallery, display thumbnails, rendered previews, metadata and QA. These are review artifacts, not game code.
+- `export/world/`, `city/`, `units/`, `ui/`, `effects/`: final game exports after approval and normalization; grain SVGv02 is the first completed export.
+- `reference/`: approved references; proof drafts are not approved references yet.
+
+The [production manifest](../project-docs/asset-production/asset-manifest.json) tracks189 production outputs (1 exported,1 concept-approved awaiting export,187 other pending). Draft source progress lives in the proof records; filenames, camera contracts and roster are unchanged. Follow the [asset production plan](../project-docs/asset-production-plan.md) and [art bible](../project-docs/art-bible.md) before mass production.

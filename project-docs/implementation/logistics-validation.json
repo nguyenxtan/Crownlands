@@ -1,0 +1,34 @@
+{
+  "release": "foundation-0.3",
+  "schema": 3,
+  "date": "2026-11-10",
+  "unit_tests": {
+    "passed": 63,
+    "failed": 0,
+    "command": "npm test"
+  },
+  "browser_tests": {
+    "passed": 56,
+    "failed": 0,
+    "command": "npm run test:e2e"
+  },
+  "build": {
+    "files": 59,
+    "cache": "7568a7cb87628170",
+    "source_matches_dist": true
+  },
+  "url": "http://127.0.0.1:4173",
+  "review": {
+    "reviewer": "/root/logistics_review",
+    "random_legal_states": 3000,
+    "integer_recall_times": 480,
+    "material_findings_fixed": 1,
+    "fix_regressions": 2
+  },
+  "limitations": [
+    "one detachment per mine",
+    "no combat/AI/research/city capture",
+    "safe-return rather than starvation attrition",
+    "trial numbers not playtested"
+  ]
+}

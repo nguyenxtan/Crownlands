@@ -1,0 +1,28 @@
+{
+  "id": "city-resource-wood-v01",
+  "resource": "wood",
+  "label": "Rừng khai thác",
+  "source_revision": 1,
+  "source": "assets/source/city-resource-wood-v01/proof-v01.png",
+  "prompt": "assets/source/city-resource-wood-v01/proof-v01-prompt.txt",
+  "generated_original": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-081a10e6-9faa-43f2-972b-85c23c07050d.png",
+  "tool": "built-in image_gen",
+  "status": "draft",
+  "approved": false,
+  "style_references": [
+    "assets/source/city-warehouse-v01/proof-v01.png",
+    "assets/source/city-granary-v01/proof-v01.png"
+  ],
+  "sha256": "b680c22148e13843854f6bbff5cf5be68cc54d3b1ed2694426df6715752af39f",
+  "actual_dimensions": [
+    1254,
+    1254
+  ],
+  "real_alpha": true,
+  "alpha_bbox": [
+    71,
+    350,
+    1193,
+    1111
+  ]
+}

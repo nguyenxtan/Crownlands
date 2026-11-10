@@ -1,0 +1,288 @@
+{
+  "design_version": "2.3",
+  "checked_date": "2026-11-10",
+  "scope": "documentation and exact arithmetic only;not engine tests",
+  "preset": "research-economy-preset.json",
+  "expected_outcomes": [
+    {
+      "id": "RE23-01",
+      "setup": "Chi tuyển trước rồi hoàn tất",
+      "expected": "Raw trừ đúng 1 lần khi nhận lệnh; hoàn tất không trừ lại, pending chuyển suất thành hiện hữu",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-02",
+      "setup": "Kho có 1000, reservation kế hoạch 200 ở module sau",
+      "expected": "on_hand 1000/reserved 200/available 800; tổng raw vẫn 1000; core reserved raw 0",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-03",
+      "setup": "Chuyển 500 lương cùng chủ bằng xe",
+      "expected": "Nguồn−500, Shipment+500; giao hợp lệShipment−500 đích+500; tổng không tăng/giảm",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-04",
+      "setup": "Army mang 3000 đóng trại hợp lệ có kho 0",
+      "expected": "Dùng hành trang; không đói giả và không tự dỡ vào kho",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-05",
+      "setup": "Nhu cầu 1000, kho site trả 300, hành trang đủ",
+      "expected": "Hành trang trả 700, tổng 1000; không double-charge hoặc buộc đói vì một nguồn thiếu",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-06",
+      "setup": "Army xuất/đến/chết ởT",
+      "expected": "Chi và nguồn đổi từT; chỉ phần quân sống trả kỳ tiếp, không còn nuôi nguyên count ở gốc",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-07",
+      "setup": "Kho 300/cap 500,xe mang 350",
+      "expected": "Dỡ 200, kho 500,xe còn 150; reserved nếu có không tạo chỗ chứa giả",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-08",
+      "setup": "Cargo dư quay về nhưng mọi kho đủ điều kiện đầy",
+      "expected": "Quay một lần rồi kẹt, giữ raw/owner; dỡ lại hoặc chủ hủy 150 với ledger discarded",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-09",
+      "setup": "Gộp 10 quân đói nặng với 1000 quân no",
+      "expected": "Giữ ít nhất 2 bucket; không trung bình nợ, không xóa nợ 10 quân",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-10",
+      "setup": "Thêm 1 lương vào Army thiếu kéo dài",
+      "expected": "Chỉ trả đúng nhu cầu tương ứng; không reset nợ/ân hạn hoặc nhân lương khi load",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-11",
+      "setup": "Học viện 20 nhưng chưa research,Doanh trại 20",
+      "expected": "Kiếm I32 giây theo preset; học viện không tự tạo bonus",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-12",
+      "setup": "Doanh trại 20 và researchIVđã hoàn tất",
+      "expected": "40×0,8/1,6=20 giây kiếmI; không cộng I+II+III+IV",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-13",
+      "setup": "1000 kiếm nhà 5 techI liên tục",
+      "expected": "Mốc lũy kế ceil(38000/1,1)=34546 giây; không ceil 35 giây mỗi người thành 35000",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-14",
+      "setup": "Research đổi tốc độ khi đang tuyển",
+      "expected": "Giữ công trướcT, tốc độ mới từT, giữ phần dư/giá đã trả, không sinh trùng",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-15",
+      "setup": "Nâng Doanh trại qua các mức giữa mốc",
+      "expected": "Cap tăng 200/250/300/350/400 ởL1–5; mọi cấp tăng năng lực theo nội suy",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-16",
+      "setup": "Mất Học viện khi dự án còn dở",
+      "expected": "Hủy dự án, không trả chi đã tiêu/chuyển công nghệ; kiến thức xong trước đó giữ",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-17",
+      "setup": "Nhiều Học viện,1 tech hoạt động",
+      "expected": "Không chạy nhiều bản dự án hoặc cộng nhiều bản bonus; không phí áp dụng lần 2",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-18",
+      "setup": "Trận ngoài tường,0 garrison hoặc chuẩn bị bị hủy",
+      "expected": "Không thu vật tư thủ thành; assault hợp lệ thu đúng 1 lần trong commit",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-19",
+      "setup": "QuânIII di chuyển để né maintenance tương lai",
+      "expected": "Rate hiện chưa bật; trước bật phải không miễn theo tư thế, có nguồn/tải/hậu quả thiếu",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-20",
+      "setup": "S00/save nền 0.2 khi docs lên 2.3",
+      "expected": "Không tự đổi quota/stock/progress hoặc cấp tech; migration là việc triển khai riêng",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-21",
+      "setup": "Công nghệ giảm giá sau khi job đã trả",
+      "expected": "Không hồi raw quá khứ; job chi trước không trừ tiếp mỗi giờ",
+      "execution_status": "not-run"
+    },
+    {
+      "id": "RE23-22",
+      "setup": "Army bị diệt trong khu nội thành đang có outer holder địch",
+      "expected": "Hàng còn lại tại đúng khu/custody; không xóa/teleport và không cho outer holder claim nội thành chưa có quyền",
+      "execution_status": "not-run"
+    }
+  ],
+  "checks": {
+    "reference-manifest.json": {
+      "status": "pass",
+      "files": 7,
+      "mismatches": []
+    },
+    "offline-design-addendum-manifest.json": {
+      "status": "pass",
+      "files": 1,
+      "mismatches": []
+    },
+    "research-system-proposal-manifest.json": {
+      "status": "pass",
+      "files": 1,
+      "mismatches": []
+    },
+    "historical_files": {
+      "status": "pass",
+      "files": 55,
+      "mismatches": []
+    },
+    "scenario_static_and_asset_contracts": {
+      "status": "pass",
+      "files": 9,
+      "mismatches": []
+    },
+    "archive_v2_2": {
+      "status": "pass",
+      "entries": 82,
+      "sha256": "7adf75206efa7672a34675f3a7c2a56bddea3928f36ffabbc58a95acc2a4deb7",
+      "entry_mismatches": []
+    },
+    "markdown_local_destinations": {
+      "status": "pass",
+      "markdown_files": 74,
+      "link_occurrences": 340,
+      "broken": []
+    },
+    "baseline_namespace": {
+      "status": "pass",
+      "definitions": 33,
+      "duplicates": []
+    },
+    "authority_and_index": {
+      "status": "pass"
+    },
+    "planned_cases": {
+      "status": "pass",
+      "planned": 22,
+      "engine_executed": 0
+    },
+    "barracks_interpolation": {
+      "status": "pass",
+      "rows": 21,
+      "anchors": {
+        "1": 200,
+        "5": 400,
+        "10": 800,
+        "15": 1500,
+        "20": 2500
+      }
+    },
+    "research_prerequisites": {
+      "status": "pass",
+      "ranks": 4,
+      "active_projects": 1
+    },
+    "training_arithmetic": {
+      "status": "pass",
+      "milestone_seconds_exact": [
+        "40",
+        "380/11",
+        "144/5",
+        "170/7",
+        "20"
+      ],
+      "thousand_swords_ceil_seconds": 34546,
+      "rounding_scope": "cumulative completion; not per-unit"
+    },
+    "army_and_campaign_arithmetic": {
+      "status": "pass",
+      "army_count": 1320,
+      "hourly_grain_wood_iron": [
+        2180,
+        200,
+        270
+      ],
+      "campaign_grain": 26160,
+      "hypothetical_maintenance_10h_wood_iron": [
+        2000,
+        2700
+      ]
+    },
+    "budget_arithmetic": {
+      "status": "pass",
+      "net_wood_clay_iron_grain": [
+        1900,
+        1500,
+        2030,
+        1760
+      ],
+      "extra_cavalry_grain": -490,
+      "stop_new_exports_grain": 910,
+      "without_new_projects_exports": [
+        3610,
+        1360
+      ]
+    },
+    "transport_arithmetic": {
+      "status": "pass",
+      "throughput_exact": [
+        "4750/3",
+        "6650/3"
+      ],
+      "max_handling_minutes_exact": "660/109",
+      "first_three_hour_grain": 6540,
+      "qualification": "hypothetical 5 percent loss; no handling time; average alone cannot prove no hunger"
+    },
+    "economy_bonus_arithmetic": {
+      "status": "pass",
+      "food_constraint_ratios_exact": [
+        "13/8",
+        "17/8"
+      ],
+      "qualification": "not overall empire power multiplier"
+    },
+    "inactive_cost_modules": {
+      "status": "pass",
+      "modules": [
+        "military_wood_iron_maintenance",
+        "building_maintenance",
+        "administration",
+        "grain_spoilage",
+        "unconditional_transport_loss"
+      ]
+    },
+    "runtime_observation": {
+      "status": "observed",
+      "snapshot_files": 52,
+      "files_changed_since_snapshot": [],
+      "attribution": "No app/scripts edits made by this documentation task; concurrent changes are preserved. No runtime tests run here."
+    },
+    "engine_tests": {
+      "status": "not-run",
+      "scope": "documentation-only closure; 22 expected outcomes are not engine assertions"
+    }
+  },
+  "verification_script_sha256": "f92e4015f4a7a657a3a2e95a07f12c5431a47aa83563e3e524c19221de718f35"
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#222c25"><title>Crownlands · Khởi nguyên</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23d2b56e' d='M5 12l10 9 9-15 9 15 10-9-5 26H10z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./barracks.css"><link rel="stylesheet" href="./logistics.css"><link rel="stylesheet" href="./resource-bar.css"><link rel="stylesheet" href="./ui-layout.css"><link rel="stylesheet" href="./economy.css"><script type="module" src="./src/main.js"></script>
+</head>
+<body>
+<div id="loading">CROWNLANDS<span>Đang mở thế giới…</span></div>
+<div id="app" hidden>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Crownlands"><span class="crown">♛</span><span>CROWNLANDS<small>KHỞI NGUYÊN</small></span></a>
+    <div id="resources" class="resources" aria-label="Kho thành khởi đầu"></div>
+    <div class="header-actions"><span id="autosave-status" class="autosave-status" data-testid="autosave-status" title="Game tự lưu tiến trình trên máy này; không cần bấm lưu.">Đang chuẩn bị tự lưu…</span><button id="update-app" aria-label="Cập nhật game" hidden>Cập nhật</button><button id="save-menu" aria-label="Quản lý bản lưu"><span class="save-menu-wide">Quản lý </span>bản lưu</button><button id="help" aria-label="Hướng dẫn">?</button></div>
+  </header>
+  <div class="workspace">
+    <nav class="sidebar" aria-label="Cảnh chơi">
+      <button id="nav-world" class="nav-item active" aria-label="Thế giới" aria-controls="world-view" aria-current="page"><span>◈</span><small>Thế giới</small></button>
+      <button id="nav-city" class="nav-item" aria-label="Nội thành" aria-controls="city-view"><span>♜</span><small>Nội thành</small></button>
+      <button id="nav-detail" class="nav-item mobile-detail" aria-label="Xem thông tin đang chọn" aria-controls="detail"><span aria-hidden="true">ⓘ</span><small>Chi tiết</small></button>
+      <div class="nav-rule"></div><span class="side-year">I<small>KỶ NGUYÊN</small></span>
+      <span class="side-bottom" title="Bản chơi một người">1P</span>
+    </nav>
+    <main id="play-area">
+      <section id="world-view" class="scene">
+        <div class="scene-heading"><div><p class="eyebrow">BIÊN CƯƠNG CHƯA KHÁM PHÁ</p><h1>Thung lũng khởi nguyên</h1></div><span class="scene-tag">64 × 64</span></div>
+        <canvas id="world-map" tabindex="0" aria-label="Bản đồ thế giới"></canvas>
+        <div class="map-toolbar"><button id="zoom-out" aria-label="Thu nhỏ">−</button><span id="zoom-label" data-testid="zoom">150%</span><button id="zoom-in" aria-label="Phóng to">+</button><button id="map-home" aria-label="Về thành khởi đầu">⌖</button></div>
+        <div class="map-caption"><span class="dot"></span> Lãnh thổ của bạn <span class="dim">· Kéo để di chuyển · Cuộn hoặc chụm hai ngón để thu phóng</span></div>
+        <div class="map-location" data-testid="map-position">12 : 32</div>
+      </section>
+      <section id="city-view" class="scene" hidden>
+        <div class="scene-heading"><div><p class="eyebrow">MỘT ĐẾ CHẾ BẮT ĐẦU TỪ ĐÂY</p><h1>Thành khởi đầu</h1></div><span class="scene-tag">14 ô · 16 vùng khai thác</span></div>
+        <div id="city-stage"><div id="city-board">
+          <img class="city-ground" src="./assets/city-ground-v02.webp" alt="">
+          <img class="city-wall-art" data-city-perimeter="wall" src="./assets/city-wall-v01.png" alt="" draggable="false">
+          <img class="city-wall-art city-wall-front" src="./assets/city-wall-v01.png" alt="" draggable="false">
+          <img class="city-gate-art" data-city-perimeter="gate" src="./assets/city-gate-v01.png" alt="" draggable="false">
+          <div id="city-items"></div>
+        </div></div>
+        <div class="city-legend"><span class="dot"></span> Chọn công trình hoặc ô tài nguyên để xem chi tiết</div>
+      </section>
+    </main>
+    <aside class="inspector">
+      <div class="empire-label"><span class="emblem">♛</span><div>LÃNH ĐỊA CỦA BẠN<strong>Vương triều mới</strong></div></div>
+      <div id="detail" class="detail"></div>
+      <section class="objective" data-testid="objective" id="objective"></section>
+      <section id="field-operations" class="field-operations" aria-label="Quân và xe đang hoạt động"></section>
+      <section class="known-sites"><h3>Địa điểm đã biết <span>4</span></h3><div id="known-sites"></div></section>
+      <div class="build-note">Bản thử 0.3 · Khai thác & vận tải</div>
+    </aside>
+  </div>
+  <footer class="timebar"><div class="time-block"><span class="sun">☀</span><span><small>THỜI GIAN GAME</small><strong id="game-time" data-testid="game-time"></strong></span></div><div class="time-controls"><button id="pause" aria-label="Tạm dừng">Ⅱ Tạm dừng</button><div id="speeds"></div></div><span id="clock-state">Đang chạy</span><span id="save-status">Lưu trên máy này</span><span class="offline-state" id="offline-state">Đang chuẩn bị offline…</span></footer>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<dialog id="save-dialog" aria-labelledby="save-title"><div class="dialog-head"><div><p class="eyebrow">LỊCH SỬ KHÔNG BỊ XÓA</p><h2 id="save-title">Quản lý bản lưu</h2></div><button id="close-saves" aria-label="Đóng bản lưu">×</button></div><p class="muted">Game tự lưu tiến trình liên tục trên trình duyệt này. Ô lưu thủ công giúp giữ một mốc để quay lại sau; không cần dùng khi chơi bình thường.</p><button id="quicksave" title="Tạo mốc thủ công · Ctrl/⌘ S">Tạo mốc lưu nhanh</button><p class="muted small">Lưu nhanh ghi đè mốc lưu nhanh trước đó. Các mốc tự lưu luân phiên nằm trong danh sách bên dưới.</p><div id="save-slots"></div><div class="file-actions"><button id="export-save">↓ Xuất bản lưu</button><button id="export-raw" hidden>Xuất dữ liệu gốc đã giữ</button><label class="button" for="import-file">↑ Nhập bản lưu</label><input id="import-file" type="file" accept="application/json,.json" hidden></div><p class="muted small">Xuất một bản dự phòng để giữ ở nơi khác. Đồng hồ thế giới dừng khi đóng game hoặc chuyển sang cửa sổ khác.</p><button id="new-game" class="danger-link">Bắt đầu thế giới mới…</button></dialog>
+<dialog id="help-dialog" aria-labelledby="help-title"><div class="dialog-head"><h2 id="help-title">Chào mừng đến Crownlands</h2><button id="close-help" aria-label="Đóng hướng dẫn">×</button></div><p>Hãy mở <b>Nội thành</b>, chọn một <b>Ruộng lương</b> rồi nâng lên cấp 2. Công việc mất 2 phút trong thế giới; dùng 8× để rút thời gian chờ xuống khoảng 15 giây.</p><p>Mở <b>Doanh trại</b> để chọn kiếm binh, giáo binh hoặc cung thủ và số lượng cần huấn luyện. Tài nguyên và hạn mức được giữ ngay; quân hoàn tất từng người rồi mới bắt đầu ăn lương.</p><p>Dùng <b>Space</b> để tạm dừng, <b>M</b> mở thế giới, <b>C</b> về thành. Kéo bản đồ hoặc dùng phím mũi tên; cuộn chuột hoặc chụm hai ngón để thu phóng.</p><p>Lương trên thanh tài nguyên đã trừ lượng quân đang có. Khi đóng game, thời gian và việc huấn luyện ngừng lại.</p><p class="help-scope">Bản này có kinh tế, tuyển quân, hành quân tới hai mỏ trống và vận tải. Trên bản đồ, chọn Mỏ đất sét hoặc Ruộng lương hoang để lập đạo khai thác; sau khi quân tới, cho xe từ thành đi lấy hàng. Đạo quân tự quay về khi chỉ còn đủ lương đường rút. Giao chiến và AI sẽ được nối tiếp.</p></dialog>
+<dialog id="recovery-dialog" aria-labelledby="recovery-title"><h2 id="recovery-title">Cần khôi phục bản lưu</h2><p id="recovery-message"></p><p class="muted">Dữ liệu gốc chưa đọc được sẽ được giữ lại trước khi chơi mới hoặc nhập; bạn có thể xuất nó bất cứ lúc nào.</p><button id="recovery-export">Xuất dữ liệu gốc</button><button id="recovery-import">Nhập bản dự phòng</button><button id="recovery-new">Chơi mới trên máy này</button><button id="recovery-exported-new" hidden>Tôi đã giữ file xuất · chơi mới</button></dialog>
+</body></html>

@@ -1,0 +1,16 @@
+#resources{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;min-width:0;flex:1}
+#resources .resource{display:flex;flex-direction:column;justify-content:center;gap:3px;min-width:0;min-height:78px;padding:7px 10px;border:1px solid #b6bd8f29;border-radius:5px;background:#ffffff04}
+#resources .resource-heading{display:flex;align-items:center;gap:6px;min-width:0}
+#resources .resource-heading img,#resources .resource-heading svg{width:21px;height:21px;grid-row:auto;flex-shrink:0;filter:none}
+#resources .res-name{display:block;color:#cdd5bc;font-size:11px;font-weight:550;white-space:nowrap}
+#resources .resource-values{display:flex;align-items:baseline;gap:7px;min-width:0}
+#resources strong{font-size:19px;line-height:1.2;font-weight:650;font-variant-numeric:tabular-nums}
+#resources .resource-cap{font-size:9px;color:#a7b397;white-space:nowrap}
+#resources .resource-rate{font-size:10px;color:#c3d0aa;line-height:1.3;white-space:nowrap}
+#resources .resource-meter{display:block;height:3px;background:#71816355;border-radius:3px;overflow:hidden}
+#resources .resource-meter i{display:block;height:100%;background:#a6b47c}
+#resources .resource-full{border-color:#d0b36b88}#resources .resource-full .resource-meter i{background:#d2b56e}#resources .resource-full .resource-cap{color:#e3cc8d}
+#resources .resource-loss .resource-rate{color:#f2b393}
+@media(max-width:940px){#resources .resource-values{gap:4px}#resources strong{font-size:16px}#resources .resource-cap{font-size:8px}#resources .res-name{font-size:10px}#resources .resource{padding:6px}}
+@media(max-width:700px){#resources{grid-column:1/-1;grid-row:2;gap:6px;width:100%;height:78px}#resources .resource{height:78px;min-height:0;padding:4px 6px;gap:1px;justify-content:space-between}#resources .resource-heading{gap:3px}#resources .resource-heading img,#resources .resource-heading svg{width:16px;height:16px}#resources .res-name{font-size:10px;line-height:14px}#resources .resource-values{display:flex;flex-direction:column;align-items:flex-start;gap:0}#resources strong{font-size:16px;line-height:19px}#resources .resource-cap{font-size:9px;line-height:11px}#resources .resource-rate{font-size:8.5px;line-height:11px}#resources .resource-meter{height:2px;width:100%}}
+@media(max-width:360px){#resources .resource-heading img,#resources .resource-heading svg{display:none}#resources .resource{padding:3px 5px;gap:0}#resources [data-resource="grain"] .resource-rate{white-space:normal}}

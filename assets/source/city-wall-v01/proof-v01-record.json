@@ -1,0 +1,44 @@
+{
+  "id": "city-wall-v01",
+  "tool": "built-in image_gen",
+  "status": "draft-runtime-integrated",
+  "approved": false,
+  "source": "assets/source/city-wall-v01/proof-v01.png",
+  "prompt": "assets/source/city-wall-v01/proof-v01-prompt.txt",
+  "generated_original": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1c3b1-ae87-7491-8233-e38a441decd8/exec-319c1d96-bde3-49eb-acca-6949e6ef1ffb.png",
+  "style_references": [
+    "assets/source/city-town-hall-v01/proof-v02.png",
+    "assets/source/city-ground-summer/proof-v02.png"
+  ],
+  "sha256": "504929824e74619710fa40faed7fe4c0aada0a006b3faf830bb3e205bff84f62",
+  "actual_dimensions": [
+    1448,
+    1086
+  ],
+  "alpha_bbox": [
+    194,
+    277,
+    1253,
+    807
+  ],
+  "real_alpha": true,
+  "alpha_checks": {
+    "size": [
+      1448,
+      1086
+    ],
+    "bbox": [
+      194,
+      277,
+      1253,
+      807
+    ],
+    "transparent_fraction": 0.853646485150026,
+    "near_opaque_fraction": 0.12682763041421202,
+    "center_alpha": 0,
+    "corner_alpha": 0,
+    "passage_alpha": 0
+  },
+  "note": "User requested in-game visibility after image preview. Integrated as provisional decorative layers using unchanged PNG source bytes. Formal 2048x1536 export remains pending; no production approval implied. Runtime presentation fit and front/back draw order are recorded in project-docs/implementation/city-perimeter-live.md.",
+  "runtime_output": "app/assets/city-wall-v01.png"
+}

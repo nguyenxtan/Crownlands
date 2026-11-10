@@ -1,0 +1,11 @@
+# Visible worksite indicators · 2026-11-10
+
+User requested that upgrades be easy to see directly at their location in the city. Every active field upgrade now has a native SVG timber-scaffold overlay, a stronger amber ground ring, hammer/status label, game-time countdown and progress strip. These remain visible when another plot or building is selected. Pausing replaces the hammer with a pause icon and freezes the timer; completion removes the construction graphics and restores the normal drawing depth.
+
+The overlay is a live HTML/CSS/SVG UI layer, not baked into the field art. `app/src/city-construction.js` owns its static markup and timer/progress updates; `city-view.js` sends the current plot job and clock. Styles live with the existing upgrade-list styles in `app/city-work.css`. Scaffolding ignores pointer input; the timer badge itself forwards clicks through the existing parent plot button. Active worksites draw above nearby structures so their status remains readable. Small screens use the icon/time without the long caption. `prefers-reduced-motion` disables the pulse.
+
+No simulation, storage, save schema, main controller, military code, original artwork or slot positions were changed. The other session's recruitment work was preserved.
+
+Two new real-browser regressions failed before implementation and passed afterward. They cover an unselected upgrading plot, remaining time/progress, pause, reload,8× completion/removal, four simultaneous upgrades at1024px, and selecting plots through their timer badges. Full verification after integration with the concurrent recruitment work: `npm test`36/36 and `npm run test:e2e`30/30. This supersedes the earlier in-progress recruitment-unit failures noted in [city-work.md](city-work.md).
+
+Five simultaneous upgrades at30 game seconds were inspected at1440×1000,1024×768 and390×844. All five displayed01:30, no horizontal overflow, reduced-motion pulse disabled. [Browser checks](../../assets/previews/city-construction-v01/browser-check.json); [desktop scene](../../assets/previews/city-construction-v01/scene-1440.png), [compact scene](../../assets/previews/city-construction-v01/scene-1024.png), [mobile scene](../../assets/previews/city-construction-v01/scene-390.png). All browser work used isolated contexts, leaving personal saves untouched.

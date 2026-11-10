@@ -1,0 +1,28 @@
+{
+  "id": "city-resource-iron-v01",
+  "resource": "iron",
+  "label": "Mỏ sắt",
+  "source_revision": 1,
+  "source": "assets/source/city-resource-iron-v01/proof-v01.png",
+  "prompt": "assets/source/city-resource-iron-v01/proof-v01-prompt.txt",
+  "generated_original": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-d0d6649f-679b-4f7b-bbce-bf6ef24d43b2.png",
+  "tool": "built-in image_gen",
+  "status": "draft",
+  "approved": false,
+  "style_references": [
+    "assets/source/city-warehouse-v01/proof-v01.png",
+    "assets/source/city-granary-v01/proof-v01.png"
+  ],
+  "sha256": "363726fd8e86847a577181ec68f580a07c9c52c2f8cdda2f27f722c2639cec72",
+  "actual_dimensions": [
+    1254,
+    1254
+  ],
+  "real_alpha": true,
+  "alpha_bbox": [
+    31,
+    510,
+    1222,
+    1122
+  ]
+}

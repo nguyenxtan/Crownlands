@@ -1,0 +1,230 @@
+
+> crownlands@0.1.0 test
+> node --test tests/*.test.js
+
+TAP version 13
+# Subtest: offline cache version includes asset paths and stays stable for identical builds
+ok 1 - offline cache version includes asset paths and stays stable for identical builds
+  ---
+  duration_ms: 172.3165
+  type: 'test'
+  ...
+# Subtest: S00 starts with sixteen fields, fourteen slots and grain net 348/hour
+ok 2 - S00 starts with sixteen fields, fourteen slots and grain net 348/hour
+  ---
+  duration_ms: 1.270458
+  type: 'test'
+  ...
+# Subtest: upgrade deducts the full cost once; a repeated click leaves state unchanged
+ok 3 - upgrade deducts the full cost once; a repeated click leaves state unchanged
+  ---
+  duration_ms: 0.602667
+  type: 'test'
+  ...
+# Subtest: unaffordable and foreign-city commands cannot alter assets
+ok 4 - unaffordable and foreign-city commands cannot alter assets
+  ---
+  duration_ms: 0.168125
+  type: 'test'
+  ...
+# Subtest: job completes at 120 seconds and the improved rate applies only afterward
+ok 5 - job completes at 120 seconds and the improved rate applies only afterward
+  ---
+  duration_ms: 0.401041
+  type: 'test'
+  ...
+# Subtest: net-before-clamp keeps a full granary full, independent of segment size
+ok 6 - net-before-clamp keeps a full granary full, independent of segment size
+  ---
+  duration_ms: 0.248125
+  type: 'test'
+  ...
+# Subtest: large advances and one-second advances yield identical stock, jobs and event history
+ok 7 - large advances and one-second advances yield identical stock, jobs and event history
+  ---
+  duration_ms: 38.341292
+  type: 'test'
+  ...
+# Subtest: pause freezes the world and each speed reaches the same logical result
+ok 8 - pause freezes the world and each speed reaches the same logical result
+  ---
+  duration_ms: 0.286583
+  type: 'test'
+  ...
+# Subtest: millisecond carry survives small frames without creating or losing game seconds
+ok 9 - millisecond carry survives small frames without creating or losing game seconds
+  ---
+  duration_ms: 0.384667
+  type: 'test'
+  ...
+# Subtest: upgrade offers stop when the trial cannot finish a new job
+ok 10 - upgrade offers stop when the trial cannot finish a new job
+  ---
+  duration_ms: 0.530125
+  type: 'test'
+  ...
+# Subtest: genuine v1 progress migrates with identical resources, field job, clock and no elapsed wall time
+ok 11 - genuine v1 progress migrates with identical resources, field job, clock and no elapsed wall time
+  ---
+  duration_ms: 2.735625
+  type: 'test'
+  ...
+# Subtest: legacy sessions and all save slots migrate in memory while original stored bytes stay untouched
+ok 12 - legacy sessions and all save slots migrate in memory while original stored bytes stay untouched
+  ---
+  duration_ms: 2.160792
+  type: 'test'
+  ...
+# Subtest: paid mixed queues survive saves between individual completions without paying or spawning twice
+ok 13 - paid mixed queues survive saves between individual completions without paying or spawning twice
+  ---
+  duration_ms: 0.657042
+  type: 'test'
+  ...
+# Subtest: malformed or unpaid recruitment states are rejected without corrupting current progress
+ok 14 - malformed or unpaid recruitment states are rejected without corrupting current progress
+  ---
+  duration_ms: 0.812625
+  type: 'test'
+  ...
+# Subtest: an explicitly future schema remains an unsupported version even without other metadata
+ok 15 - an explicitly future schema remains an unsupported version even without other metadata
+  ---
+  duration_ms: 0.353917
+  type: 'test'
+  ...
+# Subtest: imported troops and queues cannot keep refunded resources behind an apparently paid ledger
+ok 16 - imported troops and queues cannot keep refunded resources behind an apparently paid ledger
+  ---
+  duration_ms: 0.183833
+  type: 'test'
+  ...
+# Subtest: recruitment pays once and immediately reserves capacity without adding soldiers or upkeep
+ok 17 - recruitment pays once and immediately reserves capacity without adding soldiers or upkeep
+  ---
+  duration_ms: 2.135833
+  type: 'test'
+  ...
+# Subtest: each completed soldier changes upkeep from that exact boundary, not when queued
+ok 18 - each completed soldier changes upkeep from that exact boundary, not when queued
+  ---
+  duration_ms: 0.368166
+  type: 'test'
+  ...
+# Subtest: mixed recruitment orders finish in placement order with their individual durations
+ok 19 - mixed recruitment orders finish in placement order with their individual durations
+  ---
+  duration_ms: 0.289125
+  type: 'test'
+  ...
+# Subtest: training and a plot completing at the same tick are both committed once at every speed
+ok 20 - training and a plot completing at the same tick are both committed once at every speed
+  ---
+  duration_ms: 2.489875
+  type: 'test'
+  ...
+# Subtest: invalid, foreign, unaffordable and absent-barracks recruitment never changes assets
+ok 21 - invalid, foreign, unaffordable and absent-barracks recruitment never changes assets
+  ---
+  duration_ms: 2.161333
+  type: 'test'
+  ...
+# Subtest: pending soldiers consume capacity and a full five-order queue rejects new payments
+ok 22 - pending soldiers consume capacity and a full five-order queue rejects new payments
+  ---
+  duration_ms: 0.658541
+  type: 'test'
+  ...
+# Subtest: pause and trial horizon cannot cause early or impossible training completion
+ok 23 - pause and trial horizon cannot cause early or impossible training completion
+  ---
+  duration_ms: 0.316041
+  type: 'test'
+  ...
+# Subtest: mid-job export/import preserves exact stock, clock carry and one completion
+ok 24 - mid-job export/import preserves exact stock, clock carry and one completion
+  ---
+  duration_ms: 2.260875
+  type: 'test'
+  ...
+# Subtest: malformed and future saves are refused without changing the original
+ok 25 - malformed and future saves are refused without changing the original
+  ---
+  duration_ms: 0.93325
+  type: 'test'
+  ...
+# Subtest: duplicate and overdue jobs cannot be imported
+ok 26 - duplicate and overdue jobs cannot be imported
+  ---
+  duration_ms: 0.491792
+  type: 'test'
+  ...
+# Subtest: three manual slots, quicksave and five rotating autosaves remain independent
+ok 27 - three manual slots, quicksave and five rotating autosaves remain independent
+  ---
+  duration_ms: 7.255084
+  type: 'test'
+  ...
+# Subtest: failed writes preserve the previous save and never report success
+ok 28 - failed writes preserve the previous save and never report success
+  ---
+  duration_ms: 0.726792
+  type: 'test'
+  ...
+# Subtest: corrupt primary recovers a validated backup and the next save keeps that backup valid
+ok 29 - corrupt primary recovers a validated backup and the next save keeps that backup valid
+  ---
+  duration_ms: 0.503625
+  type: 'test'
+  ...
+# Subtest: unrecoverable data and unsupported future envelopes are never silently reset
+ok 30 - unrecoverable data and unsupported future envelopes are never silently reset
+  ---
+  duration_ms: 0.129083
+  type: 'test'
+  ...
+# Subtest: a primary missing its envelope version is corruption and recovers the valid backup
+ok 31 - a primary missing its envelope version is corruption and recovers the valid backup
+  ---
+  duration_ms: 0.320042
+  type: 'test'
+  ...
+# Subtest: damaged state version metadata recovers a valid backup instead of blocking recovery
+ok 32 - damaged state version metadata recovers a valid backup instead of blocking recovery
+  ---
+  duration_ms: 2.490708
+  type: 'test'
+  ...
+# Subtest: explicitly unsupported state versions preserve the primary instead of rolling back to backup
+ok 33 - explicitly unsupported state versions preserve the primary instead of rolling back to backup
+  ---
+  duration_ms: 1.403375
+  type: 'test'
+  ...
+# Subtest: an inconsistent imported sequence is rejected before any paid upgrade can make it unsavable
+ok 34 - an inconsistent imported sequence is rejected before any paid upgrade can make it unsavable
+  ---
+  duration_ms: 0.201834
+  type: 'test'
+  ...
+# Subtest: every accepted legitimate upgrade state remains saveable through all sixteen completions
+ok 35 - every accepted legitimate upgrade state remains saveable through all sixteen completions
+  ---
+  duration_ms: 2.388542
+  type: 'test'
+  ...
+# Subtest: impossible imported ledger totals cannot overflow the validation range on the next tick
+ok 36 - impossible imported ledger totals cannot overflow the validation range on the next tick
+  ---
+  duration_ms: 0.1055
+  type: 'test'
+  ...
+1..36
+# tests 36
+# suites 0
+# pass 36
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 245.580542

@@ -1,0 +1,27 @@
+{
+  "id": "city-granary-v01",
+  "label": "Kho lương",
+  "tool": "built-in image_gen",
+  "status": "draft",
+  "approved": false,
+  "source_revision": 1,
+  "source": "assets/source/city-granary-v01/proof-v01.png",
+  "prompt": "assets/source/city-granary-v01/proof-v01-prompt.txt",
+  "generated_original": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-d7be9c45-bdb4-4345-9d7c-5de6ca24efda.png",
+  "style_references": [
+    "assets/source/city-town-hall-v01/proof-v02.png",
+    "assets/source/city-barracks-v01/proof-v01.png"
+  ],
+  "sha256": "af519bdb2648a9119c8a564cf57984d20adf5dbdb4c86b2526eddafb5a8465af",
+  "actual_dimensions": [
+    1254,
+    1254
+  ],
+  "alpha_bbox": [
+    110,
+    131,
+    1143,
+    1170
+  ],
+  "real_alpha": true
+}

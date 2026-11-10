@@ -1,0 +1,467 @@
+{
+  "schema_version": 1,
+  "design_version": "2.0",
+  "canvas": [
+    2048,
+    1536
+  ],
+  "coordinates": "Normalized 0..1, top-left origin, y increases downward; anchors are ground contact.",
+  "camera_group": "city",
+  "slot_count": 14,
+  "resource_plot_count": 16,
+  "resource_count_each": 4,
+  "building_level_cap": 20,
+  "resource_level_cap": 20,
+  "visual_stages": [
+    {
+      "id": "v01",
+      "levels": [
+        1,
+        6
+      ]
+    },
+    {
+      "id": "v02",
+      "levels": [
+        7,
+        13
+      ]
+    },
+    {
+      "id": "v03",
+      "levels": [
+        14,
+        20
+      ]
+    }
+  ],
+  "wall": {
+    "center": [
+      0.5,
+      0.5
+    ],
+    "radius": [
+      0.315,
+      0.225
+    ],
+    "gate_anchor": [
+      0.5,
+      0.725
+    ],
+    "separate_layer": true
+  },
+  "slots": [
+    {
+      "id": "S01",
+      "building_type": "town-hall",
+      "label": "Phủ thành",
+      "phase": "core",
+      "anchor": [
+        0.5,
+        0.56
+      ],
+      "max_footprint": [
+        0.083,
+        0.058
+      ],
+      "empty_until_unlocked": false
+    },
+    {
+      "id": "S02",
+      "building_type": "warehouse",
+      "label": "Kho tài nguyên",
+      "phase": "core",
+      "anchor": [
+        0.5,
+        0.342
+      ],
+      "max_footprint": [
+        0.083,
+        0.058
+      ],
+      "empty_until_unlocked": false
+    },
+    {
+      "id": "S03",
+      "building_type": "granary",
+      "label": "Kho lương",
+      "phase": "core",
+      "anchor": [
+        0.60921,
+        0.3601
+      ],
+      "max_footprint": [
+        0.083,
+        0.058
+      ],
+      "empty_until_unlocked": false
+    },
+    {
+      "id": "S04",
+      "building_type": "rally-point",
+      "label": "Điểm tập kết",
+      "phase": "core",
+      "anchor": [
+        0.6934,
+        0.41025
+      ],
+      "max_footprint": [
+        0.083,
+        0.058
+      ],
+      "empty_until_unlocked": false
+    },
+    {
+      "id": "S05",
+      "building_type": "barracks",
+      "label": "Doanh trại",
+      "phase": "core",
+      "anchor": [
+        0.73329,
+        0.48096
+      ],
+      "max_footprint": [
+        0.083,
+        0.058
+      ],
+      "empty_until_unlocked": false
+    },
+    {
+      "id": "S06",
+      "building_type": "academy",
+      "label": "Học viện",
+      "phase": "core",
+      "anchor": [
+        0.71973,
+        0.55603
+      ],
+      "max_footprint": [
+        0.083,
+        0.058
+      ],
+      "empty_until_unlocked": false
+    },
+    {
+      "id": "S07",
+      "building_type": "transport-depot",
+      "label": "Trạm vận tải",
+      "phase": "core",
+      "anchor": [
+        0.65583,
+        0.61826
+      ],
+      "max_footprint": [
+        0.083,
+        0.058
+      ],
+      "empty_until_unlocked": false
+    },
+    {
+      "id": "S08",
+      "building_type": "forge",
+      "label": "Lò rèn",
+      "phase": "core",
+      "anchor": [
+        0.55624,
+        0.65341
+      ],
+      "max_footprint": [
+        0.083,
+        0.058
+      ],
+      "empty_until_unlocked": false
+    },
+    {
+      "id": "S09",
+      "building_type": "stable",
+      "label": "Chuồng ngựa",
+      "phase": "core",
+      "anchor": [
+        0.44376,
+        0.65341
+      ],
+      "max_footprint": [
+        0.083,
+        0.058
+      ],
+      "empty_until_unlocked": false
+    },
+    {
+      "id": "S10",
+      "building_type": "elephant-stable",
+      "label": "Trại voi",
+      "phase": "core",
+      "anchor": [
+        0.34417,
+        0.61826
+      ],
+      "max_footprint": [
+        0.083,
+        0.058
+      ],
+      "empty_until_unlocked": false
+    },
+    {
+      "id": "S11",
+      "building_type": "governor-hall",
+      "label": "Dinh điều hành",
+      "phase": "expansion",
+      "anchor": [
+        0.28027,
+        0.55603
+      ],
+      "max_footprint": [
+        0.083,
+        0.058
+      ],
+      "empty_until_unlocked": true
+    },
+    {
+      "id": "S12",
+      "building_type": "warehouse",
+      "label": "Kho tài nguyên bổ sung",
+      "phase": "core",
+      "anchor": [
+        0.26671,
+        0.48096
+      ],
+      "max_footprint": [
+        0.083,
+        0.058
+      ],
+      "empty_until_unlocked": false
+    },
+    {
+      "id": "S13",
+      "building_type": "granary",
+      "label": "Kho lương bổ sung",
+      "phase": "core",
+      "anchor": [
+        0.3066,
+        0.41025
+      ],
+      "max_footprint": [
+        0.083,
+        0.058
+      ],
+      "empty_until_unlocked": false
+    },
+    {
+      "id": "S14",
+      "building_type": null,
+      "label": "Ô dự trữ",
+      "phase": "reserved",
+      "anchor": [
+        0.39079,
+        0.3601
+      ],
+      "max_footprint": [
+        0.083,
+        0.058
+      ],
+      "empty_until_unlocked": true
+    }
+  ],
+  "resource_plots": [
+    {
+      "id": "R01",
+      "resource": "wood",
+      "anchor": [
+        0.5,
+        0.163
+      ],
+      "max_footprint": [
+        0.072,
+        0.052
+      ]
+    },
+    {
+      "id": "R02",
+      "resource": "clay",
+      "anchor": [
+        0.66264,
+        0.18865
+      ],
+      "max_footprint": [
+        0.072,
+        0.052
+      ]
+    },
+    {
+      "id": "R03",
+      "resource": "iron",
+      "anchor": [
+        0.80052,
+        0.26171
+      ],
+      "max_footprint": [
+        0.072,
+        0.052
+      ]
+    },
+    {
+      "id": "R04",
+      "resource": "grain",
+      "anchor": [
+        0.89265,
+        0.37104
+      ],
+      "max_footprint": [
+        0.072,
+        0.052
+      ]
+    },
+    {
+      "id": "R05",
+      "resource": "wood",
+      "anchor": [
+        0.925,
+        0.5
+      ],
+      "max_footprint": [
+        0.072,
+        0.052
+      ]
+    },
+    {
+      "id": "R06",
+      "resource": "clay",
+      "anchor": [
+        0.89265,
+        0.62896
+      ],
+      "max_footprint": [
+        0.072,
+        0.052
+      ]
+    },
+    {
+      "id": "R07",
+      "resource": "iron",
+      "anchor": [
+        0.80052,
+        0.73829
+      ],
+      "max_footprint": [
+        0.072,
+        0.052
+      ]
+    },
+    {
+      "id": "R08",
+      "resource": "grain",
+      "anchor": [
+        0.66264,
+        0.81135
+      ],
+      "max_footprint": [
+        0.072,
+        0.052
+      ]
+    },
+    {
+      "id": "R09",
+      "resource": "wood",
+      "anchor": [
+        0.5,
+        0.837
+      ],
+      "max_footprint": [
+        0.072,
+        0.052
+      ]
+    },
+    {
+      "id": "R10",
+      "resource": "clay",
+      "anchor": [
+        0.33736,
+        0.81135
+      ],
+      "max_footprint": [
+        0.072,
+        0.052
+      ]
+    },
+    {
+      "id": "R11",
+      "resource": "iron",
+      "anchor": [
+        0.19948,
+        0.73829
+      ],
+      "max_footprint": [
+        0.072,
+        0.052
+      ]
+    },
+    {
+      "id": "R12",
+      "resource": "grain",
+      "anchor": [
+        0.10735,
+        0.62896
+      ],
+      "max_footprint": [
+        0.072,
+        0.052
+      ]
+    },
+    {
+      "id": "R13",
+      "resource": "wood",
+      "anchor": [
+        0.075,
+        0.5
+      ],
+      "max_footprint": [
+        0.072,
+        0.052
+      ]
+    },
+    {
+      "id": "R14",
+      "resource": "clay",
+      "anchor": [
+        0.10735,
+        0.37104
+      ],
+      "max_footprint": [
+        0.072,
+        0.052
+      ]
+    },
+    {
+      "id": "R15",
+      "resource": "iron",
+      "anchor": [
+        0.19948,
+        0.26171
+      ],
+      "max_footprint": [
+        0.072,
+        0.052
+      ]
+    },
+    {
+      "id": "R16",
+      "resource": "grain",
+      "anchor": [
+        0.33736,
+        0.18865
+      ],
+      "max_footprint": [
+        0.072,
+        0.052
+      ]
+    }
+  ],
+  "notes": [
+    "Coordinates freeze gameplay placement, not an approved rendered composition. Verify image overlap at proof gate.",
+    "S12/S13 reuse warehouse/granary art; S14 stays empty.",
+    "Safe sprite boxes and draw size may be refined without changing gameplay slot IDs.",
+    "max_footprint is the ground-contact pad, not the full vertical sprite extent; depth-sort full sprites and verify visual overlap in the proof composite.",
+    "2026-11-10 user feedback: S01 presentation anchor moves from (0.5,0.47) to (0.5,0.56) to give the larger main-hall silhouette breathing room and a central visual role. Slot IDs, counts, economics and saved building data are unchanged. Composition remains a draft for review."
+  ],
+  "layout_revision": 2
+}

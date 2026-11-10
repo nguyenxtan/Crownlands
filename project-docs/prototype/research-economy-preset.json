@@ -1,0 +1,307 @@
+{
+  "id": "research-economy-trial",
+  "schema_version": 1,
+  "design_version": "2.3",
+  "status": "calibration-fixture-not-runtime",
+  "balance_status": "unmeasured",
+  "authority": "Coordinator defaults under U11 after Claude review; not exact numbers requested by user",
+  "scenario_compatibility": "S00 0.2-draft/design2.2 and runtime0.2 remain unchanged until an explicit migration/new ruleset",
+  "time_unit": "simulation-second",
+  "level_interpolation": "piecewise-linear;capacity-floor-to-multiple10;time-factor-exact-rational",
+  "barracks_levels": [
+    {
+      "level": 0,
+      "capacity_points": 0,
+      "training_time_factor": null
+    },
+    {
+      "level": 1,
+      "capacity_points": 200,
+      "training_time_factor": {
+        "numerator": 1,
+        "denominator": 1
+      }
+    },
+    {
+      "level": 2,
+      "capacity_points": 250,
+      "training_time_factor": {
+        "numerator": 79,
+        "denominator": 80
+      }
+    },
+    {
+      "level": 3,
+      "capacity_points": 300,
+      "training_time_factor": {
+        "numerator": 39,
+        "denominator": 40
+      }
+    },
+    {
+      "level": 4,
+      "capacity_points": 350,
+      "training_time_factor": {
+        "numerator": 77,
+        "denominator": 80
+      }
+    },
+    {
+      "level": 5,
+      "capacity_points": 400,
+      "training_time_factor": {
+        "numerator": 19,
+        "denominator": 20
+      }
+    },
+    {
+      "level": 6,
+      "capacity_points": 480,
+      "training_time_factor": {
+        "numerator": 47,
+        "denominator": 50
+      }
+    },
+    {
+      "level": 7,
+      "capacity_points": 560,
+      "training_time_factor": {
+        "numerator": 93,
+        "denominator": 100
+      }
+    },
+    {
+      "level": 8,
+      "capacity_points": 640,
+      "training_time_factor": {
+        "numerator": 23,
+        "denominator": 25
+      }
+    },
+    {
+      "level": 9,
+      "capacity_points": 720,
+      "training_time_factor": {
+        "numerator": 91,
+        "denominator": 100
+      }
+    },
+    {
+      "level": 10,
+      "capacity_points": 800,
+      "training_time_factor": {
+        "numerator": 9,
+        "denominator": 10
+      }
+    },
+    {
+      "level": 11,
+      "capacity_points": 940,
+      "training_time_factor": {
+        "numerator": 89,
+        "denominator": 100
+      }
+    },
+    {
+      "level": 12,
+      "capacity_points": 1080,
+      "training_time_factor": {
+        "numerator": 22,
+        "denominator": 25
+      }
+    },
+    {
+      "level": 13,
+      "capacity_points": 1220,
+      "training_time_factor": {
+        "numerator": 87,
+        "denominator": 100
+      }
+    },
+    {
+      "level": 14,
+      "capacity_points": 1360,
+      "training_time_factor": {
+        "numerator": 43,
+        "denominator": 50
+      }
+    },
+    {
+      "level": 15,
+      "capacity_points": 1500,
+      "training_time_factor": {
+        "numerator": 17,
+        "denominator": 20
+      }
+    },
+    {
+      "level": 16,
+      "capacity_points": 1700,
+      "training_time_factor": {
+        "numerator": 21,
+        "denominator": 25
+      }
+    },
+    {
+      "level": 17,
+      "capacity_points": 1900,
+      "training_time_factor": {
+        "numerator": 83,
+        "denominator": 100
+      }
+    },
+    {
+      "level": 18,
+      "capacity_points": 2100,
+      "training_time_factor": {
+        "numerator": 41,
+        "denominator": 50
+      }
+    },
+    {
+      "level": 19,
+      "capacity_points": 2300,
+      "training_time_factor": {
+        "numerator": 81,
+        "denominator": 100
+      }
+    },
+    {
+      "level": 20,
+      "capacity_points": 2500,
+      "training_time_factor": {
+        "numerator": 4,
+        "denominator": 5
+      }
+    }
+  ],
+  "reference_base_training_seconds": {
+    "sword-i": 40,
+    "spear-i": 35,
+    "archer-i": 45
+  },
+  "training_research": {
+    "family": "training-organization",
+    "maximum_active_projects_empire": 1,
+    "highest_tier_only": true,
+    "tiers": [
+      {
+        "tier": 1,
+        "min_academy_level": 5,
+        "total_speed_bonus": {
+          "numerator": 1,
+          "denominator": 10
+        },
+        "id": "training-organization-i",
+        "prerequisite_ids": []
+      },
+      {
+        "tier": 2,
+        "min_academy_level": 10,
+        "total_speed_bonus": {
+          "numerator": 1,
+          "denominator": 4
+        },
+        "id": "training-organization-ii",
+        "prerequisite_ids": [
+          "training-organization-i"
+        ]
+      },
+      {
+        "tier": 3,
+        "min_academy_level": 15,
+        "total_speed_bonus": {
+          "numerator": 2,
+          "denominator": 5
+        },
+        "id": "training-organization-iii",
+        "prerequisite_ids": [
+          "training-organization-ii"
+        ]
+      },
+      {
+        "tier": 4,
+        "min_academy_level": 20,
+        "total_speed_bonus": {
+          "numerator": 3,
+          "denominator": 5
+        },
+        "id": "training-organization-iv",
+        "prerequisite_ids": [
+          "training-organization-iii"
+        ]
+      }
+    ],
+    "applies_to": [
+      "recruit",
+      "upgrade-training"
+    ],
+    "does_not_change": [
+      "recruitment_cost",
+      "capacity",
+      "grain_upkeep",
+      "movement",
+      "production",
+      "research_speed"
+    ],
+    "work_rule": "exact fixed-point/rational;keep cumulative leftover;completion at ceil tick;no per-soldier rounding",
+    "change_rule": "old rate earns work to T;new rate only from T;paid cost unchanged"
+  },
+  "initial_research_slice": {
+    "stage": "BUILD-04 after A1;not prerequisite to city2",
+    "nodes": [
+      {
+        "id": "equipment-ii",
+        "name": "Trang bị cải tiến II",
+        "scope": "equipment prerequisite for available tierII profiles",
+        "status": "planned"
+      },
+      {
+        "id": "drill-ii",
+        "name": "Huấn luyện chuyên nghiệp II",
+        "scope": "training prerequisite for available tierII profiles",
+        "status": "planned"
+      },
+      {
+        "id": "training-organization-i",
+        "name": "Tổ chức huấn luyện I",
+        "scope": "training research tier1",
+        "status": "planned"
+      }
+    ],
+    "tierII_unlock_rule": "knowledge of both equipment-ii and drill-ii plus profile-specific local facility requirements",
+    "costs_duration_local_facility_levels": "CAL04 before implementation"
+  },
+  "payment": "full upfront at valid command acceptance;raw reservation disabled in core;capacity reservation active;no retroactive refunds",
+  "inactive_costs": {
+    "military_wood_iron_maintenance": {
+      "enabled": false,
+      "tierI_II_default_rate": 0,
+      "higher_tiers": "not activated;requires shortage/recovery law and physical supply"
+    },
+    "building_maintenance": {
+      "enabled": false,
+      "default_rate": 0
+    },
+    "administration": {
+      "enabled": false,
+      "default_rate": 0
+    },
+    "grain_spoilage": {
+      "enabled": false,
+      "default_rate": 0
+    },
+    "unconditional_transport_loss": {
+      "enabled": false,
+      "default_rate": 0
+    }
+  },
+  "unresolved_before_module_activation": [
+    "CAL01/CAL04 building and research prices/work;profile upgrade work;high-level production/storage;CAL10 hunger schedule and positive recovery rho<=1",
+    "physical wood/iron upkeep in all postures and shortage/recovery state",
+    "maintenance-specific functional effects and recovery",
+    "D1 targeting/breach/support semantics;beta is candidate only",
+    "Army payload after casualty and salvage access/zone implementation",
+    "tax/civilian/community/AnDan allocation;contracts/reservation;not core"
+  ]
+}

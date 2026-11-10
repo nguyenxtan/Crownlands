@@ -1,0 +1,788 @@
+{
+  "schema_version": 1,
+  "id": "first-foundation",
+  "version": "0.2-draft",
+  "design_version": "2.2",
+  "status": "specification-fixture-not-runnable",
+  "source": "U10 supplement 02, selected defaults by Codex under U09; closure after Claude review C09 per Codex resolution C10 (2026-11-10)",
+  "units_of_time": "simulation-seconds",
+  "balance_status": "unmeasured",
+  "seed": "crownlands-first-foundation-001",
+  "simulation": {
+    "clock_start": 0,
+    "speeds": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "run_while_closed": false,
+    "movement_grid": "cardinal-four-neighbors",
+    "movement_seconds_per_tile": {
+      "foot": 60,
+      "wagon": 60,
+      "cavalry": 30,
+      "elephant": 90
+    }
+  },
+  "world": {
+    "width": 64,
+    "height": 64,
+    "default_terrain": "grass",
+    "mountain_rectangles": [
+      [
+        25,
+        7,
+        28,
+        23
+      ],
+      [
+        25,
+        41,
+        28,
+        56
+      ]
+    ],
+    "river_cells": [
+      [
+        36,
+        4
+      ],
+      [
+        36,
+        5
+      ],
+      [
+        36,
+        6
+      ],
+      [
+        36,
+        7
+      ],
+      [
+        36,
+        8
+      ],
+      [
+        36,
+        9
+      ],
+      [
+        36,
+        10
+      ],
+      [
+        36,
+        11
+      ],
+      [
+        36,
+        12
+      ],
+      [
+        36,
+        13
+      ],
+      [
+        36,
+        14
+      ],
+      [
+        36,
+        15
+      ],
+      [
+        36,
+        16
+      ],
+      [
+        36,
+        17
+      ],
+      [
+        36,
+        18
+      ],
+      [
+        36,
+        19
+      ],
+      [
+        36,
+        20
+      ],
+      [
+        36,
+        21
+      ],
+      [
+        36,
+        22
+      ],
+      [
+        36,
+        23
+      ],
+      [
+        36,
+        24
+      ],
+      [
+        36,
+        25
+      ],
+      [
+        36,
+        26
+      ],
+      [
+        36,
+        27
+      ],
+      [
+        36,
+        28
+      ],
+      [
+        36,
+        29
+      ],
+      [
+        36,
+        30
+      ],
+      [
+        36,
+        31
+      ],
+      [
+        36,
+        32
+      ],
+      [
+        36,
+        33
+      ],
+      [
+        36,
+        34
+      ],
+      [
+        36,
+        35
+      ],
+      [
+        36,
+        36
+      ],
+      [
+        36,
+        37
+      ],
+      [
+        36,
+        38
+      ],
+      [
+        36,
+        39
+      ],
+      [
+        36,
+        40
+      ],
+      [
+        36,
+        41
+      ],
+      [
+        36,
+        42
+      ],
+      [
+        36,
+        43
+      ],
+      [
+        36,
+        44
+      ],
+      [
+        36,
+        45
+      ],
+      [
+        36,
+        46
+      ],
+      [
+        36,
+        47
+      ],
+      [
+        36,
+        48
+      ],
+      [
+        36,
+        49
+      ],
+      [
+        36,
+        50
+      ],
+      [
+        36,
+        51
+      ],
+      [
+        36,
+        52
+      ],
+      [
+        36,
+        53
+      ],
+      [
+        36,
+        54
+      ],
+      [
+        36,
+        55
+      ],
+      [
+        36,
+        56
+      ],
+      [
+        36,
+        57
+      ],
+      [
+        36,
+        58
+      ],
+      [
+        36,
+        59
+      ]
+    ],
+    "bridges": [
+      [
+        36,
+        32
+      ]
+    ],
+    "resource_sites": [
+      {
+        "id": "clay-near",
+        "position": [
+          18,
+          30
+        ],
+        "resource": "clay",
+        "owner": null,
+        "storage_capacity": 2000,
+        "max_output_per_hour": 300,
+        "saturation_worker_count": 12,
+        "initial_stock": 0,
+        "unclaimed_custody": "world-custody",
+        "on_last_holder_lost": "Site returns to unclaimed; stock stays at site under world-custody; a later valid claim transfers stock once via versioned ledger event; removal requires a real wagon load."
+      },
+      {
+        "id": "grain-near",
+        "position": [
+          19,
+          35
+        ],
+        "resource": "grain",
+        "owner": null,
+        "storage_capacity": 2000,
+        "max_output_per_hour": 300,
+        "saturation_worker_count": 12,
+        "initial_stock": 0,
+        "unclaimed_custody": "world-custody",
+        "on_last_holder_lost": "Site returns to unclaimed; stock stays at site under world-custody; a later valid claim transfers stock once via versioned ledger event; removal requires a real wagon load."
+      }
+    ],
+    "initial_explored_radius": 12,
+    "current_vision_radius": 6,
+    "intel_rule": "Explored terrain is remembered; current armies/stocks require valid observation within Manhattan vision; all intel carries simulation timestamp; discovering a site name does not reveal its state.",
+    "movement_rules": {
+      "ordinary_tile_collision": false,
+      "ordinary_tile_blocking_by_armies": false,
+      "road_combat": false,
+      "site_tiles_transit": false,
+      "site_tile_entry": "Only the journey start site or a valid destination site may be entered; pathfinding routes around all other site tiles."
+    },
+    "bridge_role": "shortcut-not-mandatory-chokepoint; river spans y4-59 only, so removing the bridge leaves a 90-step detour to city-ash-capital",
+    "distance_metric": {
+      "initial_explored_radius": "manhattan",
+      "current_vision_radius": "manhattan",
+      "line_of_sight": "not-modelled"
+    }
+  },
+  "factions": [
+    {
+      "id": "player",
+      "controller": "human",
+      "known_technologies": []
+    },
+    {
+      "id": "ash-crown",
+      "controller": "kingdom-ai",
+      "known_technologies": [],
+      "offensive_field_army_limit": 4,
+      "initial_field_armies": 0,
+      "new_troop_source": "Recruit from owned settlement stock/capacity; sortie troops must leave the source garrison.",
+      "ai_budget": {
+        "status": "trial-preset-unmeasured",
+        "scope_note": "S00 intro preset chosen for observability; not a general limit for all AI.",
+        "recruit_order_units_per_window": 6,
+        "recruit_window_seconds": 3600,
+        "recruit_window_anchor": "simulation-t0",
+        "recruit_quota_carry_over": false,
+        "recruit_checks": "Real stock, capacity and recruit time; no free troops.",
+        "allow_internal_reinforcement": false,
+        "max_active_campaigns": 1,
+        "field_army_limit_shared": 4,
+        "max_units_per_sortie": 12,
+        "garrison_floor": {
+          "city-ash-capital": 80,
+          "city-ash-frontier": 20
+        },
+        "evaluation_interval_seconds": 300,
+        "launch_preconditions": [
+          "valid timestamped intel on target",
+          "feasible path and target",
+          "food for the march"
+        ],
+        "landless_armies_count_toward_limit": true
+      }
+    },
+    {
+      "id": "local-bandits",
+      "controller": "fixed-site-defender",
+      "new_troop_source": "none",
+      "field_army_limit": 0
+    }
+  ],
+  "relations": [
+    {
+      "a": "player",
+      "b": "ash-crown",
+      "state": "hostile"
+    },
+    {
+      "a": "player",
+      "b": "local-bandits",
+      "state": "hostile"
+    },
+    {
+      "a": "ash-crown",
+      "b": "local-bandits",
+      "state": "neutral"
+    }
+  ],
+  "settlements": [
+    {
+      "id": "city-player-start",
+      "name": "Thành khởi đầu",
+      "owner": "player",
+      "position": [
+        12,
+        32
+      ],
+      "buildings_by_slot": {
+        "S01": 1,
+        "S02": 1,
+        "S03": 1,
+        "S04": 1,
+        "S05": 1,
+        "S06": 0,
+        "S07": 1,
+        "S08": 0,
+        "S09": 0,
+        "S10": 0,
+        "S11": 0,
+        "S12": 0,
+        "S13": 0,
+        "S14": 0
+      },
+      "resource_plot_levels": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "stock": {
+        "wood": 1200,
+        "clay": 1200,
+        "iron": 1200,
+        "grain": 1800
+      },
+      "storage_capacity": {
+        "wood": 4000,
+        "clay": 4000,
+        "iron": 4000,
+        "grain": 6000
+      },
+      "army_capacity_points": 200,
+      "garrison": [
+        {
+          "profile": "sword-i",
+          "count": 20,
+          "home": "city-player-start"
+        },
+        {
+          "profile": "spear-i",
+          "count": 20,
+          "home": "city-player-start"
+        },
+        {
+          "profile": "archer-i",
+          "count": 12,
+          "home": "city-player-start"
+        }
+      ]
+    },
+    {
+      "id": "city-ash-frontier",
+      "name": "Tiền thành Tro Tàn",
+      "owner": "ash-crown",
+      "position": [
+        29,
+        32
+      ],
+      "buildings_by_slot": {
+        "S01": 2,
+        "S02": 1,
+        "S03": 1,
+        "S04": 1,
+        "S05": 1,
+        "S06": 0,
+        "S07": 1,
+        "S08": 0,
+        "S09": 0,
+        "S10": 0,
+        "S11": 0,
+        "S12": 0,
+        "S13": 0,
+        "S14": 0
+      },
+      "resource_plot_levels": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "stock": {
+        "wood": 1000,
+        "clay": 1000,
+        "iron": 1000,
+        "grain": 1200
+      },
+      "storage_capacity": {
+        "wood": 4000,
+        "clay": 4000,
+        "iron": 4000,
+        "grain": 6000
+      },
+      "army_capacity_points": 120,
+      "garrison": [
+        {
+          "profile": "sword-i",
+          "count": 12,
+          "home": "city-ash-frontier"
+        },
+        {
+          "profile": "spear-i",
+          "count": 8,
+          "home": "city-ash-frontier"
+        },
+        {
+          "profile": "archer-i",
+          "count": 6,
+          "home": "city-ash-frontier"
+        }
+      ]
+    },
+    {
+      "id": "city-ash-capital",
+      "name": "Thành chính Tro Tàn",
+      "owner": "ash-crown",
+      "position": [
+        46,
+        32
+      ],
+      "buildings_by_slot": {
+        "S01": 4,
+        "S02": 1,
+        "S03": 1,
+        "S04": 1,
+        "S05": 2,
+        "S06": 1,
+        "S07": 1,
+        "S08": 1,
+        "S09": 0,
+        "S10": 0,
+        "S11": 0,
+        "S12": 0,
+        "S13": 0,
+        "S14": 0
+      },
+      "resource_plot_levels": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "stock": {
+        "wood": 2400,
+        "clay": 2400,
+        "iron": 2400,
+        "grain": 3600
+      },
+      "storage_capacity": {
+        "wood": 4000,
+        "clay": 4000,
+        "iron": 4000,
+        "grain": 6000
+      },
+      "army_capacity_points": 240,
+      "garrison": [
+        {
+          "profile": "sword-i",
+          "count": 40,
+          "home": "city-ash-capital"
+        },
+        {
+          "profile": "spear-i",
+          "count": 35,
+          "home": "city-ash-capital"
+        },
+        {
+          "profile": "archer-i",
+          "count": 25,
+          "home": "city-ash-capital"
+        }
+      ]
+    }
+  ],
+  "local_sites": [
+    {
+      "id": "bandit-near",
+      "type": "bandit-camp",
+      "position": [
+        22,
+        32
+      ],
+      "owner": "local-bandits",
+      "stock": {
+        "wood": 120,
+        "clay": 120,
+        "iron": 100,
+        "grain": 100
+      },
+      "garrison": [
+        {
+          "profile": "sword-i",
+          "count": 12,
+          "capacity_source": "scenario-bandit-near"
+        },
+        {
+          "profile": "spear-i",
+          "count": 6,
+          "capacity_source": "scenario-bandit-near"
+        }
+      ],
+      "capacity_transfer_on_capture": false,
+      "reinforcement_budget": 0,
+      "capacity_source_id": "scenario-bandit-near",
+      "on_garrison_eliminated": "Becomes an unclaimed site under world-custody; stock stays; no capacity, recruitment, reinforcement or respawn. Map uses overlay or hides world-npc-bandit-camp; no new asset.",
+      "unclaimed_custody": "world-custody"
+    }
+  ],
+  "opening": {
+    "initial_branch": "common",
+    "specialization_unlock": "Research and local facilities; no permanent faction-wide path lock.",
+    "human_choice": "One authored starting location; free/random settlement deferred.",
+    "home_attack_launch_guard_seconds": 3600,
+    "guard_scope": "ash-crown may not commit a new offensive aimed at city-player-start during guard; checked at launch and at every retarget or new mission step aimed at it; invalid steps before expiry are not committed; existing defenders still fight; no invulnerability; AI may attack player-held mines outside the guard scope under normal rules.",
+    "guard_cancel_condition": "Player commits a valid, proactive attack or occupy order targeting an ash-crown asset. Previews, invalid orders, defending when attacked and scouting by vision do not cancel. Combat with local-bandits alone does not cancel.",
+    "guard_timer_clock": "simulation",
+    "warning": "Explain guard scope, expiration and cancellation in UI before confirming hostile action; state that player-held mines are outside guard scope.",
+    "first_goals": [
+      "Raise one grain plot to level2.",
+      "Scout a nearby site using an existing troop detachment; no sixth scout line.",
+      "Occupy clay-near or grain-near and deliver one real shipment.",
+      "Defeat the local camp or repel a legal counterattack.",
+      "Capture city-ash-frontier; keep ownership and supply it, then save/export and restore."
+    ],
+    "default_march_rations_hours": 2,
+    "path_steps_with_site_nontransit": {
+      "city-player-start->city-ash-frontier": 19,
+      "city-ash-capital->city-ash-frontier": 17,
+      "city-ash-capital->city-player-start": 36
+    }
+  },
+  "economic_trial_values": {
+    "field_output_per_hour_by_level": {
+      "1": 100,
+      "2": 125
+    },
+    "field_level1_to2": {
+      "cost": {
+        "wood": 80,
+        "clay": 60,
+        "iron": 40,
+        "grain": 20
+      },
+      "duration_seconds": 120
+    },
+    "troop_upkeep_grain_per_hour": {
+      "sword-i": 1,
+      "spear-i": 1,
+      "archer-i": 1
+    },
+    "capacity_weight": {
+      "sword-i": 1,
+      "spear-i": 1,
+      "archer-i": 1
+    },
+    "recruit": {
+      "sword-i": {
+        "cost": {
+          "wood": 40,
+          "clay": 20,
+          "iron": 50,
+          "grain": 10
+        },
+        "seconds_per_unit": 40
+      },
+      "spear-i": {
+        "cost": {
+          "wood": 50,
+          "clay": 30,
+          "iron": 30,
+          "grain": 10
+        },
+        "seconds_per_unit": 35
+      },
+      "archer-i": {
+        "cost": {
+          "wood": 60,
+          "clay": 30,
+          "iron": 20,
+          "grain": 10
+        },
+        "seconds_per_unit": 45
+      }
+    },
+    "initial_player_wagons": 4,
+    "wagon_payload": 500,
+    "forward_camp": {
+      "cost": {
+        "wood": 100,
+        "clay": 60,
+        "iron": 20,
+        "grain": 0
+      },
+      "build_seconds": 120,
+      "troop_capacity_points": 100,
+      "stock_capacity_each_resource": 2000
+    },
+    "capture_hold_seconds": 300,
+    "recovery_seconds": 1800,
+    "capacity_debt_grace_seconds": 21600,
+    "capacity_debt_extra_upkeep_factor": 1,
+    "world_extraction_rule": "Linear output up to saturation; only assigned sword/spear/archer workers count in S00. Cavalry/elephants may guard; broader profiles require a later calibrated ruleset.",
+    "research_bonus_core": 0,
+    "warehouse_integration": "Per store and resource, per constant-rate segment: net = gross production - continuous expense; stock = clamp(stock + net*dt, 0, cap); split at rate change, ownership change, hitting 0 or cap. Ledger lines: production, paid upkeep, overflow, unmet expense. Discrete costs at their tick. Hit between integer seconds: event at ceil tick.",
+    "capacity_debt_timer_key": "(owner, original_capacity_source_id); pending:X is an alias of source X, not a new key; used counts existing troops only.",
+    "paused_job_rule": "Release held capacity increase; keep progress, remaining active time and spent cost; invalidate old completion event by version; resume re-reserves capacity before scheduling; no second charge.",
+    "starvation_after_grace": "Must apply finite attrition leading to zero troops without resupply or recovery; schedule and rates are CAL10 and unresolved."
+  },
+  "objective": {
+    "id": "first-foundation-complete",
+    "kind": "prototype-milestone",
+    "all_of": [
+      "Successfully deliver a shipment from an occupied resource site.",
+      "Own city-ash-frontier after uninterrupted valid capture.",
+      "Maintain ownership and supply for 600 simulation seconds.",
+      "Save/export/import preserves all live state and pending events."
+    ],
+    "terminal": false,
+    "not_a_great_city_victory": true
+  },
+  "unresolved_before_engine_run": [
+    "Combat stat/damage/targeting fixture CAL02/CAL03 and per-profile health persistence rules.",
+    "Hunger grace and finite attrition schedule CAL10.",
+    "Complete building/technology costs, all14 profile stats and ruleset validation.",
+    "AI scoring, targeting and tactical policy for ash-crown CAL11; ai_budget limits alone do not define behaviour and no AI is implemented.",
+    "Engine schema, local storage transaction/cache and export/import implementation CAL15."
+  ],
+  "acceptance_status": {
+    "static_data_checks": "passed-static-only-2026-11-10",
+    "simulation": "not-run",
+    "playtest": "not-run"
+  },
+  "capacity_sources": [
+    {
+      "id": "scenario-bandit-near",
+      "owner": "local-bandits",
+      "type": "scenario-fixed-garrison",
+      "capacity_points": 18,
+      "site_id": "bandit-near",
+      "transfers_on_capture": false,
+      "allow_recruitment": false
+    }
+  ],
+  "custody_holders": [
+    {
+      "id": "world-custody",
+      "kind": "neutral-world-custody",
+      "acts": false,
+      "produces": false,
+      "purpose": "Holds stock of unclaimed sites until a valid claim; avoids ownerless assets (I04)."
+    }
+  ]
+}

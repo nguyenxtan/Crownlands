@@ -1,0 +1,37 @@
+{
+  "version": "8d4805ef9ed3f8d3",
+  "layouts": [
+    {
+      "width": 320,
+      "pageOverflow": false,
+      "bookOverflow": false,
+      "bookWidth": 300,
+      "cardOverflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "pageOverflow": false,
+      "bookOverflow": false,
+      "bookWidth": 370,
+      "cardOverflow": false,
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "pageOverflow": false,
+      "bookOverflow": false,
+      "bookWidth": 992,
+      "cardOverflow": false,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "pageOverflow": false,
+      "bookOverflow": false,
+      "bookWidth": 1000,
+      "cardOverflow": false,
+      "errors": []
+    }
+  ]
+}

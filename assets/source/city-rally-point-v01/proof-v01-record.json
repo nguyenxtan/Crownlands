@@ -1,0 +1,27 @@
+{
+  "id": "city-rally-point-v01",
+  "label": "Điểm tập kết",
+  "tool": "built-in image_gen",
+  "status": "draft",
+  "approved": false,
+  "source_revision": 1,
+  "source": "assets/source/city-rally-point-v01/proof-v01.png",
+  "prompt": "assets/source/city-rally-point-v01/proof-v01-prompt.txt",
+  "generated_original": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-f778d532-f2e8-4c42-90c2-43cf1f1eb874.png",
+  "style_references": [
+    "assets/source/city-town-hall-v01/proof-v02.png",
+    "assets/source/city-barracks-v01/proof-v01.png"
+  ],
+  "sha256": "6786e2765a6fb0185d3d0cd3f44b07aa951d3c0c2e0ac5a2d32c276fe22e1c2e",
+  "actual_dimensions": [
+    1254,
+    1254
+  ],
+  "alpha_bbox": [
+    40,
+    217,
+    1214,
+    1064
+  ],
+  "real_alpha": true
+}

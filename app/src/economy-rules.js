@@ -1,0 +1,10 @@
+export const SCALE=3600000;
+export const RESOURCES=Object.freeze(['wood','clay','iron','grain']);
+export const RULESET='foundation-0.3';
+export const MAX_TIME=315360000;
+export const FIELD_COST=Object.freeze({wood:80,clay:60,iron:40,grain:20});
+export const FIELD_SECONDS=120;
+export const FIELD_RATES=Object.freeze({1:100,2:125});
+export const LEDGER_KEYS=Object.freeze(['produced','upkeep','overflow','unmet','spent','sent','received','discarded']);
+export const emptyStock=()=>Object.fromEntries(RESOURCES.map(r=>[r,0]));
+export const emptyLedger=()=>Object.fromEntries(RESOURCES.map(r=>[r,Object.fromEntries(LEDGER_KEYS.map(k=>[k,0]))]));

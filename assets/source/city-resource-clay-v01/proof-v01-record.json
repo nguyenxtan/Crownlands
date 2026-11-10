@@ -1,0 +1,28 @@
+{
+  "id": "city-resource-clay-v01",
+  "resource": "clay",
+  "label": "Mỏ đất sét",
+  "source_revision": 1,
+  "source": "assets/source/city-resource-clay-v01/proof-v01.png",
+  "prompt": "assets/source/city-resource-clay-v01/proof-v01-prompt.txt",
+  "generated_original": "/Users/tannx/Library/Application Support/orca/codex-accounts/c3808717-226b-40df-a12f-b828f4046aea/home/generated_images/01a1af91-36ab-7650-b494-13eec437ff81/exec-3e6d46c0-8bd0-4d03-8724-f2526c6fd428.png",
+  "tool": "built-in image_gen",
+  "status": "draft",
+  "approved": false,
+  "style_references": [
+    "assets/source/city-warehouse-v01/proof-v01.png",
+    "assets/source/city-granary-v01/proof-v01.png"
+  ],
+  "sha256": "1aa9f9b0a1efb370c343c7bff5c32a883ddbeb75e69f95b7ae798d8b5095d2c2",
+  "actual_dimensions": [
+    1254,
+    1254
+  ],
+  "real_alpha": true,
+  "alpha_bbox": [
+    31,
+    586,
+    1217,
+    1145
+  ]
+}
